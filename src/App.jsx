@@ -9,6 +9,7 @@ function App() {
   const [storyLoading, setStoryLoading] = useState(false);
   const [storyFading, setStoryFading] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const musicRef = useRef(null);
 
@@ -266,29 +267,37 @@ const changePage = (newPage) => {
     🎀 <span>Aska</span>
   </div>
 
-  <div className="nav-links">
+  <button
+    className="menu-toggle"
+    onClick={() => setMenuOpen((open) => !open)}
+    aria-label="Toggle menu"
+  >
+    {menuOpen ? "✕" : "☰"}
+  </button>
 
-<button onClick={() => changePage("home")}>
+  <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+
+<button onClick={() => { changePage("home"); setMenuOpen(false); }}>
   Home
 </button>
 
-<button onClick={() => changePage("story")}>
+<button onClick={() => { changePage("story"); setMenuOpen(false); }}>
   Story
 </button>
 
-<button onClick={() => changePage("gallery")}>
+<button onClick={() => { changePage("gallery"); setMenuOpen(false); }}>
   Gallery
 </button>
 
-<button onClick={() => changePage("reasons")}>
+<button onClick={() => { changePage("reasons"); setMenuOpen(false); }}>
   20 Reasons
 </button>
 
-<button onClick={() => changePage("letter")}>
+<button onClick={() => { changePage("letter"); setMenuOpen(false); }}>
   Letter
 </button>
 
-<button onClick={() => changePage("surprise")}>
+<button onClick={() => { changePage("surprise"); setMenuOpen(false); }}>
   Surprise
 </button>
 
