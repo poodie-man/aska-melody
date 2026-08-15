@@ -5,8 +5,87 @@ function App() {
   const [started, setStarted] = useState(false);
   const [burst, setBurst] = useState(false);
   const [page, setPage] = useState("home");
+  const [openChapter, setOpenChapter] = useState(null);
+  const [storyLoading, setStoryLoading] = useState(false);
+  const [storyFading, setStoryFading] = useState(false);
+  const [loadingMessage, setLoadingMessage] = useState("");
 
   const musicRef = useRef(null);
+
+  const chapters = [
+    {
+      id: 1,
+      emoji: "🌸",
+      title: "Where It All Began",
+      text: `Happy Girlfriend's Day, my love. ❤️
+
+Today is all about celebrating you, but honestly, I celebrate you every single day. Thank you for being the reason behind so many of my smiles, for making ordinary moments feel special, and for filling my life with so much warmth and happiness.
+
+No matter where life takes us, I hope you always know how deeply you're loved. You're my favorite person, my safe place, and the one I want to make countless memories with. I can't wait for all the little adventures, late-night talks, hugs, and dreams we'll share together.
+
+I hope today reminds you of just how amazing you are. Thank you for being you. I'm so lucky to call you mine.
+
+Happy Girlfriend's Day, beautiful. I love you more than words could ever express. 💛
+).`,
+    },
+    {
+      id: 2,
+      emoji: "💗",
+      title: "The Little Moments",
+      text: "Sometimes the smallest moments become the best memories.",
+    },
+    {
+      id: 3,
+      emoji: "🎀",
+      title: "My Favorite Memories",
+      text: "These are the moments I'll always remember. 💗",
+    },
+    {
+      id: 4,
+      emoji: "🎀",
+      title: "My Favorite Memories",
+      text: "These are the moments I'll always remember. 💗",
+    },
+       {
+      id: 5,
+      emoji: "🎀",
+      title: "My Favorite Memories",
+      text: "These are the moments I'll always remember. 💗",
+    },
+    
+  ];
+
+  const toggleChapter = (id) => {
+    setOpenChapter((current) => (current === id ? null : id));
+  };
+
+const changePage = (newPage) => {
+
+  const messages = {
+    home: "Loading the home page ♡",
+    story: "Loading our story ♡",
+    gallery: "Opening our memories ♡",
+    reasons: "Loading 20 reasons ♡",
+    letter: "Opening your letter ♡",
+    surprise: "Preparing your surprise ♡"
+  };
+
+  setLoadingMessage(messages[newPage] || "Loading ♡");
+
+  setStoryLoading(true);
+  setStoryFading(false);
+
+  setTimeout(() => {
+    setPage(newPage);
+    window.scrollTo(0, 0);
+    setStoryFading(true);
+  }, 2500);
+
+  setTimeout(() => {
+    setStoryLoading(false);
+    setStoryFading(false);
+  }, 3000);
+};
 
   const handleBegin = async () => {
 
@@ -32,7 +111,7 @@ function App() {
             {/* Background music */}
       <audio
         ref={musicRef}
-        src="/music/our-song.mp3"
+        src="/music/our-songs.mp3"
         loop
       />
             {/* =====================================
@@ -123,6 +202,23 @@ function App() {
         </div>
       )}
 
+      {/* =====================================
+          STORY PAGE LOADING TRANSITION
+      ====================================== */}
+
+      {storyLoading && (
+        <div className={`page-loading-overlay ${storyFading ? "fade-out" : ""}`}>
+          <img
+            src="/images/loading.gif"
+            alt="loading"
+            className="loading-gif"
+          />
+          <p className="loading-text">
+  {loadingMessage}
+</p>
+        </div>
+      )}
+
       {/* Floating decorations */}
       
     <div className="decorations">
@@ -172,21 +268,29 @@ function App() {
 
   <div className="nav-links">
 
-    <button onClick={() => setPage("home")}>
-      Home
-    </button>
+<button onClick={() => changePage("home")}>
+  Home
+</button>
 
-    <button onClick={() => {
-      setPage("story");
-      window.scrollTo(0, 0);
-    }}>
-      Story
-    </button>
+<button onClick={() => changePage("story")}>
+  Story
+</button>
 
-    <button>Gallery</button>
-    <button>20 Reasons</button>
-    <button>Letter</button>
-    <button>Surprise</button>
+<button onClick={() => changePage("gallery")}>
+  Gallery
+</button>
+
+<button onClick={() => changePage("reasons")}>
+  20 Reasons
+</button>
+
+<button onClick={() => changePage("letter")}>
+  Letter
+</button>
+
+<button onClick={() => changePage("surprise")}>
+  Surprise
+</button>
 
   </div>
 
@@ -194,6 +298,7 @@ function App() {
 
       {/* Main content */}
       {page === "home"&&(
+      
      <section
      id="home"
     className={`hero ${started ? "home-visible" : "home-hidden"}`}
@@ -281,13 +386,9 @@ function App() {
       )}
   {/* STORY PAGE */}
 {page === "story" && (
-  <div className="story-page">
+  <div className={`story-page ${openChapter ? "chapter-open" : ""}`}>
 
     <section className="story-intro">
-
-      <div className="story-label">
-        {/* ♡ OUR LITTLE STORY ♡ */}
-      </div>
 
       <h1>
         Our Little
@@ -296,99 +397,51 @@ function App() {
       </h1>
 
       <p>
-        Every beautiful story has a beginning...
+        Every beautiful story has a beginning... tap a chapter to read it ♡
       </p>
 
-      <button
-        className="story-next"
-        onClick={() =>
-          document.getElementById("chapter-one").scrollIntoView({
-            behavior: "smooth"
-          })
-        }
-      >
-        🌸 Where It All Began ↓
-      </button>
-
     </section>
 
+    <section className="story-accordion">
 
-    <section id="chapter-one" className="story-chapter">
+      {chapters.map((chapter) => (
+        <div
+          key={chapter.id}
+          className={`accordion-item ${openChapter === chapter.id ? "open" : ""}`}
+        >
 
-      <div className="chapter-number">01</div>
+          <button
+            className="accordion-header"
+            onClick={() => toggleChapter(chapter.id)}
+            aria-expanded={openChapter === chapter.id}
+          >
+            <span className="accordion-number">
+              {String(chapter.id).padStart(2, "0")}
+            </span>
 
-      <h2>🌸 Where It All Began</h2>
+            <span className="accordion-title">
+  <span className="accordion-emoji">{chapter.emoji}</span>
+  <span className="accordion-title-text">{chapter.title}</span>
+</span>
 
-      <div className="story-card">
-        <p>
-          This is where our story begins...asdddddddddddddddddddddddddddddddddddddddddddasdasdasdsad
-          asjdklasjdklasjdklasjdklasjdaklsdjkalsdasdalksjdaskldjaskldjasdklasjdlkasdjaskldjaskldajsd
-          kasjdklasdjaslkdjasdklasjdalksdjasdklasjdklasdjaskl
-        </p>
-      </div>
+            <span className="accordion-arrow">▾</span>
+          </button>
 
-      <button
-        className="story-next"
-        onClick={() =>
-          document.getElementById("chapter-two").scrollIntoView({
-            behavior: "smooth"
-          })
-        }
-      >
-        💗 The Little Moments ↓
-      </button>
+          <div className="accordion-body">
+            <div className="accordion-body-inner">
+              <p>{chapter.text}</p>
+            </div>
+          </div>
 
-    </section>
+        </div>
+      ))}
 
-
-    <section id="chapter-two" className="story-chapter">
-
-      <div className="chapter-number">02</div>
-
-      <h2>💗 The Little Moments</h2>
-
-      <div className="story-card">
-        <p>
-          Sometimes the smallest moments
-          become the best memories.
-        </p>
-      </div>
-
-      <button
-        className="story-next"
-        onClick={() =>
-          document.getElementById("chapter-three").scrollIntoView({
-            behavior: "smooth"
-          })
-        }
-      >
-        🎀 My Favorite Memories ↓
-      </button>
-
-    </section>
-
-
-    <section id="chapter-three" className="story-chapter">
-
-      <div className="chapter-number">03</div>
-
-      <h2>🎀 My Favorite Memories</h2>
-
-      <div className="story-card">
-        <p>
-          These are the moments I'll always remember. 💗
-        </p>
-      </div>
-
-      <button
-        className="story-home"
-        onClick={() => {
-          setPage("home");
-          window.scrollTo(0, 0);
-        }}
-      >
-        ♡ Back To Home
-      </button>
+    <button
+  className="story-home"
+  onClick={() => changePage("home")}
+>
+  ♡ Back To Home
+</button>
 
     </section>
 

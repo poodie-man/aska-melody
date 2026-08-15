@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Minecraftia";
+    src: url("/fonts/Minecraftia-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 html,
 body,
@@ -30,15 +36,12 @@ body {
     overflow: hidden;
 
     background:
-        radial-gradient(
-            circle at 50% 40%,
-            #fffafd 0%,
-            #fff0f6 28%,
-            #ffdce9 62%,
-            #ffc6dc 100%
-        );
+        linear-gradient(
+            rgba(255, 250, 253, 0.25),
+            rgba(255, 198, 220, 0.25)
+        ),
+        url("/images/home.png") center / cover no-repeat;
 }
-
 /* =========================
    NAVBAR
 ========================= */
@@ -168,7 +171,6 @@ body {
 .character-area {
     width: 330px;
     height: 300px;
-
     margin-top: 2px;
 
     position: relative;
@@ -426,7 +428,7 @@ body {
 .birthday-content p {
     margin-top: 12px;
 
-    color: #a06b82;
+    color: black;
 
     font-size: 14px;
 
@@ -1171,7 +1173,7 @@ body {
    SEPARATE STORY PAGE
 ========================================= */
 
-.story-page {
+/* .story-page {
     min-height: 100vh;
 
     padding: 120px 8%;
@@ -1193,7 +1195,7 @@ body {
         );
 
     overflow-y: auto;
-}
+} */
 
 
 .story-page-content {
@@ -1436,27 +1438,79 @@ body {
 
     cursor: pointer;
 }
+
+
 /* =========================================
    STORY PAGE - VERTICAL
 ========================================= */
 
-.story-page {
+/* .story-page {
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 84px 8% 16px;
 
     background:
         linear-gradient(
-            180deg,
-            #ffdce9,
-            #fff0f6,
-            #ffdce9
-        );
+            rgba(255, 220, 233, 0.25),
+            rgba(255, 240, 246, 0.25)
+        ),
+        url("/images/story.png") center / cover no-repeat;
+} */
+.story-page {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
 
     overflow-x: hidden;
     overflow-y: auto;
+
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 90px;
+    padding-bottom: 50px;
+
+    z-index: 10;
 }
+
+/* Fixed background */
+.story-page::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(255, 220, 233, 0.25),
+            rgba(255, 240, 246, 0.25)
+        ),
+        url("/images/story.png") center center / cover no-repeat;
+
+    transform: scale(1);
+
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Zoom when a chapter is open */
+.story-page.chapter-open::before {
+    transform: scale(1.06);
+}
+
 
 
 /* =========================================
@@ -1465,19 +1519,13 @@ body {
 
 .story-intro {
     width: 100%;
-    min-height: 100vh;
+    flex-shrink: 0;
 
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
     align-items: center;
 
     text-align: center;
-
-    padding: 100px 20px;
-
-    box-sizing: border-box;
 }
 
 
@@ -1591,4 +1639,434 @@ body {
 
     box-shadow:
         0 15px 35px rgba(220, 85, 130, 0.3);
+}
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .birthday-page {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links button {
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        box-sizing: border-box;
+    }
+
+
+    .melody-banner {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .banner-subtitle {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+
+    /* =========================
+       MY MELODY
+    ========================= */
+
+    .character-area {
+        transform: scale(0.78);
+
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+
+    /* =========================
+       BIRTHDAY TEXT
+    ========================= */
+
+    .birthday-content {
+        width: 100%;
+        padding: 0 15px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .birthday-content h1 {
+        font-size: clamp(45px, 14vw, 70px);
+
+        line-height: 0.95;
+    }
+
+    .sweet-message {
+        font-size: 13px;
+    }
+
+    .birthday-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: min(90%, 320px);
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .story-page {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .story-intro,
+    .story-chapter {
+        width: 100%;
+
+        min-height: 100vh;
+
+        padding: 80px 18px;
+
+        box-sizing: border-box;
+    }
+
+
+    .story-intro h1 {
+        font-size: clamp(55px, 17vw, 80px);
+    }
+
+    .story-intro p {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       STORY CARD
+    ========================= */
+
+    .story-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px 20px;
+
+        box-sizing: border-box;
+
+        border-radius: 22px;
+    }
+
+    .story-card p {
+        font-size: 15px;
+        line-height: 1.8;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    .story-chapter h2 {
+        font-size: clamp(40px, 12vw, 60px);
+
+        line-height: 1;
+    }
+
+
+    /* =========================
+       STORY BUTTONS
+    ========================= */
+
+    .story-next,
+    .story-home {
+        max-width: 90%;
+
+        padding: 13px 22px;
+
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       FLOATING DECORATIONS
+    ========================= */
+
+    .decorations span {
+        font-size: 16px;
+    }
+
+    .flower {
+        width: 18px;
+        height: auto;
+    }
+
+}
+/* =========================================
+   STORY ACCORDION
+========================================= */
+
+.story-accordion {
+    width: min(720px, 92%);
+    margin: 0 auto;
+    padding: 10px 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.accordion-item {
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid white;
+
+    box-shadow: 0 15px 40px rgba(190, 80, 130, 0.12);
+    backdrop-filter: blur(10px);
+
+    overflow: hidden;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-item.open {
+    box-shadow: 0 20px 45px rgba(190, 80, 130, 0.2);
+}
+
+.accordion-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px 26px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+}
+
+.accordion-number {
+    flex-shrink: 0;
+    font-family: "Minecraftia", monospace;
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ed6b9b;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 20px rgba(224, 84, 137, 0.25);
+}
+
+.accordion-title {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #d65389;
+    font-weight: 700;
+}
+
+.accordion-emoji {
+    line-height: 1;
+    transform: translateY(-6px);
+}
+
+.accordion-title-text {
+    font-family: "Minecraftia", monospace;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.accordion-arrow {
+    flex-shrink: 0;
+
+    color: #ed6b9b;
+    font-size: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.4s ease;
+}
+
+.accordion-item.open .accordion-body {
+    grid-template-rows: 1fr;
+}
+
+.accordion-body-inner {
+    overflow: hidden;
+}
+
+.accordion-body-inner p {
+    padding: 0 26px 26px 86px;
+
+    color: #9d7183;
+    font-size: 14px;
+    line-height: 1.8;
+
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+
+    .accordion-header {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .accordion-number {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .accordion-title-text {
+    font-size: 15px;
+}
+
+    .accordion-body-inner p {
+        padding: 0 18px 22px 66px;
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   STORY PAGE LOADING TRANSITION
+========================================= */
+
+.page-loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #fffafd 0%,
+            #fff0f6 28%,
+            #ffdce9 62%,
+            #ffc6dc 100%
+        );
+
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.page-loading-overlay.fade-out {
+    opacity: 0;
+}
+
+.loading-gif {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
+    animation: loadingPulse 1s ease-in-out infinite;
+}
+
+.loading-text {
+    color: #d94f82;
+    font-family: "Minecraftia", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@keyframes loadingPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
