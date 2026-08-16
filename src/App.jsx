@@ -20,13 +20,13 @@ function App() {
       title: "Where It All Began",
       text: `Happy Girlfriend's Day, my love. ❤️
 
-Today is all about celebrating you, but honestly, I celebrate you every single day. Thank you for being the reason behind so many of my smiles, for making ordinary moments feel special, and for filling my life with so much warmth and happiness.
+  Today is all about celebrating you, but honestly, I celebrate you every single day. Thank you for being the reason behind so many of my smiles, for making ordinary moments feel special, and for filling my life with so much warmth and happiness.
 
-No matter where life takes us, I hope you always know how deeply you're loved. You're my favorite person, my safe place, and the one I want to make countless memories with. I can't wait for all the little adventures, late-night talks, hugs, and dreams we'll share together.
+  No matter where life takes us, I hope you always know how deeply you're loved. You're my favorite person, my safe place, and the one I want to make countless memories with. I can't wait for all the little adventures, late-night talks, hugs, and dreams we'll share together.
 
-I hope today reminds you of just how amazing you are. Thank you for being you. I'm so lucky to call you mine.
+  I hope today reminds you of just how amazing you are. Thank you for being you. I'm so lucky to call you mine.
 
-Happy Girlfriend's Day, beautiful. I love you more than words could ever express. 💛
+  Happy Girlfriend's Day, beautiful. I love you more than words could ever express. 💛
 ).`,
     },
     {

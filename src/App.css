@@ -113,8 +113,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     padding-top: 35px;
+    padding-bottom: 45px;
 
     position: relative;
     z-index: 5;
@@ -2279,4 +2281,69 @@ html, body, #root {
         padding-left: 42px;
     }
 
+}
+.nav-links button {
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.nav-links button:hover{
+    transform: translateY(6px);
+    color: #e15d8c;
+      text-shadow:
+        0 0 6px rgba(225, 93, 140, 0.8),
+        0 0 14px rgba(225, 93, 140, 0.5);
+}
+
+.nav-links button::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/nav1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+
+    z-index: 5;
+}
+.nav-links button:nth-child(1)::after {
+    background-image: url("/images/nav1.gif");
+}
+
+.nav-links button:nth-child(2)::after {
+    background-image: url("/images/nav2.gif");
+}
+
+.nav-links button:nth-child(3)::after {
+    background-image: url("/images/nav3.gif");
+      width: 32px;
+    height: 32px;
+}
+
+.nav-links button:nth-child(4)::after {
+    background-image: url("/images/nav4.gif");
+     width: 32px;
+    height: 32px;
+}
+
+.nav-links button:nth-child(5)::after {
+    background-image: url("/images/nav5.gif");
+}
+
+.nav-links button:nth-child(6)::after {
+    background-image: url("/images/nav6gif.gif");
+}
+
+.nav-links button:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
 }
