@@ -1785,9 +1785,7 @@ body {
     .story-chapter {
         width: 100%;
 
-        min-height: 100vh;
-
-        padding: 80px 18px;
+        padding: 40px 18px 20px;
 
         box-sizing: border-box;
     }
