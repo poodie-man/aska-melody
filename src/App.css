@@ -40,7 +40,7 @@ body {
             rgba(255, 250, 253, 0.25),
             rgba(255, 198, 220, 0.25)
         ),
-        url("/images/home.png") center / cover no-repeat;
+        url("/images/home.png") center / cover no-repeat fixed;
 }
 /* =========================
    NAVBAR
@@ -116,7 +116,7 @@ body {
     justify-content: center;
 
     padding-top: 35px;
-    padding-bottom: 45px;
+    padding-bottom: clamp(8px, 3vh, 45px);
 
     position: relative;
     z-index: 5;
@@ -501,8 +501,8 @@ body {
 ========================= */
 
 .decorations span {
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 25;
     user-select: none;
     animation: decorationFloat 15s linear infinite;
 }
@@ -511,14 +511,14 @@ body {
 ========================= */
 
 .decorations .flower {
-    position: absolute;
+    position: fixed;
     width: 32px;
     height: 32px;
     object-fit: contain;
 
     pointer-events: none;
     user-select: none;
-    z-index: 5;
+    z-index: 25;
 
     animation: smoothFlowerFloat 15s linear infinite;
     will-change: transform;
@@ -1440,6 +1440,72 @@ body {
 
     cursor: pointer;
 }
+.nav-links button {
+    position: relative;
+    transition: transform 0.25s ease;
+}
+
+.nav-links button:hover {
+    transform: translateY(5px);
+    color: #e15d8c;
+     text-shadow:
+        0 0 6px rgba(225, 93, 140, 0.8),
+        0 0 14px rgba(225, 93, 140, 0.5);
+}
+
+.nav-links button::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/nav1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+
+    z-index: 5;
+}
+
+.nav-links button:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+.nav-links button:nth-child(1)::after {
+    background-image: url("/images/nav1.gif");
+}
+
+.nav-links button:nth-child(2)::after {
+    background-image: url("/images/nav2.gif");
+}
+
+.nav-links button:nth-child(3)::after {
+    background-image: url("/images/nav3.gif");
+    width: 32px;
+    height: 32px;
+}
+
+.nav-links button:nth-child(4)::after {
+    background-image: url("/images/nav4.gif");
+    width: 32px;
+    height: 32px;
+}
+
+.nav-links button:nth-child(5)::after {
+    background-image: url("/images/nav5.gif");
+}
+
+.nav-links button:nth-child(6)::after {
+    background-image: url("/images/nav6gif.gif");
+}
 
 
 /* =========================================
@@ -1785,7 +1851,9 @@ body {
     .story-chapter {
         width: 100%;
 
-        padding: 40px 18px 20px;
+        min-height: 100vh;
+
+        padding: 80px 18px;
 
         box-sizing: border-box;
     }
@@ -2280,68 +2348,312 @@ html, body, #root {
     }
 
 }
-.nav-links button {
+
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-page {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
     position: relative;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.nav-links button:hover{
-    transform: translateY(6px);
-    color: #e15d8c;
-      text-shadow:
-        0 0 6px rgba(225, 93, 140, 0.8),
-        0 0 14px rgba(225, 93, 140, 0.5);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 90px 6% 80px;
 }
 
-.nav-links button::after {
+/* Fixed background, same room illustration as the Story page */
+.gallery-page::before {
     content: "";
-    position: absolute;
-    top: -26px;
-    left: 50%;
-    transform: translateX(-50%) scale(0.5);
 
-    width: 20px;
-    height: 20px;
+    position: fixed;
+    inset: 0;
 
-    background-image: url("/images/nav1.gif");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background:
+        linear-gradient(
+            rgba(255, 220, 233, 0.25),
+            rgba(255, 240, 246, 0.25)
+        ),
+        url("/images/gallery.png") center center / cover no-repeat;
 
-    opacity: 0;
+    z-index: -1;
     pointer-events: none;
-
-    transition: opacity 0.25s ease, transform 0.25s ease;
-
-    z-index: 5;
-}
-.nav-links button:nth-child(1)::after {
-    background-image: url("/images/nav1.gif");
 }
 
-.nav-links button:nth-child(2)::after {
-    background-image: url("/images/nav2.gif");
+.gallery-intro {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.nav-links button:nth-child(3)::after {
-    background-image: url("/images/nav3.gif");
-      width: 32px;
-    height: 32px;
+.gallery-intro h1 {
+    font-family: "Brush Script MT","Segoe Script", cursive;
+    font-size: clamp(42px, 8vw, 72px);
+    line-height: 1.1;
+    color: #fff6ea;
+    margin: 0;
+    text-shadow:
+        0 0 10px rgba(255, 130, 180, 0.6),
+        0 0 22px rgba(255, 130, 180, 0.45),
+        0 0 40px rgba(255, 105, 160, 0.3);
+}
+.gallery-intro h1 span {
+    text-shadow:
+        0 0 10px rgba(255, 130, 180, 0.6),
+        0 0 22px rgba(255, 130, 180, 0.45),
+        0 0 40px rgba(255, 105, 160, 0.3);
+color: #fff6ea;}
+
+
+.gallery-intro p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #9d7183;
 }
 
-.nav-links button:nth-child(4)::after {
-    background-image: url("/images/nav4.gif");
-     width: 32px;
-    height: 32px;
+/* ---------- The draw pile ---------- */
+
+.photo-stack {
+    position: relative;
+    width: 170px;
+    height: 210px;
+
+    margin: 10px 0 40px;
 }
 
-.nav-links button:nth-child(5)::after {
-    background-image: url("/images/nav5.gif");
+.stack-empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 200px;
+    text-align: center;
+
+    font-size: 14px;
+    color: #d65389;
 }
 
-.nav-links button:nth-child(6)::after {
-    background-image: url("/images/nav6gif.gif");
+.pcard {
+    width: 170px;
+    height: 210px;
+    cursor: pointer;
+
+    perspective: 700px;
 }
 
-.nav-links button:hover::after {
-    opacity: 1;
-    transform: translateX(-50%) scale(1);
+.stack-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.stack-card.depth-0 { transform: rotate(-6deg); z-index: 4; }
+.stack-card.depth-1 { transform: rotate(4deg) translate(6px, 3px); z-index: 3; cursor: default; }
+.stack-card.depth-2 { transform: rotate(-3deg) translate(-5px, 6px); z-index: 2; cursor: default; }
+.stack-card.depth-3 { transform: rotate(2deg) translate(4px, -5px); z-index: 1; cursor: default; }
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.35s ease;
+}
+
+.stack-card.flipped .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.pcard .face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+
+    border-radius: 4px;
+}
+
+.pcard .face.front {
+    position: static;
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pcard .photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+
+    background: #f4f4f4;
+}
+
+.pcard .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transform: scale(1.0);
+    transform-origin: center;
+}
+
+.pcard .face.back {
+    transform: rotateY(180deg);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    color: #9d7183;
+    text-align: center;
+    padding: 8px;
+}
+
+/* ---------- Garland rows ---------- */
+
+.garland-wrap {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.garland-row {
+    position: relative;
+    width: 100%;
+    height: 190px;
+}
+
+.garland-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    overflow: visible;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.75; transform: translate(-50%, -50%) scale(0.94); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.bulb-dot {
+    position: absolute;
+    width: 11px;
+    height: 14px;
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+
+    animation: twinkle 2.8s ease-in-out infinite;
+
+    z-index: 2;
+}
+
+.bulb-cap {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 3px;
+    height: 4px;
+
+    background: #8a8a8a;
+}
+
+.bulb-shine {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+
+    width: 3px;
+    height: 4px;
+    border-radius: 50%;
+
+    background: #ffffff;
+    opacity: 0.7;
+}
+
+@keyframes hangSway {
+    0% { transform: translateX(-50%) rotate(var(--rot-a)); }
+    100% { transform: translateX(-50%) rotate(var(--rot-b)); }
+}
+
+@keyframes slideAttach {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60px) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) rotate(var(--rot-a));
+    }
+}
+
+.hung-card {
+    position: absolute;
+    transform-origin: top center;
+
+    animation:
+        slideAttach 0.5s ease-out forwards,
+        hangSway 2.6s ease-in-out 0.5s infinite alternate;
+
+    box-shadow: none;
+    border-radius: 4px;
+
+    cursor: default;
+}
+.hung-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* .hung-card .face.front {
+    position: static;
+} */
+
+@media (max-width: 600px) {
+
+    .garland-wrap {
+        width: 100%;
+    }
+
+    .gallery-intro h1 {
+        font-size: 32px;
+    }
+
+}
+.gallery-restack {
+    margin-top: 10px;
+    padding: 10px 24px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #f2a4c4, #e06f9c);
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+
+    box-shadow: 0 6px 16px rgba(220, 90, 140, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.gallery-restack:hover {
+    transform: translateY(-2px);
 }
