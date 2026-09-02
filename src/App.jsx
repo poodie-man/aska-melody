@@ -113,6 +113,68 @@ function buildGalleryRows(totalPhotos) {
   return rows;
 }
 
+// =========================================
+// 20 REASONS DATA
+// Edit each string with a real reason.
+// Order = the order they must be tapped in.
+// =========================================
+const reasons = [
+  "Reason #1 — write yours here",
+  "Reason #2 — write yours here",
+  "Reason #3 — write yours here",
+  "Reason #4 — write yours here",
+  "Reason #5 — write yours here",
+  "Reason #6 — write yours here",
+  "Reason #7 — write yours here",
+  "Reason #8 — write yours here",
+  "Reason #9 — write yours here",
+  "Reason #10 — write yours here",
+  "Reason #11 — write yours here",
+  "Reason #12 — write yours here",
+  "Reason #13 — write yours here",
+  "Reason #14 — write yours here",
+  "Reason #15 — write yours here",
+  "Reason #16 — write yours here",
+  "Reason #17 — write yours here",
+  "Reason #18 — write yours here",
+  "Reason #19 — write yours here",
+  "Reason #20 — write yours here",
+];
+
+// Generates points tracing a heart shape (parametric heart curve),
+// one per reason, in order around the outline.
+function buildHeartPoints(count, width, height) {
+  const points = [];
+  for (let i = 0; i < count; i++) {
+    const t = (i / count) * Math.PI * 2;
+    const x = 16 * Math.pow(Math.sin(t), 3);
+    const y =
+      13 * Math.cos(t) -
+      5 * Math.cos(2 * t) -
+      2 * Math.cos(3 * t) -
+      Math.cos(4 * t);
+    points.push({
+      x: width / 2 + x * (width / 46),
+      y: height / 2 - y * (height / 44) - height * 0.05,
+    });
+  }
+  return points;
+}
+
+// Builds an 8-point sparkle/star SVG path centered at (cx, cy) with outer radius r.
+function buildStarPath(cx, cy, r) {
+  const pts = [];
+  for (let k = 0; k < 8; k++) {
+    const ang = (Math.PI / 4) * k - Math.PI / 2;
+    const rad = k % 2 === 0 ? r : r * 0.42;
+    pts.push(`${cx + rad * Math.cos(ang)},${cy + rad * Math.sin(ang)}`);
+  }
+  return `M${pts.join(" L")} Z`;
+}
+
+const CONSTELLATION_WIDTH = 320;
+const CONSTELLATION_HEIGHT = 300;
+
 function App() {
   const [started, setStarted] = useState(false);
   const [burst, setBurst] = useState(false);
@@ -122,6 +184,85 @@ function App() {
   const [storyFading, setStoryFading] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // ---------- 20 REASONS / CONSTELLATION STATE ----------
+  const heartPoints = useMemo(
+    () => buildHeartPoints(reasons.length, CONSTELLATION_WIDTH, CONSTELLATION_HEIGHT),
+    []
+  );
+  const [nextReasonIndex, setNextReasonIndex] = useState(0);
+  const [caption, setCaption] = useState("Tap the first star to begin");
+  const [captionFading, setCaptionFading] = useState(false);
+  const [wishMoment, setWishMoment] = useState(false);
+  const [smallShootingStars, setSmallShootingStars] = useState([]);
+
+  useEffect(() => {
+    if (page !== "reasons" || wishMoment) return;
+
+    const interval = setInterval(() => {
+      const id = Date.now();
+      setSmallShootingStars((stars) => [
+        ...stars,
+        {
+          id,
+          top: 10 + Math.random() * 35,
+          left: 50 + Math.random() * 40,
+        },
+      ]);
+      setTimeout(() => {
+        setSmallShootingStars((stars) => stars.filter((s) => s.id !== id));
+      }, 1200);
+    }, 2800);
+
+    return () => clearInterval(interval);
+  }, [page, wishMoment]);
+
+  const setCaptionText = (text) => {
+    setCaptionFading(true);
+    setTimeout(() => {
+      setCaption(text);
+      setCaptionFading(false);
+    }, 350);
+  };
+  const ambientStarData = useMemo(
+  () =>
+    Array.from({ length: 40 }).map(() => ({
+      left: Math.random() * 100,
+      top: Math.random() * 65,
+      delay: Math.random() * 3,
+    })),
+  []
+);
+
+const petalData = useMemo(
+  () =>
+    Array.from({ length: 18 }).map((_, i) => ({
+      left: Math.random() * 100,
+      duration: 6 + Math.random() * 5,
+      delay: Math.random() * 8,
+      drift: Math.random() * 70 - 35,
+      spin: Math.random() * 360,
+      opacity: 0.4 + Math.random() * 0.5,
+      width: 6 + Math.random() * 6,
+      color: i % 2 === 0 ? "#f9c9dc" : "#ffe0ec",
+    })),
+  []
+);
+
+  const handleStarClick = (index) => {
+    if (index !== nextReasonIndex) return;
+
+    setCaptionText(reasons[index]);
+    setNextReasonIndex((n) => n + 1);
+
+    if (nextReasonIndex + 1 === reasons.length) {
+      setTimeout(() => {
+        setSmallShootingStars([]);
+        setWishMoment(true);
+        setCaptionText("make a wish ♡");
+      }, 1600);
+    }
+  };
 
   // ---------- GALLERY STATE ----------
   const [stackOrder, setStackOrder] = useState(
@@ -278,7 +419,7 @@ const changePage = (newPage) => {
   }, 2200);
 };
   return (
-    <main className="birthday-page">
+    <main className={`birthday-page ${page === "reasons" ? "reasons-active" : ""}`}>
             {/* Background music */}
       <audio
         ref={musicRef}
@@ -767,6 +908,170 @@ const changePage = (newPage) => {
 >
   ↺ Restack Photos
 </button>
+  </div>
+)}
+
+{/* 20 REASONS PAGE — heart constellation */}
+{page === "reasons" && (
+  <div className="reasons-page">
+
+    <div className="constellation-sky">
+
+      {/* Ambient background twinkle stars */}
+    <div className="ambient-stars">
+  {ambientStarData.map((star, i) => (
+    <span
+      key={i}
+      className="ambient-star"
+      style={{
+        left: `${star.left}%`,
+        top: `${star.top}%`,
+        animationDelay: `${star.delay}s`,
+      }}
+    />
+  ))}
+</div>
+
+      {/* Realistic multi-puff drifting clouds */}
+      <div className="cloud cloud-a">
+        <span className="puff" style={{ width: 60, height: 34, left: 0, top: 14 }} />
+        <span className="puff" style={{ width: 44, height: 44, left: 26, top: 0 }} />
+        <span className="puff" style={{ width: 50, height: 32, left: 58, top: 10 }} />
+        <span className="puff" style={{ width: 34, height: 24, left: 84, top: 18 }} />
+        <span className="puff" style={{ width: 30, height: 20, left: -14, top: 20 }} />
+      </div>
+      <div className="cloud cloud-b">
+        <span className="puff" style={{ width: 40, height: 24, left: 0, top: 10 }} />
+        <span className="puff" style={{ width: 30, height: 30, left: 18, top: 0 }} />
+        <span className="puff" style={{ width: 34, height: 22, left: 40, top: 8 }} />
+      </div>
+      <div className="cloud cloud-c">
+        <span className="puff" style={{ width: 52, height: 28, left: 0, top: 12 }} />
+        <span className="puff" style={{ width: 38, height: 38, left: 22, top: 0 }} />
+        <span className="puff" style={{ width: 42, height: 26, left: 50, top: 10 }} />
+        <span className="puff" style={{ width: 26, height: 18, left: 76, top: 16 }} />
+      </div>
+
+      {/* Moon */}
+      <div className="moon-glow"></div>
+      <div className="moon"></div>
+
+      {/* Falling cherry blossom petals */}
+     <div className="petal-layer">
+  {petalData.map((petal, i) => (
+    <span
+      key={i}
+      className="falling-petal"
+      style={{
+        left: `${petal.left}%`,
+        animationDuration: `${petal.duration}s`,
+        animationDelay: `${petal.delay}s`,
+        "--drift": `${petal.drift}px`,
+        "--spin": `${petal.spin}deg`,
+        opacity: petal.opacity,
+        width: `${petal.width}px`,
+      }}
+    >
+      <svg viewBox="0 0 20 20">
+        <path
+          d="M10,0 C15,5 15,15 10,20 C5,15 5,5 10,0 Z"
+          fill={petal.color}
+        />
+      </svg>
+    </span>
+  ))}
+</div>
+
+      {/* Big finale shooting star */}
+      {wishMoment && <div className="big-shooting-star"></div>}
+
+      {/* Small periodic shooting stars */}
+      {smallShootingStars.map((s) => (
+        <div
+          key={s.id}
+          className="small-shooting-star"
+          style={{ top: `${s.top}%`, left: `${s.left}%` }}
+        ></div>
+      ))}
+
+      {/* Heart constellation — kept at a fixed proportion so it
+          never stretches/squishes on wide screens */}
+      <div className="constellation-heart-area">
+
+        <svg
+          className="constellation-lines"
+          viewBox={`0 0 ${CONSTELLATION_WIDTH} ${CONSTELLATION_HEIGHT}`}
+        >
+          {heartPoints.slice(0, nextReasonIndex).map((p, i) => {
+            if (i === 0) return null;
+            const prev = heartPoints[i - 1];
+            return (
+              <line
+                key={i}
+                x1={prev.x}
+                y1={prev.y}
+                x2={p.x}
+                y2={p.y}
+                stroke="#ffb3d1"
+                strokeWidth="1.3"
+                opacity="0.85"
+              />
+            );
+          })}
+           {nextReasonIndex === reasons.length && (
+    <line
+      x1={heartPoints[heartPoints.length - 1].x}
+      y1={heartPoints[heartPoints.length - 1].y}
+      x2={heartPoints[0].x}
+      y2={heartPoints[0].y}
+      stroke="#ffb3d1"
+      strokeWidth="1.3"
+      opacity="0.85"
+    />
+  )}
+        </svg>
+
+        <div className="constellation-stars">
+          {heartPoints.map((p, i) => {
+            const isOpened = i < nextReasonIndex;
+            const isNext = i === nextReasonIndex;
+            return (
+              <svg
+                key={i}
+                className={`reason-star ${isOpened ? "opened" : ""} ${isNext ? "next" : ""}`}
+                viewBox="0 0 20 20"
+                style={{
+                  left: `${(p.x / CONSTELLATION_WIDTH) * 100}%`,
+                  top: `${(p.y / CONSTELLATION_HEIGHT) * 100}%`,
+                  animationDelay: `${i * 0.15}s`,
+                }}
+                onClick={() => handleStarClick(i)}
+              >
+                <path
+                  d={buildStarPath(10, 10, 9)}
+                  fill={isOpened ? "#ff8fb8" : "#ffd9ec"}
+                />
+              </svg>
+            );
+          })}
+        </div>
+
+      </div>
+
+    </div>
+
+  <div className="reasons-note-card">
+  <p className={`reasons-caption ${captionFading ? "fading" : ""}`}>
+    {caption}
+  </p>
+</div>
+    <button
+      className="story-home reasons-home"
+      onClick={() => changePage("home")}
+    >
+      ♡ Back To Home
+    </button>
+
   </div>
 )}
     </main>

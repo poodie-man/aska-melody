@@ -42,6 +42,9 @@ body {
         ),
         url("/images/home.png") center / cover no-repeat fixed;
 }
+.birthday-page.reasons-active {
+    background: linear-gradient(180deg, #2e1f4d 0%, #6b3a6e 55%, #b9689b 100%);
+}
 /* =========================
    NAVBAR
 ========================= */
@@ -2656,4 +2659,333 @@ color: #fff6ea;}
 
 .gallery-restack:hover {
     transform: translateY(-2px);
+}
+/* =========================================
+   20 REASONS PAGE — HEART CONSTELLATION
+========================================= */
+
+.reasons-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 90px 5% 60px;
+    box-sizing: border-box;
+
+    background: linear-gradient(180deg, #2e1f4d 0%, #6b3a6e 55%, #b9689b 100%);
+}
+
+.constellation-sky {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    overflow: hidden;
+}
+
+.constellation-heart-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: min(560px, 90vw);
+    aspect-ratio: 320 / 300;
+}
+
+/* ---------- Ambient background stars ---------- */
+
+@keyframes ambientTwinkle {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.8; }
+}
+
+.ambient-stars {
+    position: absolute;
+    inset: 0;
+}
+
+.ambient-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: ambientTwinkle 3s ease-in-out infinite;
+}
+
+/* ---------- Realistic multi-puff clouds ---------- */
+
+@keyframes cloudDriftA { 0% { transform: translateX(-20%); } 100% { transform: translateX(140%); } }
+@keyframes cloudDriftB { 0% { transform: translateX(-25%); } 100% { transform: translateX(145%); } }
+@keyframes cloudDriftC { 0% { transform: translateX(-30%); } 100% { transform: translateX(150%); } }
+
+.cloud {
+    position: absolute;
+    width: 140px;
+    height: 60px;
+}
+
+.cloud-a { top: 12%; animation: cloudDriftA 46s linear infinite; }
+.cloud-b { top: 26%; animation: cloudDriftB 58s linear infinite; animation-delay: -14s; }
+.cloud-c { top: 6%; animation: cloudDriftC 64s linear infinite; animation-delay: -34s; }
+
+.puff {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 35% 30%,
+        rgba(255, 255, 255, 0.9),
+        rgba(243, 230, 240, 0.55) 70%,
+        rgba(243, 230, 240, 0.25) 100%
+    );
+    filter: blur(2px);
+}
+
+/* ---------- Moon ---------- */
+
+@keyframes moonPulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 0.85; }
+}
+
+.moon {
+    position: absolute;
+    top: 9%;
+    right: 10%;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 35% 35%,
+        #fff8e6,
+        #ffe9b3 60%,
+        #f5cf8a
+    );
+}
+
+.moon-glow {
+    position: absolute;
+    top: 9%;
+    right: 10%;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 50px 26px rgba(255, 231, 179, 0.32);
+    animation: moonPulse 3.5s ease-in-out infinite;
+}
+
+/* ---------- Falling cherry blossom petals ---------- */
+
+@keyframes petalFall {
+    0% {
+        transform: translateY(-20px) translateX(0) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(620px) translateX(var(--drift)) rotate(var(--spin));
+        opacity: 0;
+    }
+}
+
+.petal-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.falling-petal {
+    position: absolute;
+    top: -20px;
+    animation-name: petalFall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.falling-petal svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* ---------- Shooting stars ---------- */
+
+@keyframes shoot {
+    0% { transform: translate(0, 0) rotate(320deg); opacity: 1; }
+    100% { transform: translate(-220px, 130px) rotate(320deg); opacity: 0; }
+}
+.small-shooting-star {
+    position: absolute;
+
+    width: 90px;
+    height: 2px;
+    border-radius: 2px;
+
+    background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
+    transform-origin: left center;
+    filter: blur(0.4px);
+
+    animation: shoot 0.7s ease-out forwards;
+}
+
+.small-shooting-star::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    background: #ffffff;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.9);
+}
+
+@keyframes bigShoot {
+    0% { transform: translate(0, 0) scale(1) rotate(320deg); opacity: 1; }
+    100% { transform: translate(-320px, 200px) scale(0.8) rotate(320deg); opacity: 0; }
+}
+
+.big-shooting-star {
+    position: absolute;
+    top: 18%;
+    left: 70%;
+
+    width: 110px;
+    height: 3px;
+    border-radius: 2px;
+
+    background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
+    transform: rotate(25deg);
+
+    animation: bigShoot 1.8s ease-out forwards;
+}
+
+/* ---------- Constellation stars + lines ---------- */
+
+.constellation-lines,
+.constellation-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes starPulse {
+    0%, 100% { opacity: 0.55; transform: scale(0.92); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+.reason-star {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+    margin-top: -7px;
+
+    cursor: default;
+    transform-origin: center;
+
+    animation: starPulse 2.4s ease-in-out infinite;
+
+    filter: drop-shadow(0 0 4px rgba(255, 217, 236, 0.8));
+}
+
+.reason-star.next {
+    cursor: pointer;
+}
+
+.reason-star.opened {
+    animation: none;
+    filter: drop-shadow(0 0 6px rgba(255, 143, 184, 0.9));
+}
+
+/* ---------- Caption ---------- */
+.reasons-note-card {
+    position: relative;
+
+    margin-top: 24px;
+    width: min(320px, 85vw);
+
+    background: #ffffff;
+    border: 6px solid #f7b8cf;
+    border-radius: 14px;
+
+    padding: 18px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.reasons-note-card .reasons-caption {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #b0577d;
+}
+
+.reasons-note-card .reasons-caption {
+    width: 100%;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.reasons-caption {
+    margin-top: 24px;
+    max-width: 480px;
+
+    text-align: center;
+    font-size: clamp(15px, 2.4vw, 19px);
+    color: #ffe6f0;
+
+    transition: opacity 0.35s ease;
+    opacity: 1;
+
+    min-height: 30px;
+}
+
+.reasons-caption.fading {
+    opacity: 0;
+}
+
+.reasons-home {
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    .constellation-sky {
+        height: 65vh;
+    }
+
+    .moon,
+    .moon-glow {
+        width: 46px;
+        height: 46px;
+    }
+
+    .reason-star {
+        width: 11px;
+        height: 11px;
+        margin-left: -5.5px;
+        margin-top: -5.5px;
+    }
+
 }
