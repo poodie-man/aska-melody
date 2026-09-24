@@ -185,6 +185,29 @@ function App() {
   const [loadingMessage, setLoadingMessage] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
+const [envelopeOpen, setEnvelopeOpen] = useState(false);
+const [typedText, setTypedText] = useState("");
+
+const letterMessage = `Dear Aska,
+
+Every day with you feels like a gift I didn't know I needed.
+Thank you for being exactly who you are.
+
+I love you more than words on this page could ever say.
+
+— Yours always`;
+
+useEffect(() => {
+  if (!envelopeOpen) return;
+  let i = 0;
+  const interval = setInterval(() => {
+    setTypedText(letterMessage.slice(0, i));
+    i++;
+    if (i > letterMessage.length) clearInterval(interval);
+  }, 35);
+  return () => clearInterval(interval);
+}, [envelopeOpen]);
+
   // ---------- 20 REASONS / CONSTELLATION STATE ----------
   const heartPoints = useMemo(
     () => buildHeartPoints(reasons.length, CONSTELLATION_WIDTH, CONSTELLATION_HEIGHT),
@@ -1069,6 +1092,36 @@ const changePage = (newPage) => {
       className="story-home reasons-home"
       onClick={() => changePage("home")}
     >
+      ♡ Back To Home
+    </button>
+
+  </div>
+)}
+
+{page === "letter" && (
+  <div className="letter-page">
+
+    <div className="envelope-scene">
+
+      <div className={`envelope ${envelopeOpen ? "opened" : ""}`}>
+  <div className="envelope-body"></div>
+
+  <div
+    className={`letter-paper ${envelopeOpen ? "full-open" : ""}`}
+    onClick={() => setEnvelopeOpen(true)}
+  >
+    <p className="letter-text">{typedText}</p>
+  </div>
+
+  <div className="envelope-flap"></div>
+  <div className="envelope-seal"></div>
+</div>
+
+      {!envelopeOpen && <p className="envelope-hint">Tap to open ♡</p>}
+
+    </div>
+
+    <button className="story-home" onClick={() => changePage("home")}>
       ♡ Back To Home
     </button>
 
