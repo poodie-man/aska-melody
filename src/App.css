@@ -3049,7 +3049,7 @@ color: #fff6ea;}
 .envelope:not(.opened):hover .letter-paper {
     top: 6%;
     z-index: 5;
-    clip-path: inset(0 0 75% 0);
+    clip-path: inset(0 0 79% 0);
 }
 
 .letter-paper.full-open {
