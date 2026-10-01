@@ -1103,8 +1103,23 @@ const changePage = (newPage) => {
 
     <div className="envelope-scene">
 
-      <div className={`envelope ${envelopeOpen ? "opened" : ""}`}>
-  <div className="envelope-body"></div>
+<div className={`envelope ${envelopeOpen ? "opened" : ""}`}>
+
+  <svg className="envelope-svg" viewBox="0 0 280 190" style={{ overflow: "visible" }}>
+  <rect x="0" y="0" width="280" height="190" rx="10" fill="#f0a8c4" />
+
+  <polygon className="env-back-flap" points="0,0 280,0 140,-50" fill="#d4537e" />
+
+  <polygon className="env-front-flap" points="0,0 280,0 140,95" fill="#ed93b1" />
+
+  <circle className="env-seal" cx="140" cy="20" r="14" fill="#c43d6b" />
+
+  <path
+    className="env-heart"
+    d="M140,70 C136,64 125,64 125,74 C125,83 140,93 140,93 C140,93 155,83 155,74 C155,64 144,64 140,70 Z"
+    fill="#e0527f"
+  />
+</svg>
 
   <div
     className={`letter-paper ${envelopeOpen ? "full-open" : ""}`}
@@ -1113,8 +1128,6 @@ const changePage = (newPage) => {
     <p className="letter-text">{typedText}</p>
   </div>
 
-  <div className="envelope-flap"></div>
-  <div className="envelope-seal"></div>
 </div>
 
       {!envelopeOpen && <p className="envelope-hint">Tap to open ♡</p>}
