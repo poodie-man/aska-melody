@@ -9,56 +9,55 @@ import { useEffect, useRef, useState, useMemo } from "react";
 // photos you list here.
 // =========================================
 const galleryPhotos = [
-  { id: 1, src: "/images/gallery/img1.png", caption: "phung phung trip" },
-  { id: 2, src: "/images/gallery/img2.png", caption: "" },
-  { id: 3, src: "/images/gallery/photo-3.jpg", caption: "" },
-  { id: 4, src: "/images/gallery/photo-4.jpg", caption: "" },
-  { id: 5, src: "/images/gallery/photo-5.jpg", caption: "" },
-  { id: 6, src: "/images/gallery/photo-6.jpg", caption: "" },
-  { id: 7, src: "/images/gallery/photo-7.jpg", caption: "" },
-  { id: 8, src: "/images/gallery/photo-8.jpg", caption: "" },
-  { id: 9, src: "/images/gallery/photo-9.jpg", caption: "" },
-  { id: 10, src: "/images/gallery/photo-10.jpg", caption: "" },
-  { id: 11, src: "/images/gallery/photo-11.jpg", caption: "" },
-  { id: 12, src: "/images/gallery/photo-12.jpg", caption: "" },
-  { id: 13, src: "/images/gallery/photo-13.jpg", caption: "" },
-  { id: 14, src: "/images/gallery/photo-14.jpg", caption: "" },
-  { id: 15, src: "/images/gallery/photo-15.jpg", caption: "" },
-  { id: 16, src: "/images/gallery/photo-16.jpg", caption: "" },
-  { id: 17, src: "/images/gallery/photo-17.jpg", caption: "" },
-  { id: 18, src: "/images/gallery/photo-18.jpg", caption: "" },
-  { id: 19, src: "/images/gallery/photo-19.jpg", caption: "" },
-  { id: 20, src: "/images/gallery/photo-20.jpg", caption: "" },
-  { id: 21, src: "/images/gallery/photo-21.jpg", caption: "" },
-  { id: 22, src: "/images/gallery/photo-22.jpg", caption: "" },
-  { id: 23, src: "/images/gallery/photo-23.jpg", caption: "" },
-  { id: 24, src: "/images/gallery/photo-24.jpg", caption: "" },
-  { id: 25, src: "/images/gallery/photo-25.jpg", caption: "" },
-  { id: 26, src: "/images/gallery/photo-26.jpg", caption: "" },
-  { id: 27, src: "/images/gallery/photo-27.jpg", caption: "" },
-  { id: 28, src: "/images/gallery/photo-28.jpg", caption: "" },
-  { id: 29, src: "/images/gallery/photo-29.jpg", caption: "" },
-  { id: 30, src: "/images/gallery/photo-30.jpg", caption: "" },
-  { id: 31, src: "/images/gallery/photo-31.jpg", caption: "" },
-  { id: 32, src: "/images/gallery/photo-32.jpg", caption: "" },
-  { id: 33, src: "/images/gallery/photo-33.jpg", caption: "" },
-  { id: 34, src: "/images/gallery/photo-34.jpg", caption: "" },
-  { id: 35, src: "/images/gallery/photo-35.jpg", caption: "" },
-  { id: 36, src: "/images/gallery/photo-36.jpg", caption: "" },
-  { id: 37, src: "/images/gallery/photo-37.jpg", caption: "" },
-  { id: 38, src: "/images/gallery/photo-38.jpg", caption: "" },
-  { id: 39, src: "/images/gallery/photo-39.jpg", caption: "" },
-  { id: 40, src: "/images/gallery/photo-40.jpg", caption: "" },
-  { id: 41, src: "/images/gallery/photo-41.jpg", caption: "" },
-  { id: 42, src: "/images/gallery/photo-42.jpg", caption: "" },
-  { id: 43, src: "/images/gallery/photo-43.jpg", caption: "" },
-  { id: 44, src: "/images/gallery/photo-44.jpg", caption: "" },
-  { id: 45, src: "/images/gallery/photo-45.jpg", caption: "" },
-  { id: 46, src: "/images/gallery/photo-46.jpg", caption: "" },
-  { id: 47, src: "/images/gallery/photo-47.jpg", caption: "" },
-  { id: 48, src: "/images/gallery/photo-48.jpg", caption: "" },
-  { id: 49, src: "/images/gallery/photo-49.jpg", caption: "" },
-  { id: 50, src: "/images/gallery/photo-50.jpg", caption: "" },
+  { id: 1, src: "/images/gallery/img1.png", caption: "5th december, 2025. Our first concert together." },
+  { id: 2, src: "/images/gallery/firstthakali.png", caption: "31st December, 2025. New Year Eve." },
+  { id: 3, src: "/images/gallery/firsthaircut.png", caption: "20th January, 2026. Mero kapal katna gako sangai first time." },
+  { id: 4, src: "/images/gallery/firstflower.png", caption: "27th March, 2026. Lets say maile first flower deko timlai XD." },
+  { id: 5, src: "/images/gallery/me1.png", caption: "1st April, 2026. My birthday (Memorable day of my life)." },
+  { id: 6, src: "/images/gallery/me2.png", caption: "We do look like a married couple!" },
+  { id: 7, src: "/images/gallery/me3.png", caption: "A cute cheek kiss for my beautiful girlfriend" },
+  { id: 8, src: "/images/gallery/me4.png", caption: "Cutie :3" },
+  { id: 9, src: "/images/gallery/poshon.png", caption: "5th April, 2026. Our first event together. We look hot😩." },
+  { id: 10, src: "/images/gallery/kulekhani1.png", caption: "1st May, 2026. Kulekhani trip." },
+  { id: 11, src: "/images/gallery/nail.png", caption: "18th May, 2026. 'R'🤭." },
+  { id: 12, src: "/images/gallery/pokhara1.png", caption: "23rd May, 2026. Pokhara trip together💗." },
+  { id: 13, src: "/images/gallery/pokhara2.png", caption: "24th May, 2026. A cute lip kiss for my beautiful girlfriend :3" },
+  { id: 14, src: "/images/gallery/pokhara3.png", caption: "Aiyuu buda budi vibes😭" },
+  { id: 15, src: "/images/gallery/pokhara4.png", caption: "25th May, 2026. Sunsetz by Cigarette after Sex" },
+  { id: 16, src: "/images/gallery/pokhara5.png", caption: "25th May, 2026. Bhigi billi bhayo aiyu😭" },
+  { id: 17, src: "/images/gallery/pokhara6.png", caption: "“With the sunset behind us and your lips on mine, the whole world felt still. ❤️”" },
+  { id: 18, src: "/images/gallery/pokhara7.png", caption: "love paryooo huhu" },
+  { id: 19, src: "/images/gallery/catcafe1.png", caption: "7th June, 2026. We went to see our children😘" },
+  { id: 20, src: "/images/gallery/catcafe2.png", caption: "Lets eat sandwich together :3" },
+  { id: 21, src: "/images/gallery/heaven1.png", caption: "12th July, 2026. Heaven dadha ma heavenly huggiee😘" },
+  { id: 22, src: "/images/gallery/heaven2.png", caption: "Heavenly kiss😘" },
+  { id: 23, src: "/images/gallery/phungphung1.png", caption: "23rd July, 2026. Phungphung trip." },
+  { id: 24, src: "/images/gallery/phungphung2.png", caption: "Hami jhandai ghar napugeko yo din aiyaa😭" },
+  { id: 25, src: "/images/gallery/phungphung3.png", caption: "Omgg look at the view🤭" },
+  { id: 26, src: "/images/gallery/phungphung4.png", caption: "Tmi kina sad ni ani ma chai feri kasto khusi😭" },
+  { id: 27, src: "/images/gallery/phungphung5.png", caption: "I JUST WANT TO KISS YOU EVERYTIME" },
+  { id: 28, src: "/images/gallery/phungphung6.png", caption: "It was a fun trip heehehe." },
+  { id: 29, src: "/images/gallery/nagarkot1.png", caption: "2nd August, 2026. Nagarkot💗." },
+  { id: 30, src: "/images/gallery/nagarkot2.png", caption: "Bokdekore amamama." },
+  { id: 31, src: "/images/gallery/nagarkot3.png", caption: "Waterfall wasnt that impressive but we look cute :3." },
+  { id: 32, src: "/images/gallery/nagarkot4.png", caption: "Buda budi fr." },
+  { id: 33, src: "/images/gallery/1.png", caption: "Malai cute lagne photo haruu💞" },
+  { id: 35, src: "/images/gallery/2.png", caption: "Cutu le burger khanu ateko re golveda nikalera" },
+  { id: 36, src: "/images/gallery/3.png", caption: "Tutu and his mami together 😘" },
+  { id: 37, src: "/images/gallery/4.png", caption: "I love to kuchumuchu your cheeks sou much" },
+  { id: 38, src: "/images/gallery/5.png", caption: "Aiyu kati cute hauu." },
+  { id: 39, src: "/images/gallery/6.png", caption: "Omg we slayinggg.😩" },
+  { id: 40, src: "/images/gallery/7.png", caption: "Lets make our hair :3" },
+  { id: 41, src: "/images/gallery/8.png", caption: "Thulo cha feri maya ko maan pani" },
+  { id: 42, src: "/images/gallery/9.png", caption: "LET ME SLEEP IN PEACE.😭" },
+  { id: 43, src: "/images/gallery/10.png", caption: "Mirror selfie ree ammaa waist ma haat halera aajha" },
+  { id: 44, src: "/images/gallery/11.png", caption: "Timro jutta kasto seto ho wth 😭" },
+  { id: 45, src: "/images/gallery/12.png", caption: "What am i doing😭" },
+  { id: 46, src: "/images/gallery/13.png", caption: "Vroom Vroom!!" },
+  { id: 47, src: "/images/gallery/14.png", caption: "Omgg my two cuties especially youu loveee you're so cuteeee🥺." },
+  // { id: 48, src: "/images/gallery/15.png", caption: "" },
+  // { id: 49, src: "/images/gallery/16.png", caption: "" },
+  // { id: 50, src: "/images/gallery/17.png", caption: "" },
 ];
 
 const BULBS_PER_ROW = 8;
@@ -190,10 +189,9 @@ const [typedText, setTypedText] = useState("");
 
 const letterMessage = `Dear Aska,
 
-Every day with you feels like a gift I didn't know I needed.
-Thank you for being exactly who you are.
-
-I love you more than words on this page could ever say.
+Every day with you feels like a gift I didn't know I needed. Thank you for being exactly who you are. I love you more than words on this page could ever say.asdasdasd asdasdas dasd
+asdasd
+asdasd asdasd asda sdas das dasdas dasd asdas dasd asd as
 
 — Yours always`;
 
@@ -850,7 +848,7 @@ const changePage = (newPage) => {
       })}
 
       {stackOrder.length === 0 && (
-        <p className="stack-empty">Every photo is hung up ♡</p>
+        <p className="stack-empty"></p>
       )}
     </div>
 
