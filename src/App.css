@@ -3013,7 +3013,7 @@ color: #fff6ea;}
 
 .envelope {
     position: relative;
-    width: min(280px, 70vw);
+    width: min(360px, 80vw);
     height: 190px;
     cursor: pointer;
     overflow: hidden;
@@ -3046,17 +3046,18 @@ color: #fff6ea;}
     transition: top 0.5s ease, transform 0.7s ease, clip-path 0.5s ease;
     z-index: 1;
 }
+
 .envelope:not(.opened):hover .letter-paper {
-    top: 6%;
-    z-index: 5;
-    clip-path: inset(0 0 79% 0);
+    top: -8%;
+    z-index: 6;
+    clip-path: inset(0 0 55% 0);
 }
 
 .letter-paper.full-open {
     top: -70%;
     transform: scale(1.5);
     clip-path: inset(0 0 0% 0);
-    z-index: 10;
+    z-index: 12;
 }
 
 .letter-text {
@@ -3067,12 +3068,21 @@ color: #fff6ea;}
     white-space: pre-wrap;
 }
 
-.envelope-svg {
+.envelope-svg-back {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
+}
+
+.envelope-svg-front {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    pointer-events: none;
 }
 
 .env-back-flap {

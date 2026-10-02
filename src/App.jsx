@@ -1105,14 +1105,19 @@ const changePage = (newPage) => {
 
 <div className={`envelope ${envelopeOpen ? "opened" : ""}`}>
 
-  <svg className="envelope-svg" viewBox="0 0 280 190" style={{ overflow: "visible" }}>
+<svg className="envelope-svg-back" viewBox="0 0 280 190" style={{ overflow: "visible" }}>
   <rect x="0" y="0" width="280" height="190" rx="10" fill="#f0a8c4" />
+  <polygon className="env-back-flap" points="0,0 280,0 140,-55" fill="#d4537e" />
+</svg>
 
-  <polygon className="env-back-flap" points="0,0 280,0 140,-50" fill="#d4537e" />
+<svg className="envelope-svg-front" viewBox="0 0 280 190" style={{ overflow: "visible" }}>
+  <polygon points="0,190 280,190 140,95" fill="#e585a9" />
+  <polygon points="0,0 140,95 0,190" fill="#eb9fbf" />
+  <polygon points="280,0 140,95 280,190" fill="#eb9fbf" />
 
-  <polygon className="env-front-flap" points="0,0 280,0 140,95" fill="#ed93b1" />
+  <polygon className="env-front-flap" points="0,0 280,0 140,90" fill="#ed93b1" />
 
-  <circle className="env-seal" cx="140" cy="20" r="14" fill="#c43d6b" />
+  <circle className="env-seal" cx="140" cy="80" r="14" fill="#c43d6b" />
 
   <path
     className="env-heart"
