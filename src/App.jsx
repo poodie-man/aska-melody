@@ -140,26 +140,55 @@ const reasons = [
   "Reason #20 — write yours here",
 ];
 
-// Generates points tracing a heart shape (parametric heart curve),
-// one per reason, in order around the outline.
-function buildHeartPoints(count, width, height) {
+// Generates points tracing a stylized Scorpio constellation shape
+// (the classic "hook" with claws at the head and a curled stinger tail).
+function buildScorpioPoints(count, width, height) {
+const waypoints = [
+  [0.682, 0.159],
+  [0.705, 0.242],
+  [0.589, 0.316],
+  [0.555, 0.339],
+  [0.517, 0.385],
+  [0.451, 0.553],
+  [0.436, 0.773],
+  [0.359, 0.804],
+  [0.257, 0.808],
+  [0.203, 0.733],
+  [0.184, 0.648],
+  [0.269, 0.643],
+].map(([nx, ny]) => ({ x: nx * width, y: ny * height }));
+
+  const segLengths = [];
+  let total = 0;
+  for (let i = 1; i < waypoints.length; i++) {
+    const dx = waypoints[i].x - waypoints[i - 1].x;
+    const dy = waypoints[i].y - waypoints[i - 1].y;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    segLengths.push(len);
+    total += len;
+  }
+
   const points = [];
   for (let i = 0; i < count; i++) {
-    const t = (i / count) * Math.PI * 2;
-    const x = 16 * Math.pow(Math.sin(t), 3);
-    const y =
-      13 * Math.cos(t) -
-      5 * Math.cos(2 * t) -
-      2 * Math.cos(3 * t) -
-      Math.cos(4 * t);
-    points.push({
-      x: width / 2 + x * (width / 46),
-      y: height / 2 - y * (height / 44) - height * 0.05,
-    });
+    const target = (i / (count - 1)) * total;
+    let acc = 0;
+    for (let s = 0; s < segLengths.length; s++) {
+      const isLast = s === segLengths.length - 1;
+      if (acc + segLengths[s] >= target || isLast) {
+        const start = waypoints[s];
+        const end = waypoints[s + 1];
+        const progress = segLengths[s] === 0 ? 0 : (target - acc) / segLengths[s];
+        points.push({
+          x: start.x + (end.x - start.x) * progress,
+          y: start.y + (end.y - start.y) * progress,
+        });
+        break;
+      }
+      acc += segLengths[s];
+    }
   }
   return points;
 }
-
 // Builds an 8-point sparkle/star SVG path centered at (cx, cy) with outer radius r.
 function buildStarPath(cx, cy, r) {
   const pts = [];
@@ -208,7 +237,7 @@ useEffect(() => {
 
   // ---------- 20 REASONS / CONSTELLATION STATE ----------
   const heartPoints = useMemo(
-    () => buildHeartPoints(reasons.length, CONSTELLATION_WIDTH, CONSTELLATION_HEIGHT),
+    () => buildScorpioPoints(reasons.length, CONSTELLATION_WIDTH, CONSTELLATION_HEIGHT),
     []
   );
   const [nextReasonIndex, setNextReasonIndex] = useState(0);
@@ -1039,7 +1068,7 @@ const changePage = (newPage) => {
               />
             );
           })}
-           {nextReasonIndex === reasons.length && (
+           {/* {nextReasonIndex === reasons.length && (
     <line
       x1={heartPoints[heartPoints.length - 1].x}
       y1={heartPoints[heartPoints.length - 1].y}
@@ -1049,7 +1078,7 @@ const changePage = (newPage) => {
       strokeWidth="1.3"
       opacity="0.85"
     />
-  )}
+  )} */}
         </svg>
 
         <div className="constellation-stars">

@@ -63,15 +63,45 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 35px;
 
     box-shadow:
-        0 10px 30px rgba(220, 90, 140, 0.12);
+        0 10px 30px rgba(220, 90, 140, 0.18);
 
     z-index: 20;
 }
+
+/* .navbar::before,
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 26px;
+    height: 20px;
+
+    background: #ed93b1;
+    clip-path: polygon(
+        50% 50%, 0% 0%, 0% 35%, 40% 50%,
+        0% 65%, 0% 100%, 50% 50%,
+        100% 100%, 100% 65%, 60% 50%,
+        100% 35%, 100% 0%
+    );
+}
+
+.navbar::before {
+    left: -14px;
+}
+
+.navbar::after {
+    right: -14px;
+} */
 
 .logo {
     display: flex;
