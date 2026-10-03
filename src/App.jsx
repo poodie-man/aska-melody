@@ -379,16 +379,88 @@ const petalData = useMemo(
       id: 1,
       emoji: "🌸",
       title: "Where It All Began",
-      text: `Happy Girlfriend's Day, my love. ❤️
+      text: `I didn't know it at the time, but that was the day our story really began.
+      We first met at my brother's store, and honestly, our first meeting was probably one of the most random beginnings a love story could have.
 
-Today is all about celebrating you, but honestly, I celebrate you every single day. Thank you for being the reason behind so many of my smiles, for making ordinary moments feel special, and for filling my life with so much warmth and happiness.
+I asked you if you had weed.
 
-No matter where life takes us, I hope you always know how deeply you're loved. You're my favorite person, my safe place, and the one I want to make countless memories with. I can't wait for all the little adventures, late-night talks, hugs, and dreams we'll share together.
+You did.
 
-I hope today reminds you of just how amazing you are. Thank you for being you. I'm so lucky to call you mine.
+And you gave me some.
 
-Happy Girlfriend's Day, beautiful. I love you more than words could ever express. 💛
-).`,
+That's how we met. No romantic movie moment, no dramatic first meeting — just me asking you a completely random question and somehow that becoming the first little connection between us.
+
+But later that night, I noticed something.
+
+You had followed me on Instagram.
+
+I saw your follow and decided to text you.
+
+November 27, 2025 — the day I sent you that first text.
+
+I had no idea that one little message would become the beginning of everything.
+
+You replied, and somehow that simple conversation turned into hours and hours of talking. One topic became another, then another, and before we knew it, we were talking about our lives, our pasts, random things, serious things, and everything in between.
+
+Somehow, talking to you just felt easy.
+
+There was never really a moment where we had nothing to say. We could keep talking for hours without realizing how much time had passed.
+
+And then, only two days later, came our first little adventure.
+
+The Gwarmari Hunt.
+
+We decided to go out in the morning, and what was supposed to be a simple search for gwarmari somehow turned into us walking around for hours looking for it.
+
+We walked and searched and kept looking for a place that had gwarmari. At that point, I think we were probably more determined to find gwarmari than we should have been.
+
+But eventually...
+
+we found it.
+
+After all those walks and all that searching, we finally found a place that had gwarmari. And honestly, I think finally finding it made it taste even better.
+
+We got our gwarmari, and then went to a café in Patan.
+
+We sat down, had some tea, ate our gwarmari, and continued talking.
+
+We talked about our pasts, our lives, the things we'd experienced, and slowly started learning more about each other. It wasn't some extravagant first date. It wasn't perfectly planned.
+
+It was just us.
+
+Walking around for hours.
+
+Looking for gwarmari.
+
+Finally finding it.
+
+Sitting in a café with tea.
+
+Talking about everything and nothing.
+
+And somehow, that simple morning became one of the first memories that really belonged to us.
+
+Eventually, we went home.
+
+At that point, we had only known each other for a few days. We didn't know where everything was going to lead, and we definitely couldn't have imagined all the memories that would come after that morning.
+
+But looking back now, I think there's something really beautiful about how simple it all was.
+
+Our story didn't begin with some perfect romantic moment.
+
+It began with a random meeting, a stupid question, an Instagram follow, one little text, hours of conversations, and a very long search for gwarmari.
+
+And somehow, all those little things brought me closer to you.
+
+November 27, 2025 was just an ordinary day when it started.
+
+But now, it's a date I'll always remember.
+
+Because that was the day I sent you that first text.
+
+And that first text became the beginning of us. ♡
+
+And little did I know, I had just met the girl who would become my princess. 🎀`,
     },
     {
       id: 2,

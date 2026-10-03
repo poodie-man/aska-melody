@@ -2085,10 +2085,12 @@ body {
     padding: 0 26px 26px 86px;
 
     color: #9d7183;
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 15px;
+    line-height: 1.5;
 
-    text-align: left;
+    white-space: pre-line;
+
+    text-align: justify;
 }
 
 @media (max-width: 600px) {
