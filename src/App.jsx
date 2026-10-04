@@ -374,7 +374,10 @@ const petalData = useMemo(
       id: 1,
       emoji: "🌸",
       title: "Where It All Began",
-      text: `I didn't know it at the time, but that was the day our story really began.
+      text: `November 27, 2025,
+      
+      I didn't know it at the time, but that was the day our story really began.
+
       We first met at my brother's store, and honestly, our first meeting was probably one of the most random beginnings a love story could have.
 
 I asked you if you had weed.
@@ -390,8 +393,6 @@ But later that night, I noticed something.
 You had followed me on Instagram.
 
 I saw your follow and decided to text you.
-
-November 27, 2025 — the day I sent you that first text.
 
 I had no idea that one little message would become the beginning of everything.
 
@@ -461,19 +462,184 @@ And little did I know, I had just met the girl who would become my princess. �
       id: 2,
       emoji: "💗",
       title: "The Little Moments",
-      text: "Sometimes the smallest moments become the best memories.",
+      text: `After that, something between us slowly started changing.
+
+We started talking more. Then we started hanging out more. And somehow, without either of us really realizing when it happened, we became close—really close. It wasn't something that happened overnight. It was all those little moments that kept adding up. A random conversation would turn into hours of talking. One plan would turn into another. Brunch became lunch, lunch became a ride, and a ride somehow became another long conversation before going home.
+
+We talked, we laughed, we teased each other, and slowly we started pouring out more and more of ourselves. Things we normally wouldn't tell everyone started becoming things we could tell each other. I started getting comfortable around you in a way that felt different. I could be myself. I didn't always have to think about what to say or how to act. Being around you just felt easy.
+
+And then came **December 5th, 2025**.
+
+You came to the store where I was working, and I still remember how you looked that day. You had your contact lenses on and you were wearing that black outfit. I remember looking at you and thinking you looked ridiculously adorable. I even have a picture of you from that moment, and honestly, every time I look at it, I remember exactly how I felt seeing you that day.
+
+There was a concert, and we watched it together.
+
+I don't even remember every little detail of the concert anymore, but I remember having fun with you. That's the thing about my memories with you. Sometimes I forget what happened around us, but I never forget how I felt when I was with you.
+
+We were just there together, enjoying the music, talking, laughing, and being ourselves. It felt natural. It felt like something I wanted to keep doing.
+
+But not every part of our story was perfect.
+
+There were times when we slowly started drifting away from each other. Life wasn't exactly kind to either of us during that period. I was going through a difficult time, and you had your own things going on too. I wasn't myself. I had very little energy, and communicating became difficult for me. I wasn't texting much. I wasn't talking much. Sometimes I would disappear into my own thoughts without even realizing how much distance I was creating.
+
+You still checked up on me from time to time.
+
+And honestly, I appreciated it more than I probably showed you.
+
+The truth was, I was lost. I didn't know how to explain what was happening inside my head, so instead of talking about it, I became quiet. And sometimes silence can create a distance even when you don't actually want to be far away from someone.
+
+Days passed like that.
+
+We weren't as close as we had been, and a part of me knew it was happening. But I didn't really know how to stop it. I was dealing with my own problems, and I didn't have the energy to explain them.
+
+Still, somehow, you remained somewhere in the back of my mind.
+
+Even when we weren't talking as much, I never completely stopped thinking about you.
+
+Maybe that was the first sign that you were becoming more important to me than I realized.
+
+I just didn't know it yet.
+`,
     },
     {
       id: 3,
       emoji: "🎀",
-      title: "My Favorite Memories",
-      text: "These are the moments I'll always remember. 💗",
+      title: "The Days We Slowly Drifted Apart",
+      text: `There are some parts of a story that aren't filled with happy moments.
+
+Some parts are quiet. Confusing. Messy. Sometimes you don't know what you're feeling, and sometimes you don't even know how to explain yourself to the person you care about.
+
+That was one of those parts of our story.
+
+I was still dealing with my own problems, and because of that, I slowly became distant. I didn't text as much. I didn't talk as much. I wasn't giving you the same energy I used to. It wasn't because I didn't care about you. In fact, I think I cared more than I knew how to handle at that time.
+
+I just didn't know how to communicate it.
+
+Sometimes I would look at my phone and see your messages but wouldn't know what to say. Sometimes I wanted to talk to you but didn't have the energy to start a conversation. And sometimes I would simply disappear into my own head.
+
+Looking back, I know that must have been confusing for you.
+
+You were going through your own things too, but you still made an effort to check on me. You would come around from time to time, ask how I was doing, and somehow still try to be there even when I wasn't doing a very good job of being there myself.
+
+I wish I had understood everything better back then.
+
+Then came your Mustang trip.
+
+You were going away for five days, and I remember dropping you off at your college that morning. You were leaving for your trip, and I was there to say goodbye before you went.
+
+I remember waving goodbye to you.
+
+Five days doesn't sound like a long time. It's only five days. But when someone has slowly become a part of your everyday life, even five days can feel strangely long.
+
+I missed you.
+
+I didn't really say it, though.
+
+Well... okay, I did say it once.
+
+I texted you that I missed you. LMAO.
+
+That was probably one of the few moments where I actually admitted it instead of keeping it inside.
+
+While you were away, I wondered what you were doing, where you were going, what you were seeing, and whether you were having fun. I didn't constantly text you or tell you how much I missed you, but somewhere in my mind, you were still there.
+
+Then the five days passed.
+
+You were coming back.
+
+And I went to pick you up from your college.
+
+When I saw you, you weren't exactly happy. You were sad because your friend didn't say goodbye to you before returning home. You told me about it, and I listened.
+
+We got on the scooter and started heading toward your home.
+
+And that's when you started telling me about your trip.
+
+You told me about all the fun you had, the things you did, the places you went with your friends.
+
+Then you mentioned a guy.
+
+Apparently, you had gotten pretty close to him during the trip.
+
+I don't know exactly what happened inside me at that moment.
+
+I just felt something.
+
+It wasn't anger. It wasn't exactly sadness either.
+
+It was probably jealousy.
+
+And honestly, I didn't even understand why I was jealous.
+
+Who was I to feel that way?
+
+We weren't together. I hadn't told you how I felt. I hadn't even fully admitted those feelings to myself.
+
+But hearing about someone else getting close to you bothered me more than I expected.
+
+I still listened to you until we reached your home.
+
+I didn't make a big deal out of it.
+
+But something inside me had shifted.
+
+And instead of talking about it, I did what I had already been doing.
+
+I decided to distance myself.
+
+The funny part?
+
+I never actually wanted to distance myself from you.
+`,
     },
     {
       id: 4,
       emoji: "🎀",
-      title: "My Favorite Memories",
-      text: "These are the moments I'll always remember. 💗",
+      title: "The Jealousy I Didn't Understand",
+      text: `Sometimes we don't realize how much someone means to us until something makes us afraid of losing them.
+
+Maybe that was what happened to me.
+
+After your Mustang trip, I started thinking about everything you had told me. Especially the part about the guy you had gotten close with.
+
+I didn't want to admit that it bothered me.
+
+So instead of asking myself why I felt that way, I simply decided I should create some distance.
+
+It sounds stupid when I think about it now.
+
+I wasn't trying to leave you because I didn't care.
+
+I was trying to protect myself from feelings I didn't understand.
+
+There were already so many things happening between us. We had misunderstandings. We had arguments. Sometimes we would get annoyed with each other. Sometimes we wouldn't understand what the other person was trying to say.
+
+But somehow, even after all of that, neither of us completely let go.
+
+There was always something pulling us back toward each other.
+
+I don't know how to explain what that something was.
+
+Maybe it was the way we could talk for hours.
+
+Maybe it was how comfortable we had become.
+
+Maybe it was the fact that even after an argument, I would still wonder how you were doing.
+
+Or maybe it was simply you.
+
+Because no matter how much I tried to convince myself that I should stay away, there was always something about you that pulled me back.
+
+Days passed.
+
+We continued talking.
+
+Sometimes more, sometimes less.
+
+Sometimes we were completely fine, and sometimes we were annoyed at each other over the smallest things.
+
+But even during those moments, there was still a connection between us that neither of us could completely break.
+`,
     },
        {
       id: 5,
