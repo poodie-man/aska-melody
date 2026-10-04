@@ -468,7 +468,7 @@ We started talking more. Then we started hanging out more. And somehow, without 
 
 We talked, we laughed, we teased each other, and slowly we started pouring out more and more of ourselves. Things we normally wouldn't tell everyone started becoming things we could tell each other. I started getting comfortable around you in a way that felt different. I could be myself. I didn't always have to think about what to say or how to act. Being around you just felt easy.
 
-And then came **December 5th, 2025**.
+And then came December 5th, 2025.
 
 You came to the store where I was working, and I still remember how you looked that day. You had your contact lenses on and you were wearing that black outfit. I remember looking at you and thinking you looked ridiculously adorable. I even have a picture of you from that moment, and honestly, every time I look at it, I remember exactly how I felt seeing you that day.
 
@@ -504,44 +504,122 @@ I just didn't know it yet.
     {
       id: 3,
       emoji: "🎀",
-      title: "The Days We Slowly Drifted Apart",
-      text: `There are some parts of a story that aren't filled with happy moments.
+      title: "A New Year With You",
+      text: `After December 5th, we just kept going.
 
-Some parts are quiet. Confusing. Messy. Sometimes you don't know what you're feeling, and sometimes you don't even know how to explain yourself to the person you care about.
+We talked more, hung out more, and somehow became even more comfortable around each other. It was funny because nothing between us had an official name yet, but the connection was definitely there.
 
-That was one of those parts of our story.
+We would go out for brunch, grab lunch, go on random rides, sit somewhere and talk for hours, or just find some excuse to see each other. Sometimes we had plans, and sometimes we didn't. But honestly, I didn't really care what we were doing as long as I was with you.
 
-I was still dealing with my own problems, and because of that, I slowly became distant. I didn't text as much. I didn't talk as much. I wasn't giving you the same energy I used to. It wasn't because I didn't care about you. In fact, I think I cared more than I knew how to handle at that time.
+We talked.
 
-I just didn't know how to communicate it.
+We laughed.
 
-Sometimes I would look at my phone and see your messages but wouldn't know what to say. Sometimes I wanted to talk to you but didn't have the energy to start a conversation. And sometimes I would simply disappear into my own head.
+We teased each other.
 
-Looking back, I know that must have been confusing for you.
+We shared stories.
 
-You were going through your own things too, but you still made an effort to check on me. You would come around from time to time, ask how I was doing, and somehow still try to be there even when I wasn't doing a very good job of being there myself.
+And slowly, we started pouring out more of ourselves.
 
-I wish I had understood everything better back then.
+There was something about talking to you that made it easy to open up. I could tell you random things about my day, talk about things that were bothering me, or just sit there and talk absolute nonsense with you.
 
-Then came your Mustang trip.
+And somehow, hours would pass.
 
-You were going away for five days, and I remember dropping you off at your college that morning. You were leaving for your trip, and I was there to say goodbye before you went.
+Then came December 31st, 2025.
 
-I remember waving goodbye to you.
+New Year's Eve.
 
-Five days doesn't sound like a long time. It's only five days. But when someone has slowly become a part of your everyday life, even five days can feel strangely long.
+We went out for dinner together, and honestly, it was such a good night.
 
-I missed you.
+We ate together, talked about random things, teased each other, laughed, and took pictures. Nothing extremely dramatic happened that night. It was simply one of those nights where everything felt comfortable.
 
-I didn't really say it, though.
+But sometimes, the simplest memories end up meaning the most.
 
-Well... okay, I did say it once.
+I remember looking at you that night and just enjoying your company.
 
-I texted you that I missed you. LMAO.
+There was no pressure.
 
-That was probably one of the few moments where I actually admitted it instead of keeping it inside.
+No need to figure everything out.
 
-While you were away, I wondered what you were doing, where you were going, what you were seeing, and whether you were having fun. I didn't constantly text you or tell you how much I missed you, but somewhere in my mind, you were still there.
+No need to give whatever we had a name.
+
+It was just you and me, spending the last night of the year together.
+
+And I think that night quietly became important because it made me realize how much I genuinely enjoyed having you in my life.
+
+Every time we hung out, I felt myself getting closer to you.
+
+Every conversation made me want another conversation.
+
+Every ride made me want another ride.
+
+Every goodbye somehow made me look forward to the next time I would see you.
+
+It was becoming a pattern.
+
+And I didn't mind it.
+
+If anything, I loved it.
+
+Looking back now, I think New Year's Eve was one of those moments where I should have realized just how much you already meant to me.
+
+But I was still figuring myself out.
+
+I didn't know where our story was going.
+
+I didn't know what you thought about me.
+
+I didn't know what we would become.
+
+I just knew that whenever I was with you, I was happy.
+
+And maybe that was enough for me at the time.
+
+The year ended.
+
+2025 became 2026.
+
+And with a new year came more memories, more conversations, and eventually, another unexpected chapter in our story.
+
+Because after New Year's Eve, came your Mustang trip.
+
+And that trip would bring out a feeling in me that I didn't even know I had.
+
+Jealousy.
+
+A feeling I definitely wasn't prepared for.
+
+`,
+    },
+    {
+      id: 4,
+      emoji: "🎀",
+      title: "The Feeling I Didn't Understand",
+      text: `Not long after New Year's, you had your trip to Mustang.
+
+You were going away for five days, and I remember dropping you off at your college that morning.
+
+You were leaving for your trip, and I was there to wave goodbye.
+
+I remember watching you leave and thinking that five days wasn't really that long.
+
+But somehow, it felt long.
+
+I missed you during those five days.
+
+I didn't really tell you, though.
+
+Well... okay, I did tell you once.
+
+I texted you, "I miss you."
+
+LMAO.
+
+That was probably one of the few times I actually admitted it.
+
+The rest of the time, I just kept it to myself.
+
+I wondered what you were doing, where you were going, what you were seeing, and whether you were having fun. I didn't constantly text you or ask for updates, but you were still somewhere in the back of my mind.
 
 Then the five days passed.
 
@@ -549,96 +627,112 @@ You were coming back.
 
 And I went to pick you up from your college.
 
-When I saw you, you weren't exactly happy. You were sad because your friend didn't say goodbye to you before returning home. You told me about it, and I listened.
+When I saw you, you were sad because your friend hadn't said goodbye to you before returning home. You told me about it, and I listened.
 
 We got on the scooter and started heading toward your home.
 
-And that's when you started telling me about your trip.
+You started telling me about the trip.
 
-You told me about all the fun you had, the things you did, the places you went with your friends.
+You told me about all the fun you had, the places you went, the things you did, and the people you met.
 
-Then you mentioned a guy.
+And then you mentioned a guy.
 
 Apparently, you had gotten pretty close to him during the trip.
 
-I don't know exactly what happened inside me at that moment.
+I don't know what happened inside me at that exact moment.
 
 I just felt something.
 
-It wasn't anger. It wasn't exactly sadness either.
+It wasn't anger.
 
-It was probably jealousy.
+It wasn't exactly sadness.
+
+It was this strange feeling in my chest.
+
+Jealousy.
 
 And honestly, I didn't even understand why I was jealous.
 
-Who was I to feel that way?
+Because who was I to feel that way?
 
-We weren't together. I hadn't told you how I felt. I hadn't even fully admitted those feelings to myself.
+We weren't together.
 
-But hearing about someone else getting close to you bothered me more than I expected.
+I hadn't told you how I felt.
 
-I still listened to you until we reached your home.
+I hadn't even fully admitted those feelings to myself.
 
-I didn't make a big deal out of it.
+But hearing that someone else had gotten close to you bothered me more than I expected.
 
-But something inside me had shifted.
+I still listened.
 
-And instead of talking about it, I did what I had already been doing.
+I didn't make a scene.
 
-I decided to distance myself.
+I didn't want to ruin your happiness or make you feel bad about your trip.
 
-The funny part?
+I listened to you until we reached your home.
 
-I never actually wanted to distance myself from you.
-`,
-    },
-    {
-      id: 4,
-      emoji: "🎀",
-      title: "The Jealousy I Didn't Understand",
-      text: `Sometimes we don't realize how much someone means to us until something makes us afraid of losing them.
+But after I left, I couldn't stop thinking about it.
 
-Maybe that was what happened to me.
+Why did it bother me?
 
-After your Mustang trip, I started thinking about everything you had told me. Especially the part about the guy you had gotten close with.
+Why did I care so much?
 
-I didn't want to admit that it bothered me.
+Why did hearing about another guy make something inside me feel uncomfortable?
 
-So instead of asking myself why I felt that way, I simply decided I should create some distance.
+I didn't have the answers.
 
-It sounds stupid when I think about it now.
+And instead of trying to understand those feelings, I did what I had a habit of doing.
 
-I wasn't trying to leave you because I didn't care.
+I pulled away.
 
-I was trying to protect myself from feelings I didn't understand.
+I thought maybe creating some distance would make things easier.
 
-There were already so many things happening between us. We had misunderstandings. We had arguments. Sometimes we would get annoyed with each other. Sometimes we wouldn't understand what the other person was trying to say.
+Maybe if I talked less, I wouldn't feel so much.
 
-But somehow, even after all of that, neither of us completely let go.
+Maybe if I wasn't around you as much, I wouldn't get attached.
 
-There was always something pulling us back toward each other.
+But the truth was, I never actually wanted to distance myself from you.
 
-I don't know how to explain what that something was.
+That was the confusing part.
 
-Maybe it was the way we could talk for hours.
+I was trying to move away from you while a part of me was constantly looking for a reason to come back.
 
-Maybe it was how comfortable we had become.
+And after that, things slowly became difficult.
 
-Maybe it was the fact that even after an argument, I would still wonder how you were doing.
+I started going through another rough period.
 
-Or maybe it was simply you.
+My energy was low.
 
-Because no matter how much I tried to convince myself that I should stay away, there was always something about you that pulled me back.
+My mind was all over the place.
 
-Days passed.
+And communicating became harder.
 
-We continued talking.
+I wasn't texting as much.
 
-Sometimes more, sometimes less.
+I wasn't talking as much.
 
-Sometimes we were completely fine, and sometimes we were annoyed at each other over the smallest things.
+Sometimes I would see your messages and not know what to say.
 
-But even during those moments, there was still a connection between us that neither of us could completely break.
+Sometimes I wanted to talk to you but didn't have the energy.
+
+And without meaning to, I started creating an even bigger distance between us.
+
+You still checked up on me from time to time.
+
+You still tried to be there.
+
+And I appreciated it more than I probably showed you.
+
+But I was lost.
+
+And I didn't know how to explain what was happening inside me.
+
+That was when we slowly started drifting apart.
+
+Not because we stopped caring.
+
+But because sometimes life gets difficult, and you don't know how to hold onto the people you care about while you're trying to hold yourself together.
+
 `,
     },
        {
