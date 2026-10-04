@@ -142,53 +142,48 @@ const reasons = [
 
 // Generates points tracing a stylized Scorpio constellation shape
 // (the classic "hook" with claws at the head and a curled stinger tail).
+const SCORPIO_LAYOUT = [
+  { x: 0.683, y: 0.165 },
+  { x: 0.705, y: 0.246 },
+  { x: 0.706, y: 0.340 },
+  { x: 0.708, y: 0.426 },
+  { x: 0.650, y: 0.281 },
+  { x: 0.594, y: 0.316 },
+  { x: 0.554, y: 0.338 },
+  { x: 0.518, y: 0.387 },
+  { x: 0.484, y: 0.470 },
+  { x: 0.450, y: 0.553 },
+  { x: 0.443, y: 0.663 },
+  { x: 0.436, y: 0.774 },
+  { x: 0.398, y: 0.789 },
+  { x: 0.360, y: 0.804 },
+  { x: 0.308, y: 0.807 },
+  { x: 0.256, y: 0.809 },
+  { x: 0.201, y: 0.733 },
+  { x: 0.185, y: 0.651 },
+  { x: 0.228, y: 0.648 },
+  { x: 0.271, y: 0.644 },
+];
+
+const SCORPIO_EDGES = [
+  [0, 1], [1, 2], [2, 3],
+  [1, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9],
+  [9, 10], [10, 11], [11, 12], [12, 13], [13, 14],
+  [14, 15], [15, 16], [16, 17], [17, 18], [18, 19],
+];
+
 function buildScorpioPoints(count, width, height) {
-const waypoints = [
-  [0.682, 0.159],
-  [0.705, 0.242],
-  [0.589, 0.316],
-  [0.555, 0.339],
-  [0.517, 0.385],
-  [0.451, 0.553],
-  [0.436, 0.773],
-  [0.359, 0.804],
-  [0.257, 0.808],
-  [0.203, 0.733],
-  [0.184, 0.648],
-  [0.269, 0.643],
-].map(([nx, ny]) => ({ x: nx * width, y: ny * height }));
-
-  const segLengths = [];
-  let total = 0;
-  for (let i = 1; i < waypoints.length; i++) {
-    const dx = waypoints[i].x - waypoints[i - 1].x;
-    const dy = waypoints[i].y - waypoints[i - 1].y;
-    const len = Math.sqrt(dx * dx + dy * dy);
-    segLengths.push(len);
-    total += len;
-  }
-
-  const points = [];
-  for (let i = 0; i < count; i++) {
-    const target = (i / (count - 1)) * total;
-    let acc = 0;
-    for (let s = 0; s < segLengths.length; s++) {
-      const isLast = s === segLengths.length - 1;
-      if (acc + segLengths[s] >= target || isLast) {
-        const start = waypoints[s];
-        const end = waypoints[s + 1];
-        const progress = segLengths[s] === 0 ? 0 : (target - acc) / segLengths[s];
-        points.push({
-          x: start.x + (end.x - start.x) * progress,
-          y: start.y + (end.y - start.y) * progress,
-        });
-        break;
-      }
-      acc += segLengths[s];
-    }
-  }
-  return points;
+  return SCORPIO_LAYOUT.map((p) => ({
+    x: p.x * width,
+    y: p.y * height,
+  }));
 }
+// Decorative-only stars (the small claw spur) — not part of the
+// tappable sequence, just completes the constellation's real shape.
+const extraClawStars = [
+  { x: 0.588, y: 0.276 },
+  { x: 0.595, y: 0.307 },
+];
 // Builds an 8-point sparkle/star SVG path centered at (cx, cy) with outer radius r.
 function buildStarPath(cx, cy, r) {
   const pts = [];
@@ -1124,22 +1119,23 @@ const changePage = (newPage) => {
           className="constellation-lines"
           viewBox={`0 0 ${CONSTELLATION_WIDTH} ${CONSTELLATION_HEIGHT}`}
         >
-          {heartPoints.slice(0, nextReasonIndex).map((p, i) => {
-            if (i === 0) return null;
-            const prev = heartPoints[i - 1];
-            return (
-              <line
-                key={i}
-                x1={prev.x}
-                y1={prev.y}
-                x2={p.x}
-                y2={p.y}
-                stroke="#ffb3d1"
-                strokeWidth="1.3"
-                opacity="0.85"
-              />
-            );
-          })}
+          {SCORPIO_EDGES.map(([a, b], i) => {
+  if (a >= nextReasonIndex || b >= nextReasonIndex) return null;
+  const p1 = heartPoints[a];
+  const p2 = heartPoints[b];
+  return (
+    <line
+      key={i}
+      x1={p1.x}
+      y1={p1.y}
+      x2={p2.x}
+      y2={p2.y}
+      stroke="#ffb3d1"
+      strokeWidth="1.3"
+      opacity="0.85"
+    />
+  );
+})}
            {/* {nextReasonIndex === reasons.length && (
     <line
       x1={heartPoints[heartPoints.length - 1].x}
@@ -1153,7 +1149,7 @@ const changePage = (newPage) => {
   )} */}
         </svg>
 
-        <div className="constellation-stars">
+                <div className="constellation-stars">
           {heartPoints.map((p, i) => {
             const isOpened = i < nextReasonIndex;
             const isNext = i === nextReasonIndex;

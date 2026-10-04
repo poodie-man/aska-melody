@@ -2428,9 +2428,10 @@ html, body, #root {
 
 .gallery-intro h1 {
     font-family: "Brush Script MT","Segoe Script", cursive;
-    font-size: clamp(42px, 8vw, 72px);
+    /* font-size: clamp(47px, 8vw, 72px); */
+    font-size: 80px;
     line-height: 1.1;
-    color: #fff6ea;
+    color: #ffeaf9;
     margin: 0;
     text-shadow:
         0 0 10px rgba(255, 130, 180, 0.6),
@@ -2442,7 +2443,7 @@ html, body, #root {
         0 0 10px rgba(255, 130, 180, 0.6),
         0 0 22px rgba(255, 130, 180, 0.45),
         0 0 40px rgba(255, 105, 160, 0.3);
-color: #fff6ea;}
+color: #ffeaf9;}
 
 
 .gallery-intro p {
