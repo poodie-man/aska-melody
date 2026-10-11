@@ -1588,7 +1588,7 @@ const changePage = (newPage) => {
 
       {/* Floating decorations */}
       
-    <div className="decorations">
+  <div className={`decorations ${page !== "home" ? "decorations-hidden" : ""}`}>
 
     <img
         src="/images/cherry.png"

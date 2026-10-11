@@ -3219,3 +3219,6 @@ color: #ffeaf9;}
     height: 100%;
     display: block;
 }
+.decorations-hidden {
+    display: none;
+}
