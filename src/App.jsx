@@ -738,9 +738,538 @@ But because sometimes life gets difficult, and you don't know how to hold onto t
        {
       id: 5,
       emoji: "🎀",
-      title: "My Favorite Memories",
-      text: "These are the moments I'll always remember. 💗",
+      title: "The Days We Almost Lost Each Other",
+      text: `The days after that weren't easy.
+
+I was going through a difficult time, and I wasn't really myself.
+
+My energy was low.
+
+My mind was somewhere else.
+
+And communicating became one of the hardest things for me.
+
+I didn't text much.
+
+I didn't talk much.
+
+Sometimes I would want to reach out to you but wouldn't know what to say. Sometimes I would see your messages and just sit there, not knowing how to explain what was going on inside my head.
+
+It wasn't because I didn't care.
+
+I cared.
+
+Probably more than I knew how to handle.
+
+But instead of explaining that, I became quiet.
+
+And silence can create a distance even when you never intended to leave.
+
+You still checked up on me from time to time.
+
+You still tried to see how I was doing.
+
+And honestly, I don't think I appreciated that enough at the time.
+
+You were there even when I wasn't doing a good job of being there myself.
+
+We slowly started drifting.
+
+There were fewer conversations.
+
+Fewer texts.
+
+Fewer moments together.
+
+And somewhere along the way, I started wondering whether maybe we were actually going to lose what we had.
+
+That thought scared me.
+
+Because by then, I had already realized that you weren't just someone I could simply walk away from.
+
+You had become important to me.
+
+I missed talking to you.
+
+I missed seeing you.
+
+I missed our random conversations.
+
+I missed the way we could spend hours together without realizing how much time had passed.
+
+And yet, I still struggled to communicate.
+
+I was caught between wanting you close and not knowing how to let you close enough to understand what I was going through.
+
+Then my birthday came.
+
+April 1st, 2026.
+
+My birthday.
+
+I thought it was going to be another birthday.
+
+I had no idea it would become one of the biggest turning points in our story.
+
+At midnight, you called me to wish me.
+
+Hearing your voice already made me happy, but then you said something that completely caught me off guard.
+
+You told me it was our last day.
+
+And suddenly, my birthday didn't feel like my birthday anymore.
+
+I was confused.
+
+I was panicking.
+
+I didn't understand what was happening.
+
+How could this be our last day?
+
+After everything we had been through, after all the conversations, the memories, the laughs, the rides, the dinners, the arguments—how could we just stop?
+
+I didn't know what to say.
+
+The next morning, we went out to drink tea.
+
+We sat together and talked about everything.
+
+It was one of those conversations where every word felt heavier because we both knew something was about to change.
+
+And then something happened that I still remember so clearly.
+
+You asked me if you could kiss me.
+
+Or maybe you asked if I could kiss you.
+
+Honestly, I don't even remember exactly how the question came out because my brain basically stopped working.
+
+I didn't know if you were joking.
+
+I didn't know if you were serious.
+
+But I kissed you.
+
+I kissed you on your lips.
+
+And my heart was absolutely pounding.
+
+That moment felt unreal.
+
+After everything I had been feeling, everything I had been keeping inside, suddenly I was there with you, kissing you.
+
+And after that, I finally told you how I felt.
+
+I finally let out the feelings I had been carrying for so long.
+
+I didn't want to keep pretending that I didn't care.
+
+I didn't want to keep pretending that I could simply walk away.
+
+Because the truth was simple.
+
+I didn't want to lose you. 💗`,
     },
+
+    {
+      id: 6,
+      emoji: "🎀",
+      title: "The Goodbye We Couldn't Keep",
+      text: `
+We went home that night, but even after we said goodbye, it didn't feel like the story was over. If anything, it felt like we had reached a point where we finally had to be honest with ourselves about what we wanted.
+
+I kept thinking about everything that had happened that day. The midnight call, the words you said about it being our last day, the tea we had in the morning, and that unexpected kiss that made my heart beat like crazy. Then there was the birthday surprise you had planned for me, the gifts, the pictures, and the way you made me feel special. It was a lot to take in, especially because I had spent so much time trying to understand my own feelings for you.
+
+And then there was the alley.
+
+I could still picture us standing there beneath the moon, talking and kissing as if neither of us wanted that moment to end. We had said goodbye, but somehow, neither of us could truly let go. Maybe we were both scared of what would happen if we stayed, but even more scared of what would happen if we walked away.
+
+When I got home, we started talking again. One conversation became another, and before we knew it, we were talking about everything we hadn't been able to say properly before. I don't think either of us wanted to pretend that we were ready to lose each other. We had tried to put an ending to our story, but our hearts didn't seem to agree with the decision.
+
+Honestly, I was confused too. I had spent so long keeping my feelings to myself, telling myself that I should distance myself, and acting as if I could simply walk away whenever things became complicated. But that night made me realize how difficult it was to imagine my life without you in it.
+
+I didn't want to lose the person I could talk to for hours. I didn't want to lose the person whose messages could change my mood or whose presence could make an ordinary day feel different. I didn't want to lose all the little things we had built without even realizing how much they meant to us.
+
+And I definitely didn't want our story to end just when we were finally beginning to understand what we meant to each other.
+
+So we decided to stay.
+
+We didn't suddenly have every answer. We didn't magically solve every problem or promise that everything would always be easy. We simply chose not to walk away from something that still mattered to both of us.
+
+Looking back, that decision means a lot to me. Sometimes, the most important moments in a relationship aren't the moments when two people first meet or when they finally confess their feelings. Sometimes, they're the moments when everything becomes complicated, leaving would be easier, and yet two people decide to give each other another chance.
+
+That night was one of those moments for us.
+
+My birthday had started with confusion and the fear of losing you. It had given me a kiss I would never forget, a surprise that made me feel incredibly loved, and a goodbye neither of us could finish. But it ended with something I needed even more than all of those things.
+
+It ended with us choosing to continue.
+
+And I am so glad we did, princess. Because if we had walked away that night, I would have missed so many memories that were still waiting for us.
+
+I would have missed the next chapter of our story.
+
+April 5th was only a few days away, and little did I know that another beautiful memory was already waiting for us.
+`,
+    },
+     {
+      id: 7,
+      emoji: "🎀",
+      title: "The Days We Almost Lost Each Other",
+      text: `
+
+April 5th, 2026.
+
+A few days after my birthday, we went to Poshon for an event together. After everything that had happened on April 1st, being with you again felt different. We had almost said goodbye to each other, and now here we were, making new memories as if our story had been given another chance.
+
+I don't know if you remember every little detail of that day the way I do, but one moment has stayed with me clearly.
+
+The balcony.
+
+The moonlight.
+
+And you.
+
+There was something about that night that made everything else feel unimportant. We were together, standing beneath the moonlight, close enough to forget about the noise and everything happening around us. I remember looking at you and thinking about how beautiful you looked. Maybe I was already so attached to you that even the smallest moments felt special, but honestly, I didn't want to be anywhere else.
+
+We kissed on that balcony, and I remember how we couldn't seem to get enough of being close to each other. We were completely caught up in the moment, sharing kisses under the moonlight, holding on to each other as if the rest of the world could wait.
+
+It wasn't just the kiss itself that made the memory special. It was everything that had happened before it. The uncertainty, the almost-goodbye, the conversations, and the decision to stay. Knowing that we had nearly lost each other made those moments together feel even more precious.
+
+I think that's one of the things about our story that I will always remember. We didn't arrive at every beautiful moment through a perfect path. Sometimes, we got there after confusion, misunderstandings, and difficult conversations. Sometimes, we had to face the possibility of losing each other before we understood how much we wanted to stay.
+
+And that night reminded me that I was happy we had chosen to keep going.
+
+After that, we continued spending time together, visiting places, going on rides, talking about random things, and finding reasons to meet whenever we could. We didn't need every outing to be a grand date. Sometimes, just being together was enough. We could talk about serious things one moment and tease each other about something completely ridiculous the next.
+
+We talked, we laughed, we made memories, and little by little, you became a bigger part of my everyday life.
+
+I started looking forward to seeing you. I started remembering tiny details about you without even trying. I wanted to know how your day had gone, what had made you happy, and what had bothered you. Even when we weren't physically together, you would cross my mind in the middle of ordinary moments.
+
+I don't think I fully understood how attached I had become until I started realizing how much I wanted more time with you.
+
+More conversations that lasted longer than we planned. More rides where we could talk without worrying about the time. More random pictures. More little dates. More moments when you would look at me and smile, and I would find myself smiling back without even thinking about it.
+
+Of course, everything wasn't perfect. We were still learning about each other, and we still had things to figure out. But there was something comforting about knowing that we had decided to continue instead of ending our story when things became difficult.
+`,
+    },
+     {
+      id: 8,
+      emoji: "🎀",
+      title: "Pokhara",
+      text: `May 23rd, 2026.
+
+Pokhara.
+
+I still remember that date because it became one of the most important parts of our story.
+
+We were there with my friends, and there was a Bikki Gurung concert.
+
+We arrived, settled in, and went out to eat Chinese food together. We talked about random things, laughed, and enjoyed being around each other.
+
+But there was something you didn't know.
+
+I had a surprise planned for you.
+
+You love white roses.
+
+So I bought you a bouquet of white roses.
+
+I remember giving it to you and seeing your reaction.
+
+You were genuinely happy.
+
+And honestly, seeing you happy made me happier than anything else.
+
+Sometimes the best part of giving someone a gift isn't the gift itself.
+
+It's their reaction.
+
+And yours was one I wanted to remember.
+
+We eventually got ready and went to the concert.
+
+The music, the crowd, the atmosphere—it was all fun.
+
+But even surrounded by so many people, I was mostly aware of you.
+
+We came back later, had some drinks, talked, laughed, and eventually went to bed.
+
+That night, we got even closer, sharing a kind of intimacy that made the distance between our hearts disappear.
+
+The next days were just as special.
+
+We went kayaking.
+
+We went to a photobooth.
+
+We roamed around Lakeside.
+
+We ate together.
+
+We walked around.
+
+We took pictures.
+
+We talked about everything and nothing.
+
+It felt like we had created our own little world inside Pokhara.
+
+Three days where the outside world didn't really matter.
+
+It was just us enjoying each other's company.
+
+But the moment that stayed with me the most wasn't actually one of the big romantic moments.
+
+But then I got injured.
+
+We went to an amusement park where there was a punching bag challenge. We were supposed to wear gloves, but apparently, I thought I could just punch the bag with my bare hands and get away with it. LMAO. Well, that was a terrible decision because I ended up spraining my hand, and it hurt badly enough that even doing simple things became difficult.
+
+And that's when I saw a side of you that made me fall for you even more.
+
+You didn't hesitate to take care of me. Not even for a moment.
+
+You fed me because using my injured hand was difficult. You helped me change my clothes and even helped me put them on when I couldn't manage everything myself. You helped me shower, applied medicine to my hand, and wrapped it with bandages. You even took my socks off and changed them for me.
+
+I remember all of that. I really do.
+
+Maybe to someone else, those things might sound like ordinary acts of care. But to me, they meant so much more. I was sitting there, unable to do some of the simplest things for myself, and you were right there helping me with all of them. You didn't make me feel awkward about it. You didn't hesitate or act like taking care of me was some kind of burden. You just did what needed to be done because I was hurt.
+
+And honestly, that touched something deep inside me.
+
+I remember watching you take care of me and wondering how I had gotten so lucky to have someone like you beside me. It wasn't about the medicine or the bandages, or even the fact that you helped me with things I would normally do on my own. It was the way you did everything so naturally. You made me feel safe enough to let someone else take care of me, and that feeling meant more than I knew how to explain at the time.
+
+I had already enjoyed being with you. I already loved our conversations, our rides, our little dates, and the way we could turn ordinary moments into something memorable. But seeing you care for me when I was injured made me realize that there was so much more to you than the fun moments we shared.
+
+You weren't only someone I wanted beside me when we were laughing, exploring new places, or enjoying ourselves. You were someone whose kindness showed up when things weren't convenient, someone who could look after me when I wasn't at my best.
+
+And that made my feelings for you grow even stronger.
+
+I think that's one of the things I will always appreciate about you. You showed me care through your actions, not just your words. You didn't need to make a big speech about how much you cared. You showed it by feeding me, helping me get dressed, changing my socks, and making sure I was okay.
+
+Those little things stayed with me because they made me feel loved in a way I will never forget.
+
+After that, we continued exploring Pokhara, and eventually, we found ourselves back at Lakeside, watching the beautiful scenery together. We sat there, talked for hours, and enjoyed the peaceful moment. The sky was changing colors, the lake looked beautiful, and you were right there beside me.
+
+And then we took that picture of us kissing, with the sunset and the lake behind us.
+
+I love that picture because it holds so much more than a beautiful view. When I look at it, I remember the entire trip: the white roses I surprised you with, the concert, the laughter, the little adventures, and the way you took care of me when I couldn't even manage simple things by myself. I remember how close we had become and how much I wanted to keep experiencing life with you.
+
+For a moment, I wished I could pause time. I wanted another morning with you, another walk around Lakeside, another meal together, and another night where we could lie beside each other and talk about absolutely anything.
+
+But our three days were coming to an end, and I wasn't ready to leave.
+
+I had become so used to having you close that the thought of returning to Kathmandu and being apart again felt lonely. I wanted more than a beautiful trip that would eventually become a memory on my phone. I wanted more days with you in my ordinary life, too.
+
+That sunset became a reminder of everything I was beginning to feel. The beauty of being with you, the comfort you gave me, and the little acts of love that made me realize just how deeply I was falling for you.
+
+And as we prepared to leave Pokhara, I carried all of those memories with me.
+
+I didn't know exactly what our future would look like yet. But I knew one thing: I didn't want to stop at making memories with you.
+
+I wanted to keep choosing you, keep learning about you, and keep finding new reasons to fall in love with you.
+
+Because somewhere between that sunset and the way you cared for me when I was hurt, you became someone I wanted more than just beautiful moments with.
+
+I wanted a life where I could experience them with you, again and again.`,
+    },
+     {
+      id: 9,
+      emoji: "🎀",
+      title: "When Our Little World Came To an End",
+      text: `I wish our time in Pokhara could have lasted a little longer.
+Those three days meant more to me than just a trip. We went kayaking, visited the photobooth, explored Lakeside, ate together, took pictures, and talked about almost everything. We laughed, teased each other, and enjoyed simply being together. It felt like we had created our own little world where nothing else mattered for a while.
+But eventually, we had to return to Kathmandu.
+After spending three days sharing the same space, sleeping beside each other, and waking up together, going back to our usual routines felt different. I missed having you around, even for the smallest things. I kept thinking about our conversations, our laughter, the white roses I gave you, and all the little moments that made the trip so special.
+And somewhere between those memories, I realized something.
+I didn't just want to travel with you or meet you whenever we had free time. I wanted you in my everyday life, too. I wanted the ordinary days, the random conversations, the little adventures, and even the moments when we had nothing special to do. Being with you had started to feel so natural that I wanted more than just temporary moments together.
+Pokhara helped me understand how much you had come to mean to me. I didn't know exactly how to explain everything I was feeling, but I knew I didn't want to keep those feelings to myself forever.
+I wanted to take another step with you. I wanted to know if you could imagine something more with me, too.
+And that was when I started gathering the courage to ask you a question that would change our story forever.`,
+    },
+     {
+      id: 10,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become special because of what happens on them. Others become special because of the person who makes them unforgettable. For me, May 27 will always be one of those dates because it marks the beginning of us.
+
+I still remember how I finally gathered the courage to ask you to be my girlfriend. I didn't want it to be just an ordinary question. I wanted to make that moment special for you, even in my own little way.
+
+So, I knelt down in front of you, holding a Kinder Joy in my hand because I knew how much you loved that chocolate. It might have seemed like such a small gift, but I wanted to give you something that would make you smile. And there I was, on one knee, with your favorite chocolate, ready to ask you the question I had been carrying in my heart.
+
+“Aska, will you be my girlfriend?”
+
+It was such a simple question, but my heart was filled with so many feelings. I wanted you to know that I wasn't asking just because we'd shared beautiful moments together. I was asking because I wanted more of them with you. I wanted to be someone who could love you openly, care for you, and build something real with you.
+
+And when you said yes, you gave me one of the happiest moments of my life.
+
+From that moment, you weren't just the girl I talked to for hours, went on little adventures with, or made beautiful memories beside. You became my girlfriend—the person I wanted to keep learning about, understanding, and growing with.
+
+Of course, I knew being together wouldn't mean everything would suddenly become perfect. We were two different people with different thoughts, feelings, habits, and ways of seeing things. There would be misunderstandings, difficult days, and things we'd need to learn about each other.
+
+But I wanted to learn them with you.
+
+I wanted to know what made you happy, what hurt you, what made you feel loved, and what you needed from me when things weren't going well. I wanted you to know me, too, including the parts of me that sometimes struggled to explain feelings or handle things perfectly.
+
+And if I could go back to that day, knowing everything I know now, I'd still want to ask you that same question.
+
+Because out of all the people I could have met, I'm grateful that our paths crossed. And I'm even more grateful that you said yes.
+
+May 27, 2026—the day we officially became us.❤️`,
+    },
+    {
+      id: 11,
+      emoji: "🎀",
+      title: "Our Little Adventures",
+      text: `If someone asked me what some of my favorite memories with you are, I wouldn't be able to choose just one. We've had so many little adventures together, and each one has given us another memory to keep.
+
+Every time we went somewhere together, we created memories that were special in their own way. Sometimes, we had plans, and other times, we just went with the flow. We talked, we laughed, teased each other, took pictures, and enjoyed being around one another. I loved how even a simple outing could turn into a day I wanted to remember.
+
+Then came Pokhara, a trip that gave us so many memories I'll always keep close to my heart. From surprising you with white roses to going to the Bikki Gurung concert, exploring Lakeside, kayaking, and visiting the photobooth, every little moment became part of our story. Even the unexpected moments, like when I injured my hand and you took care of me, made me appreciate you even more.
+
+And then there was our Phungphung trip.
+
+We originally planned to visit a waterfall, but things didn't go the way we expected because the road had been destroyed by a landslide. Our original plan was ruined, but we didn't want the day to end without going somewhere together. So, instead, we decided to head toward Phungphung.
+
+But even that journey wasn't easy. The road was really bumpy and rough, and the ride wasn't exactly comfortable. Eventually, we decided to stop near a small waterfall instead of continuing further. And honestly, I'm glad we did.
+
+We spent some time there, enjoyed the sound of the flowing water, and took a picture together. It wasn't the waterfall we originally planned to visit, and the day didn't go the way we had imagined, but we still made a memory out of it.
+
+That's something I love about our little adventures. Sometimes, things don't go according to plan, but we can still find something beautiful in the unexpected moments. We didn't need the perfect destination or a perfectly planned day. We just needed to enjoy the time we had together.
+
+After spending some time there, we took our picture and headed back home. It might have been a simple outing, but it's still one of those memories that makes me smile when I think about us.
+
+I love how a simple plan with you can turn into a whole day of memories. We can go somewhere, eat something, take pictures, talk for hours, and somehow make even the most ordinary things feel special. Sometimes, we don't even need a proper plan. Just spending time together is enough.
+
+Our adventures have also shown me different sides of you. I've seen you excited, tired, happy, playful, and sometimes a little moody. I've learned more about how you think, what you enjoy, and the little things that make you smile. And with every memory, I feel like there's still so much more of you left for me to discover.
+
+When I look back at everything we've done together, I don't just see places on a map. I see moments of us growing closer.
+
+And I hope this is only the beginning.
+
+I want more road trips, more spontaneous plans, more sunsets, more pictures, more food adventures, and more days when we forget about the time because we're too busy enjoying each other's company.
+
+There are still so many places I want to visit with you and so many memories I want us to make.
+
+And wherever we go next, I hope one thing stays the same: you beside me, me beside you, and another little adventure waiting for us.`
+ },
+  {
+      id: 12,
+      emoji: "🎀",
+      title: "The Little Things I Love About You",
+      text: `Aska, if you ever ask me what I love about you, I honestly don't know where I would begin. There's so much I could say that I don't think one chapter would ever be enough.
+
+I love your smile. I love your laugh and the little giggles you make when something genuinely amuses you. I love looking into your eyes and seeing the person who has become so important to me. Sometimes, I catch myself looking at you and wondering how someone can be so beautiful without even trying.
+
+But it's not only your appearance that makes me love you.
+
+I love the way you act like a little child when you're hungry, upset, happy, or excited. I love how your mood changes when something makes you happy and how you can be so playful without even realizing it. Those little moments make you you, and they're the things I want to keep remembering.
+
+I love your humor, your personality, and the way you think. I love hearing your opinions and learning how you see the world. I love your kindness, especially when I see you caring for other people and feeding street dogs and cats. It shows me a side of your heart that I genuinely admire.
+
+I love how patient you can be with me, even when I'm being difficult. I love how you listen to me, encourage me, and motivate me when I need it. I love how you compliment me whenever we meet and how you sometimes notice that something is wrong before I even explain it.
+
+And I love the way you care. The way you check on me, make time for me, and try to understand what I'm feeling means more than I can properly explain.
+
+I know I might not always express my appreciation in the best way, but please don't ever think that I don't notice these things. I notice more than you realize, and I carry so many of those little moments with me.
+
+I love the big things about you, but I also love the tiny things that might seem unimportant to everyone else.
+
+Because all those little things come together to make the person I fell in love with.
+
+And that person is you.`
+ },
+  {
+      id: 13,
+      emoji: "🎀",
+      title: "The Way You Make Ordinary Days Special",
+      text: `One thing I've learned from being with you is that a day doesn't need to be extraordinary to become a beautiful memory.
+
+Sometimes, the best moments are the simplest ones. Going out together, eating our favorite food, taking a ride, sitting somewhere and talking, or spending time together without having anything special planned. Those moments might not seem like much when they're happening, but they become precious when I look back at them.
+
+I love our conversations, especially when one random topic turns into an hour-long discussion about something completely different. We talk, we laugh, we tease each other, and sometimes we say the most ridiculous things. Somehow, even the most random conversations become something I look forward to.
+
+I love the time we spend together when neither of us has to pretend to be anything other than ourselves. We can be silly, quiet, tired, excited, or completely random. We don't always need to do something exciting. Sometimes, simply being around you is enough to make my day better.
+
+And then there are our calls and messages. Even when we're not physically together, hearing from you can make me feel closer to you. A little message, a random update about your day, or a conversation before sleeping can mean so much more than you might think.
+
+Of course, life doesn't always allow us to spend as much time together as we'd like. We have responsibilities, plans, and days when we're both busy or tired. But even then, the little ways we stay connected matter to me.
+
+I don't expect every day with us to feel like a date or a trip. I know real life doesn't work that way. What I want is to keep finding happiness in the ordinary days, too.
+
+Because one day, when we look back at our relationship, I don't think we'll remember only the big occasions. We'll remember the random rides, the silly jokes, the meals we shared, the conversations that went on for hours, and the days when doing nothing together somehow felt like everything.
+
+And if I get to share those ordinary days with you, I think I'll have plenty of reasons to be happy.`
+ },
+    
+  {
+      id: 14,
+      emoji: "🎀",
+      title: " Learning Through the Difficult Days",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 15,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 16,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 17,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 18,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 19,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+  {
+      id: 20,
+      emoji: "🎀",
+      title: "The Day You Became My Girlfriend",
+      text: `May 27, 2026.
+
+Some dates become specia`
+ },
+    
+    
+    
+    
     
   ];
 
