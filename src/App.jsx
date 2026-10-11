@@ -1239,9 +1239,27 @@ Because a love that grows is a love that keeps learning.`
       id: 15,
       emoji: "🎀",
       title: " Everything You Have Taught Me",
-      text: `May 27, 2026.
+      text: `Before you, I don't think I fully understood how much a relationship could teach someone about themselves.
 
-Some dates become specia`
+Being with you has made me look at my own actions, my habits, my reactions, and the way I communicate. You've helped me notice things about myself that I might otherwise have ignored. Sometimes, those lessons have been uncomfortable, but they've also given me opportunities to grow.
+
+You've taught me that caring about someone isn't only about saying the right words. It's also about showing up, paying attention, listening, and making an effort even when life gets difficult.
+
+You've taught me that people don't always express their feelings in the same way. Sometimes, understanding someone means slowing down, asking questions, and giving them the space to explain what is going on inside their heart.
+
+You've also taught me the importance of patience. We both have our own ways of thinking, our own insecurities, and our own difficult days. Learning to love each other means understanding those differences without forgetting that we both deserve kindness and respect.
+
+And through your care and support, you've reminded me that I don't have to figure everything out on my own. There are moments when your encouragement helps me believe in myself a little more, especially when I'm struggling to do that for myself.
+
+But I know learning shouldn't be something that only one person does. I want us both to feel that this relationship helps us become better versions of ourselves. I want to support your dreams, listen to your worries, celebrate your progress, and encourage you whenever you need someone beside you.
+
+I don't want us to lose ourselves while loving each other. I want us to grow as individuals while building something meaningful together.
+
+Thank you for the lessons you've taught me, sometimes intentionally and sometimes without even realizing it.
+
+I'm still learning. I'll probably make mistakes along the way, too. But I want to keep becoming someone who loves you with more understanding, communicates with more honesty, and shows you through his actions how much you mean to him.
+
+And I hope we never stop learning from each other.`
  },
     
   {
