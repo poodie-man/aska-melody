@@ -1208,15 +1208,37 @@ And if I get to share those ordinary days with you, I think I'll have plenty of 
       id: 14,
       emoji: "🎀",
       title: " Learning Through the Difficult Days",
-      text: `May 27, 2026.
+      text: `Our story hasn't been made up of happy moments alone, and I don't want to pretend that it has.
 
-Some dates become specia`
+We've had arguments. We've misunderstood each other. We've had days when we didn't talk properly and moments when one of us felt hurt by the other. Sometimes, we struggled to explain what we were feeling, and sometimes, we expected the other person to understand something that we hadn't properly communicated.
+
+Those moments haven't always been easy for me. I care about you so much that it hurts when we're not okay. I don't like knowing that something I said or did has hurt you, and I don't like the distance that comes between us when we're struggling to understand each other.
+
+I also know that loving someone doesn't automatically mean knowing how to love them perfectly. I'm still learning. I'm learning how to listen without immediately defending myself, how to explain my feelings instead of keeping everything inside, and how to understand that something can hurt you even when hurting you wasn't my intention.
+
+I want to keep learning those things because your feelings matter to me.
+
+And I know we both have things to work on. Neither of us is perfect, and I don't expect either of us to be. What matters is that we can acknowledge our mistakes, take responsibility for the ways we hurt each other, and make a genuine effort to do better.
+
+I don't want us to measure our love by how rarely we disagree. I want us to measure our growth by how we handle those disagreements with honesty, patience, respect, and a willingness to understand each other.
+
+I want us to be able to speak openly, even when the conversation is difficult. I want us to feel safe expressing what hurts us without turning every disagreement into a fight.
+
+Because you mean too much to me for us to stop trying to understand one another.
+
+Our difficult days are part of our story, but they don't have to define it. We can learn from them, grow from them, and build healthier ways of loving each other.
+
+I can't promise that we'll never have another hard day.
+
+But I can promise that I'll keep working on myself and making an effort to understand you, just as I hope we'll continue making that effort together.
+
+Because a love that grows is a love that keeps learning.`
  },
     
   {
       id: 15,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: " Everything You Have Taught Me",
       text: `May 27, 2026.
 
 Some dates become specia`
@@ -1225,7 +1247,7 @@ Some dates become specia`
   {
       id: 16,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: "My Favorite Person, My Safe Place",
       text: `May 27, 2026.
 
 Some dates become specia`
@@ -1234,7 +1256,7 @@ Some dates become specia`
   {
       id: 17,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: "All the Dreams I Have With You",
       text: `May 27, 2026.
 
 Some dates become specia`
@@ -1243,7 +1265,7 @@ Some dates become specia`
   {
       id: 18,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: " Even on the Hard Days, I Choose You",
       text: `May 27, 2026.
 
 Some dates become specia`
@@ -1252,7 +1274,7 @@ Some dates become specia`
   {
       id: 19,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: "The Life I Hope We Build Together",
       text: `May 27, 2026.
 
 Some dates become specia`
@@ -1261,7 +1283,7 @@ Some dates become specia`
   {
       id: 20,
       emoji: "🎀",
-      title: "The Day You Became My Girlfriend",
+      title: "Twenty Years of You, and a Lifetime of Loving You",
       text: `May 27, 2026.
 
 Some dates become specia`
