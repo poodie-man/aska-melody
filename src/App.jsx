@@ -59,6 +59,15 @@ const galleryPhotos = [
   // { id: 49, src: "/images/gallery/16.png", caption: "" },
   // { id: 50, src: "/images/gallery/17.png", caption: "" },
 ];
+const letterPetals = Array.from({ length: 16 }).map((_, i) => ({
+  left: Math.random() * 100,
+  duration: 9 + Math.random() * 6,
+  delay: -Math.random() * 14,
+  drift: Math.random() * 120 - 60,
+  spin: 180 + Math.random() * 360,
+  size: 10 + Math.random() * 8,
+  color: i % 2 === 0 ? "#f6a5c3" : "#fbc1d6",
+}));
 
 const BULBS_PER_ROW = 8;
 const ROW_WIDTH = 640;
@@ -118,26 +127,26 @@ function buildGalleryRows(totalPhotos) {
 // Order = the order they must be tapped in.
 // =========================================
 const reasons = [
-  "Reason #1 — write yours here",
-  "Reason #2 — write yours here",
-  "Reason #3 — write yours here",
-  "Reason #4 — write yours here",
-  "Reason #5 — write yours here",
-  "Reason #6 — write yours here",
-  "Reason #7 — write yours here",
-  "Reason #8 — write yours here",
-  "Reason #9 — write yours here",
-  "Reason #10 — write yours here",
-  "Reason #11 — write yours here",
-  "Reason #12 — write yours here",
-  "Reason #13 — write yours here",
-  "Reason #14 — write yours here",
-  "Reason #15 — write yours here",
-  "Reason #16 — write yours here",
-  "Reason #17 — write yours here",
-  "Reason #18 — write yours here",
-  "Reason #19 — write yours here",
-  "Reason #20 — write yours here",
+  "Reason #1 — I love your smile because it makes my world feel brighter.",
+  "Reason #2 — I love your giggles because they're my favorite sound.",
+  "Reason #3 — I love your eyes because I could get lost in them forever.",
+  "Reason #4 — I love your childish side because it makes me want to protect your little happiness.",
+  "Reason #5 — I love your kind heart because you care even for those who cannot speak.",
+  "Reason #6 — I love your humor because even ordinary moments become fun with you.",
+  "Reason #7 — I love how you understand my silence when I can't explain my feelings.",
+  "Reason #8 — I love your compliments because you make me see myself through your loving eyes.",
+  "Reason #9 — I love how you motivate me because you make me believe I can do better.",
+  "Reason #10 — I love how you listen to me because you make my thoughts feel important.",
+  "Reason #11 — I love your sweet voice because even the simplest words sound special when they come from you. ",
+  "Reason #12 — I love how you care for me because you make me feel safe being vulnerable.",
+  "Reason #13 — I love your personality because my favorite version of you is simply you.",
+  "Reason #14 — I love our little adventures because every road feels better with you beside me.",
+  "Reason #15 — I love our conversations because I never get tired of knowing you more.",
+  "Reason #16 — I love how we can be silly together because with you, I can be myself.",
+  "Reason #17 — I love your happiness because seeing you smile brings peace to my heart.",
+  "Reason #18 — I love your patience because you make me want to grow, not give up.",
+  "Reason #19 — I love our memories because each one holds a little piece of my heart.",
+  "Reason #20 — I love you because you're Aska, my princess, my baby, my home, my safe place and no one else could ever be you. ❤️",
 ];
 
 // Generates points tracing a stylized Scorpio constellation shape
@@ -372,7 +381,7 @@ const petalData = useMemo(
   const chapters = [
     {
       id: 1,
-      emoji: "🌸",
+      emoji: "💌",
       title: "Where It All Began",
       text: `November 27, 2025,
       
@@ -593,7 +602,7 @@ A feeling I definitely wasn't prepared for.
     },
     {
       id: 4,
-      emoji: "🎀",
+      emoji: "🌸",
       title: "The Feeling I Didn't Understand",
       text: `Not long after New Year's, you had your trip to Mustang.
 
@@ -737,7 +746,7 @@ But because sometimes life gets difficult, and you don't know how to hold onto t
     },
        {
       id: 5,
-      emoji: "🎀",
+      emoji: "💗",
       title: "The Days We Almost Lost Each Other",
       text: `The days after that weren't easy.
 
@@ -914,7 +923,7 @@ April 5th was only a few days away, and little did I know that another beautiful
     },
      {
       id: 7,
-      emoji: "🎀",
+      emoji: "💗",
       title: "The Days We Almost Lost Each Other",
       text: `
 
@@ -955,7 +964,7 @@ Of course, everything wasn't perfect. We were still learning about each other, a
     },
      {
       id: 8,
-      emoji: "🎀",
+      emoji: "🌎",
       title: "Pokhara",
       text: `May 23rd, 2026.
 
@@ -963,9 +972,9 @@ Pokhara.
 
 I still remember that date because it became one of the most important parts of our story.
 
-We were there with my friends, and there was a Bikki Gurung concert.
+We were there with my friends and there was a Bikki Gurung concert.
 
-We arrived, settled in, and went out to eat Chinese food together. We talked about random things, laughed, and enjoyed being around each other.
+We arrived, settled in and went out to eat Chinese food together. We talked about random things, laughed and enjoyed being around each other.
 
 But there was something you didn't know.
 
@@ -993,7 +1002,7 @@ The music, the crowd, the atmosphere—it was all fun.
 
 But even surrounded by so many people, I was mostly aware of you.
 
-We came back later, had some drinks, talked, laughed, and eventually went to bed.
+We came back later, had some drinks, talked, laughed and eventually went to bed.
 
 That night, we got even closer, sharing a kind of intimacy that made the distance between our hearts disappear.
 
@@ -1075,7 +1084,7 @@ I wanted a life where I could experience them with you, again and again.`,
     },
      {
       id: 9,
-      emoji: "🎀",
+      emoji: "😞",
       title: "When Our Little World Came To an End",
       text: `I wish our time in Pokhara could have lasted a little longer.
 Those three days meant more to me than just a trip. We went kayaking, visited the photobooth, explored Lakeside, ate together, took pictures, and talked about almost everything. We laughed, teased each other, and enjoyed simply being together. It felt like we had created our own little world where nothing else mattered for a while.
@@ -1089,7 +1098,7 @@ And that was when I started gathering the courage to ask you a question that wou
     },
      {
       id: 10,
-      emoji: "🎀",
+      emoji: "💍",
       title: "The Day You Became My Girlfriend",
       text: `May 27, 2026.
 
@@ -1121,7 +1130,7 @@ May 27, 2026—the day we officially became us.❤️`,
     },
     {
       id: 11,
-      emoji: "🎀",
+      emoji: "🎡",
       title: "Our Little Adventures",
       text: `If someone asked me what some of my favorite memories with you are, I wouldn't be able to choose just one. We've had so many little adventures together, and each one has given us another memory to keep.
 
@@ -1157,7 +1166,7 @@ And wherever we go next, I hope one thing stays the same: you beside me, me besi
  },
   {
       id: 12,
-      emoji: "🎀",
+      emoji: "💞",
       title: "The Little Things I Love About You",
       text: `Aska, if you ever ask me what I love about you, I honestly don't know where I would begin. There's so much I could say that I don't think one chapter would ever be enough.
 
@@ -1206,7 +1215,7 @@ And if I get to share those ordinary days with you, I think I'll have plenty of 
     
   {
       id: 14,
-      emoji: "🎀",
+      emoji: "💪",
       title: " Learning Through the Difficult Days",
       text: `Our story hasn't been made up of happy moments alone, and I don't want to pretend that it has.
 
@@ -1237,7 +1246,7 @@ Because a love that grows is a love that keeps learning.`
     
   {
       id: 15,
-      emoji: "🎀",
+      emoji: "💕",
       title: " Everything You Have Taught Me",
       text: `Before you, I don't think I fully understood how much a relationship could teach someone about themselves.
 
@@ -1264,53 +1273,153 @@ And I hope we never stop learning from each other.`
     
   {
       id: 16,
-      emoji: "🎀",
+      emoji: "🏡",
       title: "My Favorite Person, My Safe Place",
-      text: `May 27, 2026.
+      text: `There are people we enjoy being around, and then there are people whose presence brings us a kind of comfort that is difficult to explain. For me, you've become one of those people.
 
-Some dates become specia`
+You have this way of making my days feel lighter. Sometimes, I can be caught up in my own thoughts, feeling tired or bothered by things I don't even know how to explain. Then we talk, you make me laugh, or you simply spend time with me, and somehow things don't feel quite as heavy.
+
+I love that I can share parts of myself with you that I don't always know how to show the world. I can tell you about my worries, my hopes, and the random thoughts that cross my mind. I can be excited about something small or feel disappointed when things don't go the way I planned.
+
+I know I don't always communicate perfectly. Sometimes I get quiet or struggle to explain what's happening in my head. But I appreciate the times you check on me, listen to me, and try to understand how I'm feeling.
+
+And I hope you feel that same comfort with me, too.
+
+I want you to know that you can talk to me when you're happy and when you're having a difficult day. You don't have to hide your sadness or pretend to be okay just to make things easier for me. I want to listen, understand, and support you in the ways you need—not assume that I always know what is best.
+
+I know I can't solve every problem you face, and I don't expect you to solve mine. Sometimes, all we can do is sit together, listen, and remind each other that we don't have to face everything alone.
+
+That's the kind of relationship I want us to build: one where we can be honest, feel respected, and find comfort in each other's presence without losing our own strength.
+
+You're my favorite person to share my little moments with, the person I want to tell things to, and the person whose happiness matters deeply to me.
+
+And if I can become someone who makes you feel as loved and understood as you make me feel, that would mean so much to me.
+
+Because to me, home isn't always a place.
+
+Sometimes, it's the feeling of being beside you.`
  },
     
   {
       id: 17,
-      emoji: "🎀",
+      emoji: "🌴",
       title: "All the Dreams I Have With You",
-      text: `May 27, 2026.
+      text: `When I think about the future, I find myself imagining so many things with you.
 
-Some dates become specia`
+I imagine us growing older, becoming more confident in ourselves, and working toward the dreams we have today. I want to see you succeed in whatever you choose to do. I want to be there when you achieve something you've worked hard for, celebrate your happiness, and remind you of your strength when things don't go as planned.
+
+I want us to encourage each other instead of competing with each other. I want your dreams to have space in our relationship, just as I want mine to have space in yours. I hope we can build lives that make us proud, both individually and together.
+
+And yes, I imagine the little things, too.
+
+I imagine more trips, more photographs, more dinners, more late night conversations, and more memories that we'll laugh about years later. I imagine having a place that feels like ours, where we can return after long days and tell each other about everything that happened.
+
+Sometimes, I even imagine us getting married one day, if that's the future we both continue to want. I imagine holding your hand and realizing that the girl I once messaged on Instagram has become the person I'm building a life with.
+
+And I can't lie I sometimes imagine having a little daughter who looks just like you. I wonder what she'd be like, whether she'd have your eyes, your smile, or that little personality that makes you so special to me. It's a sweet thought that makes me smile whenever it crosses my mind.
+
+But more than any specific picture of the future, what I really want is to build a future with you that makes both of us happy. I want us to keep choosing our dreams, supporting each other's growth, and discovering what life has waiting for us.
+
+I know the future isn't something we can plan perfectly. Life can surprise us, and our dreams may change as we grow. But I hope that, whatever comes, we can keep talking honestly about what we want and make those decisions together.
+
+There are so many things I haven't experienced with you yet, so many places we haven't visited, and so many memories we haven't made.
+
+And I hope we get the chance to experience them, one little moment at a time.`
  },
     
   {
       id: 18,
-      emoji: "🎀",
+      emoji: "🤗",
       title: " Even on the Hard Days, I Choose You",
-      text: `May 27, 2026.
+      text: `Baby, if there's one thing I want you to understand about my love for you, it's that I don't love you only when everything is easy.
 
-Some dates become specia`
+I love you on the days when we're laughing until we can't stop, when we go out together, when we make new memories, and when everything between us feels right. But I also care about us on the days when we misunderstand each other, when our feelings get hurt and when we struggle to find the right words.
+
+Those days can be difficult. Sometimes, we both need time to calm down and understand what we're feeling. Sometimes, we have to admit that we were wrong. And sometimes, we need to listen more carefully instead of trying so hard to prove our own point.
+
+I'm learning that choosing someone doesn't mean pretending nothing is wrong. It means being willing to face the problem honestly and making an effort to work through it together.
+
+I want to choose you through patience, communication, respect and the little actions that make love feel real. I want to learn how to understand you better and I want both of us to feel heard when something is bothering us.
+
+I know there will be moments when I disappoint you, just as there may be moments when I feel disappointed. What I hope for is that we can talk about those moments without forgetting that we're on the same side. We don't have to agree on everything to treat each other with kindness.
+
+And I never want either of us to feel that love means accepting hurt without change. We deserve a relationship where both of us feel valued, where apologies lead to effort and where our actions show that our feelings matter.
+
+When I say I choose you, I mean I want to keep showing up for this relationship and doing my part to make it healthier and stronger.
+
+I want us to keep learning, forgiving when it's right, setting things right when we can and making room for each other's feelings.
+
+Because my love for you isn't about having a perfect relationship.
+
+It's about building a real one with you, one where we both feel loved, respected and free to grow.
+
+And on the hard days, I hope we remember why we started, how far we've come and how much more beautiful our story can become when we work on it together.`
  },
     
   {
       id: 19,
-      emoji: "🎀",
+      emoji: "🏠",
       title: "The Life I Hope We Build Together",
-      text: `May 27, 2026.
+      text: `Sometimes, when I'm with you, I catch myself thinking about how strange and beautiful life can be. A simple Instagram message led to conversations, little dates, adventures, a trip to Pokhara and eventually the relationship we have today.
 
-Some dates become specia`
+Back then, neither of us could have known all the memories waiting for us. We couldn't have known how much we'd learn about each other or how many different feelings we'd experience along the way.
+
+And that's what makes me excited about the future. There's still so much we haven't done.
+
+I want to see more places with you. I want to try new food, take silly pictures, watch sunsets, go on random rides and collect memories that only we will fully understand. I want more days when we're laughing about something that wouldn't make sense to anyone else.
+
+But I also want the quieter parts of life with you. I want to hear about your day when you come home tired. I want to celebrate the little victories you might think aren't important enough to celebrate. I want to be someone you can talk to when you're confused, someone who encourages you when you doubt yourself and someone who reminds you that your dreams are worth working for.
+
+I hope we keep growing, both as individuals and as a couple. I hope we learn how to handle difficult conversations with more understanding and become better at showing love in the ways the other person needs.
+
+And maybe, one day, those dreams will lead us toward a home of our own, a marriage and a family if that's what we both still want when the time comes. I hope we can look back at the younger versions of ourselves and smile at how much we've learned.
+
+I don't know exactly what every year ahead will bring. No one can promise that life will always go according to plan. But I know I want to approach the future with honesty, effort and care for the person I love.
+
+I want us to create a life that feels right for both of us, not just one that looks beautiful from the outside.
+
+And when I imagine that life, I feel grateful that I get to imagine it with you babyy.
+
+Our story is still being written and I hope we have many, many more chapters to fill.`
  },
     
   {
       id: 20,
       emoji: "🎀",
-      title: "Twenty Years of You, and a Lifetime of Loving You",
-      text: `May 27, 2026.
+      title: "Twenty Years of You and a Lifetime of Loving You",
+      text: `And here we are, My love. Twenty years of you.
 
-Some dates become specia`
+If I could gather every memory we've made and put them into one place, I think I'd spend hours looking through them. From the first time our paths crossed at my brother's store to the day I messaged you on Instagram, from our gwarmari hunt in Patan to the concert, New Year's Eve, my birthday, Poshon and our unforgettable trip to Pokhara every part has helped make our story what it is today.
+
+Some memories make me smile immediately. Some remind me how much I care about you. Others remind me of the things we've learned and the ways we've grown. Together, they tell the story of two people who met unexpectedly and slowly became an important part of each other's lives.
+
+But this story isn't only about the places we've visited or the dates we've celebrated. It's about you.
+
+It's about your smile, your laugh, your kindness, your little habits and the way you make ordinary moments feel special. It's about the way you care for the people around you, the way you encourage me and the way you continue to teach me what it means to love someone while still learning how to love them well.
+
+Today, I hope you feel celebrated, not just because it's your birthday, but because you deserve to know how much your existence means to the people who love you. I hope this new year of your life brings you happiness, confidence, beautiful opportunities and the courage to chase everything your heart wants.
+
+I hope you become proud of the person you're becoming. I hope you never forget your worth on the difficult days and I hope you always have people around you who remind you that you're loved and appreciated.
+
+And selfishly, I hope I get to be part of many more of your birthdays. I hope I get to celebrate your achievements, comfort you when life feels overwhelming, laugh with you over the smallest things and keep discovering new reasons to love you.
+
+I can't promise that I'll always get everything right. But I can promise to keep learning, to be honest with you, to respect you and to put genuine effort into the relationship we share. I want my love to be something you can feel through my actions, not only something you read in these chapters.
+
+One day, I hope we'll look back at this story together and laugh about how it all began. Maybe we'll read these words years from now and remember the younger versions of ourselves, the places we went, the things we worried about and the dreams we had.
+
+And I hope we'll have so many more memories by then that we'll need another book to fit them all.
+
+Thank you for being part of my life, Aska. Thank you for the memories, the lessons, the laughter, the care and the love we've shared. Thank you for being you.
+
+Happy 20th birthday, my princess. ❤️
+
+I hope this is not the end of our story, but only the beginning of everything still waiting for us.
+
+I love you then. I love you now. I love you tomorrow. I love you when we're laughing, and I love you when we're learning. I love you through the memories we've made and the ones we have yet to create.
+
+I love you, Babyyyy. I love youuu forever. ❤️`
  },
-    
-    
-    
-    
-    
+       
   ];
 
   const toggleChapter = (id) => {
@@ -2024,6 +2133,27 @@ const changePage = (newPage) => {
 
 {page === "letter" && (
   <div className="letter-page">
+  <div className="letter-petals" aria-hidden="true">
+  {letterPetals.map((p, i) => (
+    <span
+      key={i}
+      className="letter-petal"
+      style={{
+        left: `${p.left}%`,
+        width: `${p.size}px`,
+        height: `${p.size}px`,
+        animationDuration: `${p.duration}s`,
+        animationDelay: `${p.delay}s`,
+        "--drift": `${p.drift}px`,
+        "--spin": `${p.spin}deg`,
+      }}
+    >
+      <svg viewBox="0 0 20 20">
+        <path d="M10,0 C15,5 15,15 10,20 C5,15 5,5 10,0 Z" fill={p.color} />
+      </svg>
+    </span>
+  ))}
+</div>
 
     <div className="envelope-scene">
 

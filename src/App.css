@@ -3044,6 +3044,7 @@ color: #ffeaf9;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .envelope {
@@ -3160,9 +3161,61 @@ color: #ffeaf9;}
 .envelope.opened .env-heart {
     opacity: 1;
 }
+@keyframes envelopeGlow {
+    0%, 100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1); }
+    50%      { opacity: 1;   transform: translate(-50%, -50%) scale(1.07); }
+}
+
+.envelope-scene::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(640px, 130vw);
+    aspect-ratio: 1;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 240, 200, 0.95) 0%,
+        rgba(255, 205, 225, 0.55) 38%,
+        rgba(255, 220, 235, 0) 70%
+    );
+
+    pointer-events: none;
+    z-index: -1;
+    animation: envelopeGlow 4s ease-in-out infinite;
+}
 
 .envelope-hint {
     margin-top: 18px;
     font-size: 14px;
     color: #b0577d;
+}
+@keyframes letterPetalFall {
+    0%   { transform: translate(0, -30px) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.9; }
+    90%  { opacity: 0.9; }
+    100% { transform: translate(var(--drift), 105vh) rotate(var(--spin)); opacity: 0; }
+}
+
+.letter-petals {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.letter-petal {
+    position: absolute;
+    top: 0;
+    display: block;
+    animation: letterPetalFall 12s linear infinite;
+    filter: drop-shadow(0 1px 1px rgba(200, 80, 130, 0.25));
+}
+
+.letter-petal svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
