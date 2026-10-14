@@ -3066,10 +3066,10 @@ color: #ffeaf9;}
     left: 15%;
     right: 15%;
     top: 20%;
-    aspect-ratio: 1080 / 1928;
+   aspect-ratio: 736 / 1080;
 
     background-image: url("/images/paper.jpg");
-    background-size: contain;
+   background-size: 100% 100%;
     background-position: center;
     /* background-color: #ffd9ec; */
     background-repeat: no-repeat;
@@ -3101,10 +3101,21 @@ color: #ffeaf9;}
 
 .letter-text {
     font-family: "Quicksand", sans-serif;
-    font-size: 10px;
-    line-height: 2.05;
+    font-size: 8px;
+    text-align: justify;
+    line-height: 1;
     color: #6b4a52;
     white-space: pre-wrap;
+        position: absolute;
+    top: 11%;
+    bottom: 8%;
+    left: 12%;
+    right: 12%;
+    margin: 0;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #f2a0bf transparent;
 }
 
 .envelope-svg-back {

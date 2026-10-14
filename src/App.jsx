@@ -220,13 +220,33 @@ function App() {
 const [envelopeOpen, setEnvelopeOpen] = useState(false);
 const [typedText, setTypedText] = useState("");
 
-const letterMessage = `Dear Aska,
+const letterMessage = `Dear Kuchupuchu,
 
-Every day with you feels like a gift I didn't know I needed. Thank you for being exactly who you are. I love you more than words on this page could ever say.asdasdasd asdasdas dasd
-asdasd
-asdasd asdasd asda sdas das dasdas dasd asdas dasd asd as
+Happy 20th birthday to my prettiest girl, my favorite person, and the sweetest part of my life. 
 
-— Yours always`;
+First of all, I wish I could hug you right now, hold your little face in my hands, kiss your forehead, and tell you just how much you mean to me. If I could give you one thing today, it would be the ability to see yourself through my eyes, even just for a moment, because then you'd understand why I feel so lucky to have you in my life. You'd see the beautiful girl who makes me smile without even trying, whose little giggles can make my day, whose sweet voice I could listen to for hours and whose happiness means more to me than you probably realize.
+
+Sometimes I wonder how one person can become so many things to another person. You're the girl I want to tell everything to, the person I want beside me when life gets difficult, the one I want to share my happiest moments with and the one I want to annoy with my nonsense for the rest of my life. Somehow you became my favorite hello, my hardest goodbye and the person I look forward to making more memories with.
+
+When I think about us, I think about how everything started with simple conversations. We talked, we laughed, we went on little adventures and slowly, without even realizing it, you became someone so important to me. From our first little gwarmari hunt in Patan to our rides, our random dates, our late-night conversations and our adventures together, every memory has a special place in my heart. And if I could go back and live those moments again, I would, because getting to know you has been one of the sweetest parts of my life. But even more than going back, I want to move forward with you and make a thousand more memories together.
+
+On your birthday, I hope you remember how special you are. Not just to me but as the person you are all by yourself. I hope you never lose that beautiful smile, that adorable little personality, that kind heart and the dreams that make your eyes light up. I hope life gives you countless reasons to laugh until your stomach hurts, days that make you proud of yourself, opportunities that bring you closer to your dreams and people who remind you how precious you are. And whenever life feels heavy, I hope you remember that you don't have to carry everything alone. I want to be someone you can lean on, someone who listens, someone who cheers for you and someone who reminds you of your worth when you forget it yourself.
+
+My baby, I wish I could take away every worry and every little thing that makes you doubt yourself. I wish I could show you how beautiful you are, not only because of your pretty face and those lovely eyes but because of the way you care, the way you love, the way you make people laugh and the way you bring warmth into the lives of people around you. You have so many beautiful things inside you, and I hope you never let the world make you believe otherwise. You deserve a love that is gentle, a life filled with happiness and a future that makes all your hard work worth it.
+
+And selfishly, I hope I get to be part of that future. I want more little dates with you, more pictures, more sunsets, more random rides, more hugs that last a little longer, more kisses when the world feels quiet and more moments when we're laughing at something nobody else would understand. I want to celebrate your little victories, support you through your difficult days, watch you achieve your dreams and stand beside you as we both grow into the people we want to become. Someday, I hope we get to look back at all these little memories and smile at how far we've come. I hope we get to build the little life we've dreamed about, hand in hand, choosing each other with love, patience and understanding.
+
+Happy birthday again my sweet girl. Thank you for being you, for the memories we've made, for the love you've given me and for all the little ways you've become such an important part of my life. I hope this new chapter brings you more happiness than you can imagine, more blessings than you expect and more reasons to be proud of the person you're becoming.
+
+If I could make one birthday wish for myself, it would be to celebrate many more birthdays with you to see that beautiful smile every year and to keep finding new reasons to fall in love with you as time goes by.
+
+Happy 20th birthday, my love. My baby, my favorite girl, my kuchupuchu, my capyberry, my princess and the person who holds such a special place in my heart. I hope today makes you feel even a little bit as loved as you make me feel. You deserve the world and every beautiful thing in it.
+
+I love you then, I love you now, I love you tomorrow and I will keep loving you through all the little moments and big adventures still waiting for us.
+
+I love youuu to the moon and back. Happy birthday, my love. Forever and always.
+
+— Your Puntu`;
 
 useEffect(() => {
   if (!envelopeOpen) return;
@@ -2184,7 +2204,7 @@ const changePage = (newPage) => {
     className={`letter-paper ${envelopeOpen ? "full-open" : ""}`}
     onClick={() => setEnvelopeOpen(true)}
   >
-    <p className="letter-text">{typedText}</p>
+    <p className="letter-text">{letterMessage}</p>
   </div>
 
 </div>
