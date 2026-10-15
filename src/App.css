@@ -3025,18 +3025,33 @@ color: #ffeaf9;}
 
 }
 .letter-page {
+    position: relative;
+    z-index: 0;
+
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 90px 5% 60px;
+    padding: 30px 5% 5px;
     box-sizing: border-box;
+}
 
-    background: linear-gradient(180deg, #ffdce9, #fff0f6, #ffdce9);
+.letter-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(180deg, rgba(255, 214, 230, 0.16), rgba(70, 25, 55, 0.22)),
+        url("/images/letter1.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 .envelope-scene {
@@ -3200,7 +3215,8 @@ color: #ffeaf9;}
 .envelope-hint {
     margin-top: 18px;
     font-size: 14px;
-    color: #b0577d;
+    color: #ffffff;
+    text-shadow: 0 1px 6px rgba(70, 25, 55, 0.7);
 }
 @keyframes letterPetalFall {
     0%   { transform: translate(0, -30px) rotate(0deg); opacity: 0; }
