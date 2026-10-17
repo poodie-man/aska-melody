@@ -1518,11 +1518,8 @@ const resetWish = () => {
 
 useEffect(() => {
   if (wishStage !== "video") return;
-  if (musicRef.current) musicRef.current.pause();
   const v = wishVideoRef.current;
   if (v) {
-    v.currentTime = 0;
-    v.play().catch(() => {});
     v.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 }, [wishStage]);
@@ -2315,9 +2312,13 @@ const wishCaption =
         <video
           ref={wishVideoRef}
           className="wish-video"
-          src="/videos/surprise.mp4"
+          src="/videos/sweet.mp4"
           controls
           playsInline
+          preload="metadata"
+  onPlay={() => {
+    if (musicRef.current) musicRef.current.pause();
+  }}
         />
         <button className="wish-replay" onClick={resetWish}>
           ↺ Light the candles again
