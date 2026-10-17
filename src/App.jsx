@@ -120,7 +120,6 @@ function buildGalleryRows(totalPhotos) {
 
   return rows;
 }
-
 // =========================================
 // 20 REASONS DATA
 // Edit each string with a real reason.
@@ -203,11 +202,21 @@ function buildStarPath(cx, cy, r) {
   }
   return `M${pts.join(" L")} Z`;
 }
-
 const CONSTELLATION_WIDTH = 320;
 const CONSTELLATION_HEIGHT = 300;
 
 function App() {
+const topCandles = Array.from({ length: 8 }, (_, i) => i);
+const leftCandles = Array.from({ length: 6 }, (_, i) => 8 + i);
+const rightCandles = Array.from({ length: 6 }, (_, i) => 14 + i);
+
+function Candle({ i }) {
+  return (
+    <span className="candle" style={{ "--i": i }}>
+      <span className="flame"></span>
+    </span>
+  );
+}
   const [started, setStarted] = useState(false);
   const [burst, setBurst] = useState(false);
   const [page, setPage] = useState("home");
@@ -1493,6 +1502,40 @@ const changePage = (newPage) => {
     setStarted(true);
   }, 2200);
 };
+const [wishStage, setWishStage] = useState("idle");
+const wishVideoRef = useRef(null);
+
+const handleMakeWish = () => {
+  if (wishStage !== "idle") return;
+  setWishStage("blowing");
+  setTimeout(() => setWishStage("video"), 2600);
+};
+
+const resetWish = () => {
+  if (wishVideoRef.current) wishVideoRef.current.pause();
+  setWishStage("idle");
+};
+
+useEffect(() => {
+  if (wishStage !== "video") return;
+  if (musicRef.current) musicRef.current.pause();
+  const v = wishVideoRef.current;
+  if (v) {
+    v.currentTime = 0;
+    v.play().catch(() => {});
+    v.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}, [wishStage]);
+useEffect(() => {
+  if (page !== "surprise") setWishStage("idle");
+}, [page]);
+
+const wishCaption =
+  wishStage === "idle"
+    ? "Close your eyes and make a wish ♡"
+    : wishStage === "blowing"
+    ? "✨"
+    : "Happy 20th birthday, Aska ♡";
   return (
     <main className={`birthday-page ${page === "reasons" ? "reasons-active" : ""}`}>
             {/* Background music */}
@@ -2212,6 +2255,75 @@ const changePage = (newPage) => {
       {!envelopeOpen && <p className="envelope-hint">Tap to open ♡</p>}
 
     </div>
+
+    <button className="story-home" onClick={() => changePage("home")}>
+      ♡ Back To Home
+    </button>
+
+  </div>
+)}
+{page === "surprise" && (
+  <div className={`surprise-page ${wishStage !== "video" ? "dimmed" : ""}`}>
+
+    <p className="surprise-caption">{wishCaption}</p>
+
+   <div className={`cake ${wishStage !== "idle" ? "blown" : ""} ${wishStage === "video" ? "out" : ""}`}>
+      <div className="cake-glow"></div>
+      <div className="cake-stand">
+  <div className="stand-foot"></div>
+  <div className="stand-stem"></div>
+  <div className="stand-plate-edge"></div>
+  <div className="stand-plate-top"></div>
+</div>
+
+      <div className="candle-row candle-row-top">
+        {topCandles.map((i) => (
+          <Candle key={i} i={i} />
+        ))}
+      </div>
+      <div className="candle-row candle-row-left">
+        {leftCandles.map((i) => (
+          <Candle key={i} i={i} />
+        ))}
+      </div>
+      <div className="candle-row candle-row-right">
+        {rightCandles.map((i) => (
+          <Candle key={i} i={i} />
+        ))}
+      </div>
+
+      <div className="cake-tier cake-tier-top">
+        <span className="tier-frosting"></span>
+        <span className="cake-twenty">20</span>
+      </div>
+
+      <div className="cake-tier cake-tier-bottom">
+        <span className="tier-frosting"></span>
+        <span className="cake-heart cake-heart-l">♥</span>
+        <span className="cake-heart cake-heart-r">♥</span>
+      </div>
+    </div>
+
+    {wishStage === "idle" && (
+      <button className="wish-button" onClick={handleMakeWish}>
+        ✨ Make a wish
+      </button>
+    )}
+
+    {wishStage === "video" && (
+      <div className="wish-video-card">
+        <video
+          ref={wishVideoRef}
+          className="wish-video"
+          src="/videos/surprise.mp4"
+          controls
+          playsInline
+        />
+        <button className="wish-replay" onClick={resetWish}>
+          ↺ Light the candles again
+        </button>
+      </div>
+    )}
 
     <button className="story-home" onClick={() => changePage("home")}>
       ♡ Back To Home
