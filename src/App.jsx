@@ -1689,10 +1689,10 @@ const wishCaption =
 </div>
 <nav className="navbar">
 
-  <div className="logo">
-    🎀 <span>Aska</span>
-  </div>
-
+<div className="logo">
+  <img src="/images/nav4.gif" alt="" className="logo-gif" />
+  <span>Kuchupuchu</span>
+</div>
   <button
     className="menu-toggle"
     onClick={() => setMenuOpen((open) => !open)}

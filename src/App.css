@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=DynaPuff:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -112,6 +113,11 @@ body {
 
     font-size: 14px;
     font-weight: 700;
+}
+.logo-gif {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -1468,8 +1474,11 @@ body {
     border: none;
     padding: 0;
 
-    font: inherit;
-    color: inherit;
+    font-family: "DynaPuff", "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #d47299;
 
     cursor: pointer;
 }
@@ -2270,6 +2279,12 @@ html, body, #root {
     }
 
 }
+.logo span {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    font-weight: 700;
+    color: #d4537e;
+}
 
 /* ---------- HERO / CHARACTER: fluid scaling ---------- */
 
@@ -2371,6 +2386,7 @@ html, body, #root {
 @media (max-width: 360px) {
 
     .logo span {
+        
         display: none; /* keep just the emoji if space is truly tight */
     }
 
@@ -2381,6 +2397,7 @@ html, body, #root {
     .accordion-body-inner p {
         padding-left: 42px;
     }
+    
 
 }
 
