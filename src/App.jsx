@@ -543,89 +543,40 @@ I just didn't know it yet.
       id: 3,
       emoji: "🎀",
       title: "A New Year With You",
-      text: `After December 5th, we just kept going.
+      text: `After December 5th, we just kept getting closer.
 
-We talked more, hung out more, and somehow became even more comfortable around each other. It was funny because nothing between us had an official name yet, but the connection was definitely there.
+We started talking more, hanging out more and getting comfortable around each other without even realizing it. We weren't officially anything yet, but if I'm being honest, there was definitely something about us. I just didn't know what to call it back then.
 
-We would go out for brunch, grab lunch, go on random rides, sit somewhere and talk for hours, or just find some excuse to see each other. Sometimes we had plans, and sometimes we didn't. But honestly, I didn't really care what we were doing as long as I was with you.
+We'd go out for brunch, grab lunch, go on random rides or find somewhere to sit and talk for hours. Sometimes we'd actually plan things and other times we'd just figure it out as we went. Honestly I didn't really care what we did. I was just happy to spend time with you.
 
-We talked.
+We talked about our days, shared stories, teased each other and laughed at the most random things. Sometimes our conversations were deep and sometimes we were just talking absolute nonsense. But somehow even the most ordinary moments felt different with you. I found myself wanting to tell you more about my life and wanting to know more about yours. Before I knew it, spending time with you had become something I genuinely looked forward to.
 
-We laughed.
+Then came December 31st, 2025  New Year's Eve.
 
-We teased each other.
+We went out for dinner together and I remember having such a good time with you. We ate, talked about random things, teased each other, laughed and took pictures. It wasn't some big, dramatic romantic night. We were just two people enjoying each other's company and honestly that's what made it special.
 
-We shared stories.
+I remember how comfortable everything felt. I didn't feel like I had to impress you or make every moment perfect. We could just be ourselves, laugh at stupid things and enjoy being together. Looking back, I think that's one of the things I loved most about those days. Being around you felt easy and I never seemed to run out of things to talk about with you.
 
-And slowly, we started pouring out more of ourselves.
+Every time we met, I wanted to see you again. Every time we went on a ride, there was always another ride I'd want to take with you. And whenever it was time to say goodbye, a part of me was already looking forward to the next time we'd meet.
 
-There was something about talking to you that made it easy to open up. I could tell you random things about my day, talk about things that were bothering me, or just sit there and talk absolute nonsense with you.
+Somewhere along the way you became a part of my everyday thoughts without me even noticing it.
 
-And somehow, hours would pass.
+And the funny thing is, I still hadn't figured out what I was feeling. I didn't know what you thought about me and I had no idea where any of this was going. I just knew that I liked having you around and I was happy with whatever we had at that time.
 
-Then came December 31st, 2025.
+That night we said goodbye to 2025 and stepped into a new year. I had no idea what 2026 had planned for us or how much our relationship would change in the months ahead.
 
-New Year's Eve.
+All I knew was that I wanted more time with you.
 
-We went out for dinner together, and honestly, it was such a good night.
+And then you left for your five-day Mustang trip.
 
-We ate together, talked about random things, teased each other, laughed, and took pictures. Nothing extremely dramatic happened that night. It was simply one of those nights where everything felt comfortable.
-
-But sometimes, the simplest memories end up meaning the most.
-
-I remember looking at you that night and just enjoying your company.
-
-There was no pressure.
-
-No need to figure everything out.
-
-No need to give whatever we had a name.
-
-It was just you and me, spending the last night of the year together.
-
-And I think that night quietly became important because it made me realize how much I genuinely enjoyed having you in my life.
-
-Every time we hung out, I felt myself getting closer to you.
-
-Every conversation made me want another conversation.
-
-Every ride made me want another ride.
-
-Every goodbye somehow made me look forward to the next time I would see you.
-
-It was becoming a pattern.
-
-And I didn't mind it.
-
-If anything, I loved it.
-
-Looking back now, I think New Year's Eve was one of those moments where I should have realized just how much you already meant to me.
-
-But I was still figuring myself out.
-
-I didn't know where our story was going.
-
-I didn't know what you thought about me.
-
-I didn't know what we would become.
-
-I just knew that whenever I was with you, I was happy.
-
-And maybe that was enough for me at the time.
-
-The year ended.
-
-2025 became 2026.
-
-And with a new year came more memories, more conversations, and eventually, another unexpected chapter in our story.
-
-Because after New Year's Eve, came your Mustang trip.
-
-And that trip would bring out a feeling in me that I didn't even know I had.
+I didn't think those few days away would bring out a feeling I hadn't really understood before. But when you came back and told me about your trip, especially about getting close to someone else, I realized I was feeling something I hadn't expected.
 
 Jealousy.
 
-A feeling I definitely wasn't prepared for.
+And honestly, I wasn't ready for it because how could I be jealous when you weren't even mine?
+
+Looking back now, I think that was when I started realizing that maybe, just maybe, you had become more than just a girl I enjoyed spending time with.
+
 
 `,
     },
@@ -954,9 +905,7 @@ April 5th was only a few days away, and little did I know that another beautiful
       id: 7,
       emoji: "💗",
       title: "The Days We Almost Lost Each Other",
-      text: `
-
-April 5th, 2026.
+      text: `April 5th, 2026.
 
 A few days after my birthday, we went to Poshon for an event together. After everything that had happened on April 1st, being with you again felt different. We had almost said goodbye to each other, and now here we were, making new memories as if our story had been given another chance.
 
@@ -1116,13 +1065,21 @@ I wanted a life where I could experience them with you, again and again.`,
       emoji: "😞",
       title: "When Our Little World Came To an End",
       text: `I wish our time in Pokhara could have lasted a little longer.
-Those three days meant more to me than just a trip. We went kayaking, visited the photobooth, explored Lakeside, ate together, took pictures, and talked about almost everything. We laughed, teased each other, and enjoyed simply being together. It felt like we had created our own little world where nothing else mattered for a while.
+
+Those three days meant more to me than just a trip. We went kayaking, visited the photobooth, explored Lakeside, ate together, took pictures and talked about almost everything. We laughed, teased each other and enjoyed simply being together. It felt like we had created our own little world where nothing else mattered for a while.
+
 But eventually, we had to return to Kathmandu.
-After spending three days sharing the same space, sleeping beside each other, and waking up together, going back to our usual routines felt different. I missed having you around, even for the smallest things. I kept thinking about our conversations, our laughter, the white roses I gave you, and all the little moments that made the trip so special.
+
+After spending three days sharing the same space, sleeping beside each other and waking up together, going back to our usual routines felt different. I missed having you around, even for the smallest things. I kept thinking about our conversations, our laughter, the white roses I gave you and all the little moments that made the trip so special.
+
 And somewhere between those memories, I realized something.
-I didn't just want to travel with you or meet you whenever we had free time. I wanted you in my everyday life, too. I wanted the ordinary days, the random conversations, the little adventures, and even the moments when we had nothing special to do. Being with you had started to feel so natural that I wanted more than just temporary moments together.
+
+I didn't just want to travel with you or meet you whenever we had free time. I wanted you in my everyday life, too. I wanted the ordinary days, the random conversations, the little adventures and even the moments when we had nothing special to do. Being with you had started to feel so natural that I wanted more than just temporary moments together.
+
 Pokhara helped me understand how much you had come to mean to me. I didn't know exactly how to explain everything I was feeling, but I knew I didn't want to keep those feelings to myself forever.
+
 I wanted to take another step with you. I wanted to know if you could imagine something more with me, too.
+
 And that was when I started gathering the courage to ask you a question that would change our story forever.`,
     },
      {
@@ -1135,63 +1092,63 @@ Some dates become special because of what happens on them. Others become special
 
 I still remember how I finally gathered the courage to ask you to be my girlfriend. I didn't want it to be just an ordinary question. I wanted to make that moment special for you, even in my own little way.
 
-So, I knelt down in front of you, holding a Kinder Joy in my hand because I knew how much you loved that chocolate. It might have seemed like such a small gift, but I wanted to give you something that would make you smile. And there I was, on one knee, with your favorite chocolate, ready to ask you the question I had been carrying in my heart.
+So, I knelt down in front of you, holding a Kinder Joy in my hand because I knew how much you loved that chocolate. It might have seemed like such a small gift, but I wanted to give you something that would make you smile. And there I was on one knee with your favorite chocolate, ready to ask you the question I had been carrying in my heart.
 
 “Aska, will you be my girlfriend?”
 
-It was such a simple question, but my heart was filled with so many feelings. I wanted you to know that I wasn't asking just because we'd shared beautiful moments together. I was asking because I wanted more of them with you. I wanted to be someone who could love you openly, care for you, and build something real with you.
+It was such a simple question but my heart was filled with so many feelings. I wanted you to know that I wasn't asking just because we'd shared beautiful moments together. I was asking because I wanted more of them with you. I wanted to be someone who could love you openly, care for you and build something real with you.
 
 And when you said yes, you gave me one of the happiest moments of my life.
 
-From that moment, you weren't just the girl I talked to for hours, went on little adventures with, or made beautiful memories beside. You became my girlfriend—the person I wanted to keep learning about, understanding, and growing with.
+From that moment you weren't just the girl I talked to for hours, went on little adventures with or made beautiful memories beside. You became my girlfriend the person I wanted to keep learning about, understanding and growing with.
 
 Of course, I knew being together wouldn't mean everything would suddenly become perfect. We were two different people with different thoughts, feelings, habits, and ways of seeing things. There would be misunderstandings, difficult days, and things we'd need to learn about each other.
 
 But I wanted to learn them with you.
 
-I wanted to know what made you happy, what hurt you, what made you feel loved, and what you needed from me when things weren't going well. I wanted you to know me, too, including the parts of me that sometimes struggled to explain feelings or handle things perfectly.
+I wanted to know what made you happy, what hurt you, what made you feel loved and what you needed from me when things weren't going well. I wanted you to know me, too, including the parts of me that sometimes struggled to explain feelings or handle things perfectly.
 
-And if I could go back to that day, knowing everything I know now, I'd still want to ask you that same question.
+And if I could go back to that day knowing everything I know now, I'd still want to ask you that same question.
 
 Because out of all the people I could have met, I'm grateful that our paths crossed. And I'm even more grateful that you said yes.
 
-May 27, 2026—the day we officially became us.❤️`,
+May 27, 2026 is the day we officially became us.❤️`,
     },
     {
       id: 11,
       emoji: "🎡",
       title: "Our Little Adventures",
-      text: `If someone asked me what some of my favorite memories with you are, I wouldn't be able to choose just one. We've had so many little adventures together, and each one has given us another memory to keep.
+      text: `If someone asked me what some of my favorite memories with you are I wouldn't be able to choose just one. We've had so many little adventures together and each one has given us another memory to keep.
 
-Every time we went somewhere together, we created memories that were special in their own way. Sometimes, we had plans, and other times, we just went with the flow. We talked, we laughed, teased each other, took pictures, and enjoyed being around one another. I loved how even a simple outing could turn into a day I wanted to remember.
+Every time we went somewhere together, we created memories that were special in their own way. Sometimes we had plans and other times we just went with the flow. We talked, we laughed, teased each other, took pictures and enjoyed being around one another. I loved how even a simple outing could turn into a day I wanted to remember.
 
-Then came Pokhara, a trip that gave us so many memories I'll always keep close to my heart. From surprising you with white roses to going to the Bikki Gurung concert, exploring Lakeside, kayaking, and visiting the photobooth, every little moment became part of our story. Even the unexpected moments, like when I injured my hand and you took care of me, made me appreciate you even more.
+Then came Pokhara, a trip that gave us so many memories I'll always keep close to my heart. From surprising you with white roses to going to the Bikki Gurung concert, exploring Lakeside, kayaking and visiting the photobooth, every little moment became part of our story. Even the unexpected moments, like when I injured my hand and you took care of me, made me appreciate you even more.
 
 And then there was our Phungphung trip.
 
-We originally planned to visit a waterfall, but things didn't go the way we expected because the road had been destroyed by a landslide. Our original plan was ruined, but we didn't want the day to end without going somewhere together. So, instead, we decided to head toward Phungphung.
+We originally planned to visit a waterfall but things didn't go the way we expected because the road had been destroyed by a landslide. Our original plan was ruined but we didn't want the day to end without going somewhere together. So, instead we decided to head toward Phungphung.
 
-But even that journey wasn't easy. The road was really bumpy and rough, and the ride wasn't exactly comfortable. Eventually, we decided to stop near a small waterfall instead of continuing further. And honestly, I'm glad we did.
+But even that journey wasn't easy. The road was really bumpy and rough and the ride wasn't exactly comfortable. Eventually, we decided to stop near a small waterfall instead of continuing further. And honestly, I'm glad we did.
 
-We spent some time there, enjoyed the sound of the flowing water, and took a picture together. It wasn't the waterfall we originally planned to visit, and the day didn't go the way we had imagined, but we still made a memory out of it.
+We spent some time there, enjoyed the sound of the flowing water and took a picture together. It wasn't the waterfall we originally planned to visit and the day didn't go the way we had imagined but we still made a memory out of it.
 
 That's something I love about our little adventures. Sometimes, things don't go according to plan, but we can still find something beautiful in the unexpected moments. We didn't need the perfect destination or a perfectly planned day. We just needed to enjoy the time we had together.
 
 After spending some time there, we took our picture and headed back home. It might have been a simple outing, but it's still one of those memories that makes me smile when I think about us.
 
-I love how a simple plan with you can turn into a whole day of memories. We can go somewhere, eat something, take pictures, talk for hours, and somehow make even the most ordinary things feel special. Sometimes, we don't even need a proper plan. Just spending time together is enough.
+I love how a simple plan with you can turn into a whole day of memories. We can go somewhere, eat something, take pictures, talk for hours and somehow make even the most ordinary things feel special. Sometimes we don't even need a proper plan. Just spending time together is enough.
 
-Our adventures have also shown me different sides of you. I've seen you excited, tired, happy, playful, and sometimes a little moody. I've learned more about how you think, what you enjoy, and the little things that make you smile. And with every memory, I feel like there's still so much more of you left for me to discover.
+Our adventures have also shown me different sides of you. I've seen you excited, tired, happy, playful and sometimes a little moody. I've learned more about how you think, what you enjoy and the little things that make you smile. And with every memory, I feel like there's still so much more of you left for me to discover.
 
 When I look back at everything we've done together, I don't just see places on a map. I see moments of us growing closer.
 
 And I hope this is only the beginning.
 
-I want more road trips, more spontaneous plans, more sunsets, more pictures, more food adventures, and more days when we forget about the time because we're too busy enjoying each other's company.
+I want more road trips, more spontaneous plans, more sunsets, more pictures, more food adventures and more days when we forget about the time because we're too busy enjoying each other's company.
 
 There are still so many places I want to visit with you and so many memories I want us to make.
 
-And wherever we go next, I hope one thing stays the same: you beside me, me beside you, and another little adventure waiting for us.`
+And wherever we go next, I hope one thing stays the same: you beside me, me beside you and another little adventure waiting for us.`
  },
   {
       id: 12,
@@ -1203,17 +1160,17 @@ I love your smile. I love your laugh and the little giggles you make when someth
 
 But it's not only your appearance that makes me love you.
 
-I love the way you act like a little child when you're hungry, upset, happy, or excited. I love how your mood changes when something makes you happy and how you can be so playful without even realizing it. Those little moments make you you, and they're the things I want to keep remembering.
+I love the way you act like a little child when you're hungry, upset, happy or excited. I love how your mood changes when something makes you happy and how you can be so playful without even realizing it. Those little moments make you you and they're the things I want to keep remembering.
 
-I love your humor, your personality, and the way you think. I love hearing your opinions and learning how you see the world. I love your kindness, especially when I see you caring for other people and feeding street dogs and cats. It shows me a side of your heart that I genuinely admire.
+I love your humor, your personality and the way you think. I love hearing your opinions and learning how you see the world. I love your kindness, especially when I see you caring for other people and feeding street dogs and cats. It shows me a side of your heart that I genuinely admire.
 
-I love how patient you can be with me, even when I'm being difficult. I love how you listen to me, encourage me, and motivate me when I need it. I love how you compliment me whenever we meet and how you sometimes notice that something is wrong before I even explain it.
+I love how patient you can be with me, even when I'm being difficult. I love how you listen to me, encourage me and motivate me when I need it. I love how you compliment me whenever we meet and how you sometimes notice that something is wrong before I even explain it.
 
-And I love the way you care. The way you check on me, make time for me, and try to understand what I'm feeling means more than I can properly explain.
+And I love the way you care. The way you check on me, make time for me and try to understand what I'm feeling means more than I can properly explain.
 
-I know I might not always express my appreciation in the best way, but please don't ever think that I don't notice these things. I notice more than you realize, and I carry so many of those little moments with me.
+I know I might not always express my appreciation in the best way but please don't ever think that I don't notice these things. I notice more than you realize and I carry so many of those little moments with me.
 
-I love the big things about you, but I also love the tiny things that might seem unimportant to everyone else.
+I love the big things about you but I also love the tiny things that might seem unimportant to everyone else.
 
 Because all those little things come together to make the person I fell in love with.
 
@@ -1225,19 +1182,19 @@ And that person is you.`
       title: "The Way You Make Ordinary Days Special",
       text: `One thing I've learned from being with you is that a day doesn't need to be extraordinary to become a beautiful memory.
 
-Sometimes, the best moments are the simplest ones. Going out together, eating our favorite food, taking a ride, sitting somewhere and talking, or spending time together without having anything special planned. Those moments might not seem like much when they're happening, but they become precious when I look back at them.
+Sometimes, the best moments are the simplest ones. Going out together, eating our favorite food, taking a ride, sitting somewhere and talking or spending time together without having anything special planned. Those moments might not seem like much when they're happening but they become precious when I look back at them.
 
-I love our conversations, especially when one random topic turns into an hour-long discussion about something completely different. We talk, we laugh, we tease each other, and sometimes we say the most ridiculous things. Somehow, even the most random conversations become something I look forward to.
+I love our conversations especially when one random topic turns into an hour long discussion about something completely different. We talk, we laugh, we tease each other and sometimes we say the most ridiculous things. Somehow, even the most random conversations become something I look forward to.
 
-I love the time we spend together when neither of us has to pretend to be anything other than ourselves. We can be silly, quiet, tired, excited, or completely random. We don't always need to do something exciting. Sometimes, simply being around you is enough to make my day better.
+I love the time we spend together when neither of us has to pretend to be anything other than ourselves. We can be silly, quiet, tired, excited or completely random. We don't always need to do something exciting. Sometimes, simply being around you is enough to make my day better.
 
-And then there are our calls and messages. Even when we're not physically together, hearing from you can make me feel closer to you. A little message, a random update about your day, or a conversation before sleeping can mean so much more than you might think.
+And then there are our calls and messages. Even when we're not physically together, hearing from you can make me feel closer to you. A little message, a random update about your day or a conversation before sleeping can mean so much more than you might think.
 
-Of course, life doesn't always allow us to spend as much time together as we'd like. We have responsibilities, plans, and days when we're both busy or tired. But even then, the little ways we stay connected matter to me.
+Of course, life doesn't always allow us to spend as much time together as we'd like. We have responsibilities, plans and days when we're both busy or tired. But even then, the little ways we stay connected matter to me.
 
-I don't expect every day with us to feel like a date or a trip. I know real life doesn't work that way. What I want is to keep finding happiness in the ordinary days, too.
+I don't expect every day with us to feel like a date or a trip. I know real life doesn't work that way. What I want is to keep finding happiness in the ordinary days too.
 
-Because one day, when we look back at our relationship, I don't think we'll remember only the big occasions. We'll remember the random rides, the silly jokes, the meals we shared, the conversations that went on for hours, and the days when doing nothing together somehow felt like everything.
+Because one day, when we look back at our relationship, I don't think we'll remember only the big occasions. We'll remember the random rides, the silly jokes, the meals we shared, the conversations that went on for hours and the days when doing nothing together somehow felt like everything.
 
 And if I get to share those ordinary days with you, I think I'll have plenty of reasons to be happy.`
  },
@@ -1246,25 +1203,25 @@ And if I get to share those ordinary days with you, I think I'll have plenty of 
       id: 14,
       emoji: "💪",
       title: " Learning Through the Difficult Days",
-      text: `Our story hasn't been made up of happy moments alone, and I don't want to pretend that it has.
+      text: `Our story hasn't been made up of happy moments alone and I don't want to pretend that it has.
 
-We've had arguments. We've misunderstood each other. We've had days when we didn't talk properly and moments when one of us felt hurt by the other. Sometimes, we struggled to explain what we were feeling, and sometimes, we expected the other person to understand something that we hadn't properly communicated.
+We've had arguments. We've misunderstood each other. We've had days when we didn't talk properly and moments when one of us felt hurt by the other. Sometimes we struggled to explain what we were feeling and sometimes we expected the other person to understand something that we hadn't properly communicated.
 
-Those moments haven't always been easy for me. I care about you so much that it hurts when we're not okay. I don't like knowing that something I said or did has hurt you, and I don't like the distance that comes between us when we're struggling to understand each other.
+Those moments haven't always been easy for me. I care about you so much that it hurts when we're not okay. I don't like knowing that something I said or did has hurt you and I don't like the distance that comes between us when we're struggling to understand each other.
 
-I also know that loving someone doesn't automatically mean knowing how to love them perfectly. I'm still learning. I'm learning how to listen without immediately defending myself, how to explain my feelings instead of keeping everything inside, and how to understand that something can hurt you even when hurting you wasn't my intention.
+I also know that loving someone doesn't automatically mean knowing how to love them perfectly. I'm still learning. I'm learning how to listen without immediately defending myself, how to explain my feelings instead of keeping everything inside and how to understand that something can hurt you even when hurting you wasn't my intention.
 
 I want to keep learning those things because your feelings matter to me.
 
-And I know we both have things to work on. Neither of us is perfect, and I don't expect either of us to be. What matters is that we can acknowledge our mistakes, take responsibility for the ways we hurt each other, and make a genuine effort to do better.
+And I know we both have things to work on. Neither of us is perfect and I don't expect either of us to be. What matters is that we can acknowledge our mistakes and take responsibility for the ways we hurt each other and make a genuine effort to do better.
 
-I don't want us to measure our love by how rarely we disagree. I want us to measure our growth by how we handle those disagreements with honesty, patience, respect, and a willingness to understand each other.
+I don't want us to measure our love by how rarely we disagree. I want us to measure our growth by how we handle those disagreements with honesty, patience, respect and a willingness to understand each other.
 
-I want us to be able to speak openly, even when the conversation is difficult. I want us to feel safe expressing what hurts us without turning every disagreement into a fight.
+I want us to be able to speak openly even when the conversation is difficult. I want us to feel safe expressing what hurts us without turning every disagreement into a fight.
 
 Because you mean too much to me for us to stop trying to understand one another.
 
-Our difficult days are part of our story, but they don't have to define it. We can learn from them, grow from them, and build healthier ways of loving each other.
+Our difficult days are part of our story, but they don't have to define it. We can learn from them, grow from them and build healthier ways of loving each other.
 
 I can't promise that we'll never have another hard day.
 
@@ -1279,23 +1236,23 @@ Because a love that grows is a love that keeps learning.`
       title: " Everything You Have Taught Me",
       text: `Before you, I don't think I fully understood how much a relationship could teach someone about themselves.
 
-Being with you has made me look at my own actions, my habits, my reactions, and the way I communicate. You've helped me notice things about myself that I might otherwise have ignored. Sometimes, those lessons have been uncomfortable, but they've also given me opportunities to grow.
+Being with you has made me look at my own actions, my habits, my reactions and the way I communicate. You've helped me notice things about myself that I might otherwise have ignored. Sometimes, those lessons have been uncomfortable but they've also given me opportunities to grow.
 
-You've taught me that caring about someone isn't only about saying the right words. It's also about showing up, paying attention, listening, and making an effort even when life gets difficult.
+You've taught me that caring about someone isn't only about saying the right words. It's also about showing up, paying attention, listening and making an effort even when life gets difficult.
 
-You've taught me that people don't always express their feelings in the same way. Sometimes, understanding someone means slowing down, asking questions, and giving them the space to explain what is going on inside their heart.
+You've taught me that people don't always express their feelings in the same way. Sometimes understanding someone means slowing down, asking questions and giving them the space to explain what is going on inside their heart.
 
-You've also taught me the importance of patience. We both have our own ways of thinking, our own insecurities, and our own difficult days. Learning to love each other means understanding those differences without forgetting that we both deserve kindness and respect.
+You've also taught me the importance of patience. We both have our own ways of thinking, our own insecurities and our own difficult days. Learning to love each other means understanding those differences without forgetting that we both deserve kindness and respect.
 
-And through your care and support, you've reminded me that I don't have to figure everything out on my own. There are moments when your encouragement helps me believe in myself a little more, especially when I'm struggling to do that for myself.
+And through your care and support, you've reminded me that I don't have to figure everything out on my own. There are moments when your encouragement helps me believe in myself a little more especially when I'm struggling to do that for myself.
 
-But I know learning shouldn't be something that only one person does. I want us both to feel that this relationship helps us become better versions of ourselves. I want to support your dreams, listen to your worries, celebrate your progress, and encourage you whenever you need someone beside you.
+But I know learning shouldn't be something that only one person does. I want us both to feel that this relationship helps us become better versions of ourselves. I want to support your dreams, listen to your worries, celebrate your progress and encourage you whenever you need someone beside you.
 
 I don't want us to lose ourselves while loving each other. I want us to grow as individuals while building something meaningful together.
 
 Thank you for the lessons you've taught me, sometimes intentionally and sometimes without even realizing it.
 
-I'm still learning. I'll probably make mistakes along the way, too. But I want to keep becoming someone who loves you with more understanding, communicates with more honesty, and shows you through his actions how much you mean to him.
+I'm still learning. I'll probably make mistakes along the way too. But I want to keep becoming someone who loves you with more understanding, communicates with more honesty and shows you through his actions how much you mean to him.
 
 And I hope we never stop learning from each other.`
  },
@@ -1304,23 +1261,23 @@ And I hope we never stop learning from each other.`
       id: 16,
       emoji: "🏡",
       title: "My Favorite Person, My Safe Place",
-      text: `There are people we enjoy being around, and then there are people whose presence brings us a kind of comfort that is difficult to explain. For me, you've become one of those people.
+      text: `There are people we enjoy being around and then there are people whose presence brings us a kind of comfort that is difficult to explain. For me, you've become one of those people.
 
-You have this way of making my days feel lighter. Sometimes, I can be caught up in my own thoughts, feeling tired or bothered by things I don't even know how to explain. Then we talk, you make me laugh, or you simply spend time with me, and somehow things don't feel quite as heavy.
+You have this way of making my days feel lighter. Sometimes I can be caught up in my own thoughts, feeling tired or bothered by things I don't even know how to explain. Then we talk, you make me laugh or you simply spend time with me and somehow things don't feel quite as heavy.
 
-I love that I can share parts of myself with you that I don't always know how to show the world. I can tell you about my worries, my hopes, and the random thoughts that cross my mind. I can be excited about something small or feel disappointed when things don't go the way I planned.
+I love that I can share parts of myself with you that I don't always know how to show the world. I can tell you about my worries, my hopes and the random thoughts that cross my mind. I can be excited about something small or feel disappointed when things don't go the way I planned.
 
-I know I don't always communicate perfectly. Sometimes I get quiet or struggle to explain what's happening in my head. But I appreciate the times you check on me, listen to me, and try to understand how I'm feeling.
+I know I don't always communicate perfectly. Sometimes I get quiet or struggle to explain what's happening in my head. But I appreciate the times you check on me, listen to me and try to understand how I'm feeling.
 
-And I hope you feel that same comfort with me, too.
+And I hope you feel that same comfort with me too.
 
-I want you to know that you can talk to me when you're happy and when you're having a difficult day. You don't have to hide your sadness or pretend to be okay just to make things easier for me. I want to listen, understand, and support you in the ways you need—not assume that I always know what is best.
+I want you to know that you can talk to me when you're happy and when you're having a difficult day. You don't have to hide your sadness or pretend to be okay just to make things easier for me. I want to listen to you, understand how you feel and be there for you in the way you need me to. I don't want to assume I know everything. I want to really listen to you, understand how you feel, and be there for you in the way you need me to. I don't want to assume I know everything. I want to learn more about you and understand you better every day.
 
-I know I can't solve every problem you face, and I don't expect you to solve mine. Sometimes, all we can do is sit together, listen, and remind each other that we don't have to face everything alone.
+I know I can't solve every problem you face and I don't expect you to solve mine. Sometimes all we can do is sit together, listen and remind each other that we don't have to face everything alone.
 
-That's the kind of relationship I want us to build: one where we can be honest, feel respected, and find comfort in each other's presence without losing our own strength.
+That's the kind of relationship I want us to build. The one where we can be honest, feel respected and find comfort in each other's presence without losing our own strength.
 
-You're my favorite person to share my little moments with, the person I want to tell things to, and the person whose happiness matters deeply to me.
+You're my favorite person to share my little moments with, the person I want to tell things to and the person whose happiness matters deeply to me.
 
 And if I can become someone who makes you feel as loved and understood as you make me feel, that would mean so much to me.
 
@@ -1335,23 +1292,23 @@ Sometimes, it's the feeling of being beside you.`
       title: "All the Dreams I Have With You",
       text: `When I think about the future, I find myself imagining so many things with you.
 
-I imagine us growing older, becoming more confident in ourselves, and working toward the dreams we have today. I want to see you succeed in whatever you choose to do. I want to be there when you achieve something you've worked hard for, celebrate your happiness, and remind you of your strength when things don't go as planned.
+I imagine us growing older becoming more confident in ourselves and working toward the dreams we have today. I want to see you succeed in whatever you choose to do. I want to be there when you achieve something you've worked hard for, celebrate your happiness and remind you of your strength when things don't go as planned.
 
-I want us to encourage each other instead of competing with each other. I want your dreams to have space in our relationship, just as I want mine to have space in yours. I hope we can build lives that make us proud, both individually and together.
+I want us to encourage each other instead of competing with each other. I want your dreams to have space in our relationship just as I want mine to have space in yours. I hope we can build lives that make us proud both individually and together.
 
-And yes, I imagine the little things, too.
+And yes, I imagine the little things too.
 
-I imagine more trips, more photographs, more dinners, more late night conversations, and more memories that we'll laugh about years later. I imagine having a place that feels like ours, where we can return after long days and tell each other about everything that happened.
+I imagine more trips, more photographs, more dinners, more late night conversations and more memories that we'll laugh about years later. I imagine having a place that feels like ours, where we can return after long days and tell each other about everything that happened.
 
 Sometimes, I even imagine us getting married one day, if that's the future we both continue to want. I imagine holding your hand and realizing that the girl I once messaged on Instagram has become the person I'm building a life with.
 
-And I can't lie I sometimes imagine having a little daughter who looks just like you. I wonder what she'd be like, whether she'd have your eyes, your smile, or that little personality that makes you so special to me. It's a sweet thought that makes me smile whenever it crosses my mind.
+And I can't lie I sometimes imagine having a little daughter who looks just like you. I wonder what she'd be like, whether she'd have your eyes, your smile or that little personality that makes you so special to me. It's a sweet thought that makes me smile whenever it crosses my mind.
 
-But more than any specific picture of the future, what I really want is to build a future with you that makes both of us happy. I want us to keep choosing our dreams, supporting each other's growth, and discovering what life has waiting for us.
+But more than any specific picture of the future, what I really want is to build a future with you that makes both of us happy. I want us to keep choosing our dreams, supporting each other's growth and discovering what life has waiting for us.
 
-I know the future isn't something we can plan perfectly. Life can surprise us, and our dreams may change as we grow. But I hope that, whatever comes, we can keep talking honestly about what we want and make those decisions together.
+I know the future isn't something we can plan perfectly. Life can surprise us and our dreams may change as we grow. But I hope that whatever comes, we can keep talking honestly about what we want and make those decisions together.
 
-There are so many things I haven't experienced with you yet, so many places we haven't visited, and so many memories we haven't made.
+There are so many things I haven't experienced with you yet, so many places we haven't visited and so many memories we haven't made.
 
 And I hope we get the chance to experience them, one little moment at a time.`
  },
@@ -1362,7 +1319,7 @@ And I hope we get the chance to experience them, one little moment at a time.`
       title: " Even on the Hard Days, I Choose You",
       text: `Baby, if there's one thing I want you to understand about my love for you, it's that I don't love you only when everything is easy.
 
-I love you on the days when we're laughing until we can't stop, when we go out together, when we make new memories, and when everything between us feels right. But I also care about us on the days when we misunderstand each other, when our feelings get hurt and when we struggle to find the right words.
+I love you on the days when we're laughing until we can't stop, when we go out together, when we make new memories and when everything between us feels right. But I also care about us on the days when we misunderstand each other, when our feelings get hurt and when we struggle to find the right words.
 
 Those days can be difficult. Sometimes, we both need time to calm down and understand what we're feeling. Sometimes, we have to admit that we were wrong. And sometimes, we need to listen more carefully instead of trying so hard to prove our own point.
 
@@ -1389,9 +1346,9 @@ And on the hard days, I hope we remember why we started, how far we've come and 
       id: 19,
       emoji: "🏠",
       title: "The Life I Hope We Build Together",
-      text: `Sometimes, when I'm with you, I catch myself thinking about how strange and beautiful life can be. A simple Instagram message led to conversations, little dates, adventures, a trip to Pokhara and eventually the relationship we have today.
+      text: `Sometimes when I'm with you, I catch myself thinking about how strange and beautiful life can be. A simple Instagram message led to conversations, little dates, adventures, a trip to Pokhara and eventually the relationship we have today.
 
-Back then, neither of us could have known all the memories waiting for us. We couldn't have known how much we'd learn about each other or how many different feelings we'd experience along the way.
+Back then neither of us could have known all the memories waiting for us. We couldn't have known how much we'd learn about each other or how many different feelings we'd experience along the way.
 
 And that's what makes me excited about the future. There's still so much we haven't done.
 
@@ -1401,7 +1358,7 @@ But I also want the quieter parts of life with you. I want to hear about your da
 
 I hope we keep growing, both as individuals and as a couple. I hope we learn how to handle difficult conversations with more understanding and become better at showing love in the ways the other person needs.
 
-And maybe, one day, those dreams will lead us toward a home of our own, a marriage and a family if that's what we both still want when the time comes. I hope we can look back at the younger versions of ourselves and smile at how much we've learned.
+And maybe one day, those dreams will lead us toward a home of our own, a marriage and a family if that's what we both still want when the time comes. I hope we can look back at the younger versions of ourselves and smile at how much we've learned.
 
 I don't know exactly what every year ahead will bring. No one can promise that life will always go according to plan. But I know I want to approach the future with honesty, effort and care for the person I love.
 
