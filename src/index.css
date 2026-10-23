@@ -109,3 +109,67 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+/* ---------- Nav fixed to the top ---------- */
+
+.birthday-page {
+    padding-top: 68px;
+}
+
+.navbar {
+    position: fixed;
+    top: 14px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: min(780px, 92%);
+}
+
+/* ---------- Nav: pink pill behind the current page ---------- */
+
+.nav-links button {
+    isolation: isolate;
+}
+
+.nav-links button::before {
+    content: "";
+    position: absolute;
+    inset: -5px -11px;
+    border-radius: 999px;
+    background: rgba(255, 176, 206, 0.5);
+    box-shadow: 0 0 12px rgba(255, 143, 184, 0.45);
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: -1;
+}
+
+.nav-links button.active::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-links button.active {
+    color: #b82f66;
+}
+
+/* ---------- Nav: music button ---------- */
+
+.nav-links .music-toggle {
+    font-size: 16px;
+}
+
+.nav-links .music-toggle.off {
+    opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        width: max-content;
+        max-width: 92vw;
+    }
+
+    .nav-links button::before {
+        inset: 0;
+        border-radius: 12px;
+    }
+}

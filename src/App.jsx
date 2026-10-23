@@ -1413,6 +1413,7 @@ I love you, Babyyyy. I love youuu forever. ❤️`
   };
 
 const changePage = (newPage) => {
+  if (newPage === page) return;
 
   const messages = {
     home: "Loading the home page ♡",
@@ -1459,6 +1460,16 @@ const changePage = (newPage) => {
     setStarted(true);
   }, 2200);
 };
+
+const [musicOn, setMusicOn] = useState(false);
+
+const toggleMusic = () => {
+  const a = musicRef.current;
+  if (!a) return;
+  if (a.paused) a.play().catch(() => {});
+  else a.pause();
+};
+
 const [wishStage, setWishStage] = useState("idle");
 const wishVideoRef = useRef(null);
 
@@ -1495,8 +1506,10 @@ const wishCaption =
             {/* Background music */}
       <audio
         ref={musicRef}
-        src="/music/US1.mp3"
+        src="/music/US.mp3"
         loop
+          onPlay={() => setMusicOn(true)}
+          onPause={() => setMusicOn(false)}
       />
             {/* =====================================
           TAP TO BEGIN OVERLAY
@@ -1660,31 +1673,58 @@ const wishCaption =
 
   <div className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-<button onClick={() => { changePage("home"); setMenuOpen(false); }}>
-  Home
-</button>
+  <button
+    className={page === "home" ? "active" : ""}
+    onClick={() => { changePage("home"); setMenuOpen(false); }}
+  >
+    Home
+  </button>
 
-<button onClick={() => { changePage("story"); setMenuOpen(false); }}>
-  Story
-</button>
+  <button
+    className={page === "story" ? "active" : ""}
+    onClick={() => { changePage("story"); setMenuOpen(false); }}
+  >
+    Story
+  </button>
 
-<button onClick={() => { changePage("gallery"); setMenuOpen(false); }}>
-  Gallery
-</button>
+  <button
+    className={page === "gallery" ? "active" : ""}
+    onClick={() => { changePage("gallery"); setMenuOpen(false); }}
+  >
+    Gallery
+  </button>
 
-<button onClick={() => { changePage("reasons"); setMenuOpen(false); }}>
-  20 Reasons
-</button>
+  <button
+    className={page === "reasons" ? "active" : ""}
+    onClick={() => { changePage("reasons"); setMenuOpen(false); }}
+  >
+    20 Reasons
+  </button>
 
-<button onClick={() => { changePage("letter"); setMenuOpen(false); }}>
-  Letter
-</button>
+  <button
+    className={page === "letter" ? "active" : ""}
+    onClick={() => { changePage("letter"); setMenuOpen(false); }}
+  >
+    Letter
+  </button>
 
-<button onClick={() => { changePage("surprise"); setMenuOpen(false); }}>
-  Surprise
-</button>
+  <button
+    className={page === "surprise" ? "active" : ""}
+    onClick={() => { changePage("surprise"); setMenuOpen(false); }}
+  >
+    Surprise
+  </button>
 
-  </div>
+  <button
+    className={`music-toggle ${musicOn ? "" : "off"}`}
+    onClick={toggleMusic}
+    aria-label="Toggle music"
+    title="Music on / off"
+  >
+    {musicOn ? "🎵" : "🔇"}
+  </button>
+
+</div>
 
 </nav>
 
