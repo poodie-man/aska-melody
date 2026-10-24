@@ -342,7 +342,6 @@ const petalData = useMemo(
       setTimeout(() => {
         setSmallShootingStars([]);
         setWishMoment(true);
-        setCaptionText("make a wish ♡");
       }, 1600);
     }
   };
