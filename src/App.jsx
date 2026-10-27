@@ -1616,7 +1616,7 @@ const wishCaption =
     ? "Close your eyes and make a wish ♡"
     : wishStage === "blowing"
     ? "✨"
-    : "Happy 20th birthday, Aska ♡";
+    : "Happy 20th birthday, Babyyyy ♡";
   return (
     <main className={`birthday-page ${page === "reasons" ? "reasons-active" : ""}`}>
             {/* Background music */}

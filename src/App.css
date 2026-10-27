@@ -3318,9 +3318,11 @@ color: #ffeaf9;}
 .surprise-caption {
     margin: 0;
     text-align: center;
-    font-size: clamp(15px, 2.4vw, 19px);
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(15px, 2.4vw, 30px);
     color: #b0577d;
     transition: color 1s ease;
+    font-weight: 1000;
 }
 
 .surprise-page.dimmed .surprise-caption {
@@ -3492,14 +3494,18 @@ color: #ffeaf9;}
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 2.6em;
+    bottom: 0.5em;
+    font-family: "Dancing Script", cursive;
     text-align: center;
     font-size: 5em;
-    font-weight: 700;
+    font-weight: 1000;
     line-height: 1;
     color: #d4537e;
-    text-shadow: 0 0.04em 0 rgba(255, 255, 255, 0.6);
-}
+     text-shadow:
+        0 0 10px rgba(255, 130, 180, 0.6),
+        0 0 22px rgba(255, 130, 180, 0.45),
+        0 0 40px rgba(255, 105, 160, 0.3);
+color: #d4537e;};
 
 .cake-heart {
     position: absolute;
