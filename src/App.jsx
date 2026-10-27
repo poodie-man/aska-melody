@@ -8,6 +8,123 @@ import { useEffect, useRef, useState, useMemo } from "react";
 // generate automatically to fit however many
 // photos you list here.
 // =========================================
+function WishYouTube({ videoId, onPlay }) {
+  const holderRef = useRef(null);
+
+  useEffect(() => {
+    let player;
+
+    const createPlayer = () => {
+      player = new window.YT.Player(holderRef.current, {
+        videoId,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1 },
+        events: {
+          onStateChange: (e) => {
+            if (e.data === window.YT.PlayerState.PLAYING) onPlay?.();
+          },
+        },
+      });
+    };
+
+    if (window.YT && window.YT.Player) {
+      createPlayer();
+    } else {
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.body.appendChild(tag);
+      window.onYouTubeIframeAPIReady = createPlayer;
+    }
+
+    return () => player?.destroy?.();
+  }, [videoId]);
+
+  return (
+    <div className="wish-youtube">
+      <div ref={holderRef} />
+    </div>
+  );
+}
+const partyColors = ["#ff8fb8", "#b9a6f0", "#8fd3c8", "#ffd45c", "#f48fb1"];
+
+const balloons = [
+  { side: "left", x: "2%", top: "14%", c: 0, d: "0s" },
+  { side: "left", x: "7%", top: "34%", c: 2, d: "-1.2s" },
+  { side: "left", x: "3%", top: "56%", c: 3, d: "-2.4s" },
+  { side: "right", x: "2%", top: "16%", c: 1, d: "-0.6s" },
+  { side: "right", x: "7%", top: "38%", c: 4, d: "-1.8s" },
+  { side: "right", x: "3%", top: "58%", c: 0, d: "-3s" },
+];
+
+const melodyGifs = [
+  { src: "/gifs/surprise1.gif", pos: { left: "14%",  top: 140 }, size: 120, delay: "0s" },
+  { src: "/gifs/surprise 2.gif", pos: { right: "14%", top: 170 }, size: 120, delay: "-1s" },
+  { src: "/gifs/surprise4.gif", pos: { left: "15%",  top: 420 }, size: 140, delay: "-2s" },
+  { src: "/gifs/surprise5.gif", pos: { right: "15%", top: 480 }, size: 140, delay: "-0.5s" },
+  { src: "/gifs/surprise6.gif", pos: { left: "13%",  top: 780 }, size: 130, delay: "-1.5s" },
+  { src: "/gifs/nav4.gif", pos: { right: "20%",  top: 780 }, size: 130, delay: "-1.5s" },
+  { src: "/gifs/melody.gif", pos: { right: "14%",  top: 650 }, size: 130, delay: "-1.5s" }
+];
+
+function MelodyGifs() {
+  return (
+    <div className="melody-gifs" aria-hidden="true">
+      {melodyGifs.map((g, i) => (
+        <img
+          key={i}
+          className="melody-gif"
+          src={g.src}
+          alt=""
+          draggable="false"
+          style={{ ...g.pos, width: g.size, animationDelay: g.delay }}
+        />
+      ))}
+    </div>
+  );
+}
+
+function PartyDecor() {
+  return (
+    <div className="party-decor" aria-hidden="true">
+      <div className="bunting">
+        {Array.from({ length: 14 }, (_, i) => (
+          <span key={i} style={{ "--c": partyColors[i % partyColors.length] }} />
+        ))}
+      </div>
+
+      <span className="streamer" style={{ left: "3%", "--c": "#ff8fb8" }} />
+      <span className="streamer" style={{ left: "5%", "--c": "#b9a6f0", animationDelay: "-1s" }} />
+      <span className="streamer" style={{ right: "3%", "--c": "#8fd3c8" }} />
+      <span className="streamer" style={{ right: "5%", "--c": "#ffd45c", animationDelay: "-1s" }} />
+
+      {balloons.map((b, i) => (
+        <span
+          key={i}
+          className="balloon"
+          style={{
+            [b.side]: b.x,
+            top: b.top,
+            "--c": partyColors[b.c],
+            animationDelay: b.d,
+          }}
+        />
+      ))}
+
+      <div className="confetti">
+        {Array.from({ length: 28 }, (_, i) => (
+          <span
+            key={i}
+            style={{
+              "--c": partyColors[i % partyColors.length],
+              left: `${(i * 37) % 100}%`,
+              animationDuration: `${6 + (i % 5)}s`,
+              animationDelay: `${-(i * 0.7)}s`,
+            }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 const galleryPhotos = [
   { id: 1, src: "/images/gallery/img1.png", caption: "5th december, 2025. Our first concert together." },
   { id: 2, src: "/images/gallery/firstthakali.png", caption: "31st December, 2025. New Year Eve." },
@@ -2257,7 +2374,8 @@ const wishCaption =
 )}
 {page === "surprise" && (
   <div className={`surprise-page ${wishStage !== "video" ? "dimmed" : ""}`}>
-
+      <PartyDecor/>
+      <MelodyGifs/>
     <p className="surprise-caption">{wishCaption}</p>
 
    <div className={`cake ${wishStage !== "idle" ? "blown" : ""} ${wishStage === "video" ? "out" : ""}`}>
@@ -2305,17 +2423,10 @@ const wishCaption =
 
     {wishStage === "video" && (
       <div className="wish-video-card">
-        <video
-          ref={wishVideoRef}
-          className="wish-video"
-          src="/videos/sweet.mp4"
-          controls
-          playsInline
-          preload="metadata"
-  onPlay={() => {
-    if (musicRef.current) musicRef.current.pause();
-  }}
-        />
+      <WishYouTube
+  videoId="FZ8PzWk1dbQ"
+  onPlay={() => musicRef.current?.pause()}
+/>
         <button className="wish-replay" onClick={resetWish}>
           ↺ Light the candles again
         </button>

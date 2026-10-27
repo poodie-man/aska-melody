@@ -3657,7 +3657,7 @@ color: #ffeaf9;}
 }
 
 .wish-video-card {
-    width: min(640px, 100%);
+    width: min(960px, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3685,4 +3685,179 @@ color: #ffeaf9;}
     color: #b0577d;
     text-decoration: underline;
     cursor: pointer;
+}
+.wish-youtube {
+    width: min(100%, calc(70vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    border-radius: 18px;
+    border: 6px solid #ffffff;
+    background: #2b1a2e;
+    box-shadow: 0 16px 40px rgba(200, 80, 130, 0.35);
+}
+
+.wish-youtube iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.03);
+}
+/* ---------- Party decorations ---------- */
+
+.party-decor {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    animation: decorIn 1s ease both;
+}
+
+@keyframes decorIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* bunting */
+.bunting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bunting::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6px;
+    height: 2px;
+    background: rgba(176, 87, 125, 0.45);
+}
+
+.bunting span {
+    width: 30px;
+    height: 38px;
+    margin-top: 7px;
+    background: var(--c);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* streamers */
+.streamer {
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 170px;
+    background: var(--c);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+    transform-origin: top center;
+    animation: streamerSwing 3s ease-in-out infinite alternate;
+}
+
+@keyframes streamerSwing {
+    from { transform: rotate(-5deg); }
+    to   { transform: rotate(5deg); }
+}
+
+/* balloons */
+.balloon {
+    position: absolute;
+    width: 62px;
+    height: 78px;
+    border-radius: 50% 50% 48% 48% / 55% 55% 45% 45%;
+    background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.75) 0 8%, transparent 9%),
+        var(--c);
+    box-shadow: inset -8px -10px 16px rgba(0, 0, 0, 0.12);
+    animation: balloonFloat 5s ease-in-out infinite alternate;
+}
+
+.balloon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background: var(--c);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 3px);
+    width: 1.5px;
+    height: 90px;
+    background: rgba(176, 87, 125, 0.45);
+}
+
+@keyframes balloonFloat {
+    from { transform: translateY(0) rotate(-2deg); }
+    to   { transform: translateY(-16px) rotate(2deg); }
+}
+
+/* confetti */
+.confetti {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+}
+
+.confetti span {
+    position: absolute;
+    top: -20px;
+    width: 8px;
+    height: 14px;
+    border-radius: 2px;
+    background: var(--c);
+    opacity: 0.85;
+    animation: confettiFall 7s linear infinite;
+}
+
+@keyframes confettiFall {
+    from { transform: translateY(-20px) rotate(0deg); }
+    to   { transform: translateY(105vh) rotate(720deg); }
+}
+
+/* phones: keep it light */
+@media (max-width: 700px) {
+    .balloon { transform: scale(0.6); }
+    .bunting span:nth-child(n + 9) { display: none; }
+    .streamer { display: none; }
+}
+/* ---------- Melody GIFs ---------- */
+
+.melody-gifs {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    animation: decorIn 1s ease both;
+}
+
+.melody-gif {
+    position: absolute;
+    height: auto;
+    filter: drop-shadow(0 8px 12px rgba(200, 80, 130, 0.25));
+    animation: gifBob 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes gifBob {
+    from { transform: translateY(0) rotate(-2deg); }
+    to   { transform: translateY(-10px) rotate(2deg); }
+}
+
+@media (max-width: 900px) {
+    .melody-gif { width: 80px !important; }
+    .melody-gif:nth-child(n + 3) { display: none; }
 }
