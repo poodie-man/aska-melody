@@ -3500,12 +3500,12 @@ color: #ffeaf9;}
     font-size: 5em;
     font-weight: 1000;
     line-height: 1;
-    color: #d4537e;
      text-shadow:
         0 0 10px rgba(255, 130, 180, 0.6),
         0 0 22px rgba(255, 130, 180, 0.45),
         0 0 40px rgba(255, 105, 160, 0.3);
-color: #d4537e;};
+color: #d4537e
+}
 
 .cake-heart {
     position: absolute;
